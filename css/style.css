@@ -8171,7 +8171,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: white;
+  color: #808080;
   font-weight: 400; }
 
 .text-primary {
@@ -9369,7 +9369,7 @@ textarea.form-control {
     width: 40px;
     font-size: 18px;
     padding-top: 2px;
-    color: white; }
+    color: #808080; }
 
 .block-6 {
   margin-bottom: 40px; }
