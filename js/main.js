@@ -269,6 +269,20 @@
     fixedContentPos: false
   });
 
+  // Smooth Scrolling
+  $('a[href*="#"]').on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top - 70
+    }, 500);
+  });
+
+  // Dark Mode Toggle
+  $('#dark-mode-toggle').on('click', function() {
+    $('body').toggleClass('dark-mode');
+    $(this).text($('body').hasClass('dark-mode') ? '☀️' : '🌙');
+  });
+
 
 
 
