@@ -4,6 +4,8 @@
     <title>Prince Yadav Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio of Prince Yadav, Senior Zoho Developer and Consultant specializing in Zoho One implementations, Deluge scripting, and business process automation.">
+    <meta name="keywords" content="Zoho Developer, Zoho Consultant, Deluge, API Integration, Business Process Automation, Prince Yadav">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -24,289 +26,9 @@
 
 
 
-<style>
-/* Prince pic */
-.hero-growth-graphic-wrapper {
-  width: 100%;
-  max-width: auto;
-  min-width: auto;
-  height: auto; 
-  display: flex;  
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding-top: 4vw;
-  padding-right: 0vw;
-  box-sizing: border-box;
-}
-.hero-growth-graphic {
-  width: 100%;
-  height: auto;
-  max-width: 500px;
-  min-width: 200px;
-  aspect-ratio: 4/3;
-  display: block;
-}
-@media (max-width: 991px) {
-  .hero-growth-graphic-wrapper {
-    max-width: 420px;
-    padding-top: 0vw;
-    padding-right: 1vw;
-  }
-  .hero-growth-graphic {
-    max-width: 350px;
-    min-width: 150px;
-  }
-}
-@media (max-width: 767px) {
-  .hero-growth-graphic-wrapper {
-    max-width: 220px;
-    padding-top: 0;
-    padding-right: 0;
-    margin: 0 auto 1rem auto;
-    justify-content: center;
-  }
-  .one-third.js-fullheight.order-md-last {
-    justify-content: center !important;
-  }
-}
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
 
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 1em; /* Adjusted for better fit within h2 */
-  font-weight: bold;
-  color: #ffbd39; /* Accent color for typed text */
-  overflow: hidden;
-  white-space: nowrap;
-  vertical-align: bottom;
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-/* UI Improvements */
-.btn {
-  background: linear-gradient(45deg, #ffbd39, #ff8c00);
-  border: none;
-  color: #fff;
-  transition: all 0.3s ease;
-  border-radius: 25px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  box-shadow: 0 4px 15px rgba(255, 189, 57, 0.3);
-}
-
-.btn:hover {
-  background: linear-gradient(45deg, #ff8c00, #ffbd39);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(255, 189, 57, 0.4);
-  color: #fff;
-}
-
-.btn-outline-white {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.btn-outline-white:hover {
-  background: #fff;
-  color: #333;
-  border-color: #fff;
-}
-
-.navbar-brand {
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #ffbd39 !important;
-}
-
-.section-title {
-  color: #333;
-  font-weight: 600;
-}
-
-.skill-mf .progress-bar {
-  background: linear-gradient(90deg, #ffbd39 0%, #ff8c00 100%);
-}
-
-.hero h1 {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-/* Advanced Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-.hero-growth-graphic {
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
-}
-
-#typing-animation::after {
-  content: '..';
-  animation: blink 1s infinite;
-  color: #ffbd39;
-}
-
-.skill-mf .progress-bar {
-  animation: fillProgress 2s ease-out forwards;
-  transform-origin: left;
-}
-
-@keyframes fillProgress {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
-}
-
-/* More UI Improvements */
-.resume-wrap {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  transition: box-shadow 0.3s ease;
-}
-
-.resume-wrap:hover {
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.contact-section .box {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.contact-section .box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.ftco-footer-social a {
-  transition: transform 0.3s ease;
-}
-
-.ftco-footer-social a:hover {
-  transform: scale(1.2);
-}
-
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #ffbd39;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s, transform 0.3s;
-  z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.back-to-top.show {
-  opacity: 1;
-}
-
-.back-to-top:hover {
-  transform: scale(1.1);
-}
-
-.ftco-hireme .heading h4 {
-  color: #fff;
-  font-weight: 600;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-}
-
-/* More Animations */
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40% { transform: translateY(-10px); }
-  60% { transform: translateY(-5px); }
-}
-
-.contact-section .icon {
-  transition: transform 0.3s;
-}
-
-.contact-section .box:hover .icon {
-  animation: bounce 1s;
-}
-
-.navbar.shrink {
-  padding: 10px 0;
-  background: rgba(0,0,0,0.9) !important;
-  transition: all 0.3s ease;
-}
-
-.navbar.shrink .navbar-brand {
-  font-size: 1.2rem;
-  transition: font-size 0.3s ease;
-}
-
-.hero .text {
-  animation: slideInLeft 1s ease-out;
-}
-
-@keyframes slideInLeft {
-  from { transform: translateX(-100px); opacity: 0; }
-  to { transform: translateX(0); opacity: 1; }
-}
-
-</style>
 
 
   </head>
@@ -324,6 +46,7 @@
             <ul class="navbar-nav nav ml-auto">
               <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
               <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+              <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
               <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience  </span></a></li>
               <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
               <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
@@ -484,6 +207,67 @@
     </section>
 
 
+    <section class="ftco-section" id="skills-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h1 class="big big-2">Skills</h1>
+                    <h2 class="mb-4">Skills & Expertise</h2>
+                    <p>Mastering the art of Zoho One ecosystem and modern development practices.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-code"></i>
+                        <h4>Deluge Scripting</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-link"></i>
+                        <h4>API Integration</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-cogs"></i>
+                        <h4>Automation</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-bar-chart"></i>
+                        <h4>Data Analytics</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-users"></i>
+                        <h4>CRM Solutions</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-cloud"></i>
+                        <h4>Cloud Platforms</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-shield"></i>
+                        <h4>Security</h4>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 ftco-animate text-center">
+                    <div class="skill-icon">
+                        <i class="icon-globe"></i>
+                        <h4>Marketing</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <section class="ftco-section ftco-no-pb" id="resume-section">
         <div class="container">
@@ -528,7 +312,6 @@
         </div>
     </section>
 
-    
 
     <section class="ftco-section" id="project-section">
         <div class="container">
@@ -540,19 +323,68 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">Projects</span>
-                        <h2>Zoho One Implementations Across Industries</h2>
-                        <span class="position">Zoho One, Deluge, REST APIs, CRM, Books, Creator, Analytics, Flow, Campaigns</span>
-                        <p class="mt-4">
-                            Designed and deployed end-to-end Zoho One solutions for clients in investment, healthcare, and manufacturing sectors, enhancing operational efficiency and data-driven decision-making.
-                            <ul>
-                                <li><b>Investment & Financial Services:</b> Spearheaded Zoho CRM integrations with Google Ads, Facebook, and third-party APIs; engineered telephony and WhatsApp automations; developed SQL-based analytics dashboards and LMS implementations.</li>
-                                <li><b>Healthcare Technology:</b> Architected integrated Zoho ecosystems (CRM, Books, Sign, Creator) to streamline digital documentation, financial workflows, and client management.</li>
-                                <li><b>Manufacturing & Sovereign Funds:</b> Led development of large-scale Zoho suites with high-security data orchestration, real-time analytics platforms, and robust API/Webhook integrations for seamless third-party connectivity.</li>
-                            </ul>
-                        </p>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img zoom-effect">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Investment & Financial Services Project" class="img-fluid">
+                        </div>
+                        <div class="project-info">
+                            <h3>Investment & Financial Services</h3>
+                            <p>Spearheaded Zoho CRM integrations with Google Ads, Facebook, and third-party APIs; engineered telephony and WhatsApp automations.</p>
+                            <span class="tech">Zoho CRM, APIs, Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img zoom-effect">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80" alt="Healthcare Technology Project" class="img-fluid">
+                        </div>
+                        <div class="project-info">
+                            <h3>Healthcare Technology</h3>
+                            <p>Architected integrated Zoho ecosystems (CRM, Books, Sign, Creator) to streamline digital documentation and financial workflows.</p>
+                            <span class="tech">Zoho Books, Sign, Creator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img zoom-effect">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Manufacturing Analytics Project" class="img-fluid">
+                        </div>
+                        <div class="project-info">
+                            <h3>Manufacturing Analytics</h3>
+                            <p>Designed advanced Zoho Analytics platform for real-time data visualization and operational insights.</p>
+                            <span class="tech">Zoho Analytics, SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img zoom-effect">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Sovereign Fund Suite Project" class="img-fluid">
+                        </div>
+                        <div class="project-info">
+                            <h3>Sovereign Fund Suite</h3>
+                            <p>Led development of large-scale Zoho suites with high-security data orchestration and robust API integrations.</p>
+                            <span class="tech">Zoho Creator, APIs, Security</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-card">
+                        <div class="project-img zoom-effect">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Campaign Automation Project" class="img-fluid">
+                        </div>
+                        <div class="project-info">
+                            <h3>Campaign Automation</h3>
+                            <p>Implemented Zoho Campaigns and Flow for synchronized data across marketing ecosystems.</p>
+                            <span class="tech">Zoho Campaigns, Flow</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -627,8 +459,31 @@
             <br>
             <br>
             <div class="row justify-content-center">
-                <div class="col-md-7 ftco-animate text-center">
-                    <h2>Have a<span> Question?   </span> <a href="https://forms.gle/ny7qe46Pvms2ep6o7" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+                <div class="col-md-8 ftco-animate">
+                    <h2 class="text-center mb-4">Have a <span>Question?</span></h2>
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
                 </div>
             </div>
                 <br>
@@ -686,7 +541,45 @@
     $('#back-to-top').click(function() {
       $('html, body').animate({scrollTop: 0}, 600);
     });
+
   </script>
-    
+
+
+
+
+  <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  (function() {
+    // Initialize with your Public Key from EmailJS Account
+    emailjs.init("m6vkaQevc8GZmWyfA");
+  })();
+
+  $(document).ready(function() {
+    $('.contact-form').on('submit', function(event) {
+      event.preventDefault(); // Prevent page reload
+
+      const btn = $(this).find('input[type="submit"]');
+      btn.val('Sending...');
+
+      // These IDs must match your EmailJS dashboard
+      const serviceID = 'service_yj717gj';
+      const templateID = 'template_9sylra8';
+
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          btn.val('Send Message');
+          alert('Message Sent Successfully!');
+          $('.contact-form')[0].reset();
+        }, (err) => {
+          btn.val('Send Message');
+          alert('Failed to send: ' + JSON.stringify(err));
+        });
+    });
+  });
+</script>
+
+
   </body>
 </html>

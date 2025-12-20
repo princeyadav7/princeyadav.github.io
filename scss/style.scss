@@ -1,6 +1,16 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/variables';
 
+:root {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --primary-color: #ffbd39;
+  --secondary-color: #a0f669;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 189, 57, 0.3);
+  --muted-text: #ccc;
+}
+
 $font-primary: 'Poppins',Arial, sans-serif;
 
 $white: #fff;
@@ -32,11 +42,11 @@ html {
 }
 body {
 	font-family: $font-primary;
-	background: $black;
+	background: var(--bg-color);
 	font-size: 16px;
 	line-height: 1.8;
 	font-weight: 400;
-	color: lighten($black,60%);
+	color: var(--text-color);
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
@@ -56,7 +66,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
 	line-height: 1.5;
-	color: rgba(255,255,255,1);
+	color: var(--text-color);
 	font-weight: 400;
 }
 
@@ -1986,3 +1996,118 @@ textarea.form-control {
     stroke-dashoffset: -136px;
   }
 }
+
+/* Project Cards */
+.project-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project-img {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 20px;
+}
+
+.project-info h3 {
+  color: #ffbd39;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.tech {
+  display: block;
+  color: #ffbd39;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Contact Form */
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .form-control {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  padding: 10px 15px;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(255, 189, 57, 0.25);
+  background: var(--card-bg);
+}
+
+.contact-form .form-control::placeholder {
+  color: var(--muted-text);
+}
+
+.contact-form textarea.form-control {
+  resize: vertical;
+}
+
+/* Skills Section */
+.skill-icon {
+  padding: 30px 20px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.skill-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.skill-icon i {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  display: block;
+}
+
+.skill-icon h4 {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
