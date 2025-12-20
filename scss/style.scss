@@ -2111,3 +2111,76 @@ textarea.form-control {
   font-weight: 600;
 }
 
+/* Custom UI Improvements */
+:root {
+    --primary-color: #ffbd39;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Glassmorphism Cards */
+.resume-wrap, .project-card, .box {
+    background: var(--glass-bg) !important;
+    border: 1px solid var(--glass-border) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 15px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.resume-wrap:hover, .project-card:hover {
+    border-color: var(--primary-color) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Polished Progress Bars */
+.progress {
+    height: 8px !important;
+    background: rgba(255,255,255,0.1) !important;
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: var(--primary-color) !important;
+    position: relative;
+    border-radius: 10px;
+}
+
+.progress-bar::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    width: 16px;
+    height: 16px;
+    background: #fff;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Hero Section Refinement */
+.hero-growth-graphic {
+    filter: drop-shadow(0 0 20px rgba(255, 189, 57, 0.3));
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Skill Icons */
+.skill-icon {
+    padding: 30px;
+    background: var(--glass-bg);
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 1px solid var(--glass-border);
+}
+
+.skill-icon i {
+    font-size: 40px;
+    color: var(--primary-color);
+}
