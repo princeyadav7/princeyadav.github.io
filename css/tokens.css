@@ -1,0 +1,87 @@
+/* =====================================================
+   tokens.css — Design Tokens, Reset, Base Styles
+   =====================================================
+   Edit this file to change:
+   - Colours (--blue, --text, --bg, etc.)
+   - Typography (font sizes, weights)
+   - Border radii, shadows, transitions
+   ===================================================== */
+
+/* ─── COLOUR TOKENS ─────────────────────────────────
+   Primary accent  → --blue  (professional blue)
+   Backgrounds     → --bg (page), --bg2 (alt sections)
+   Surfaces        → --surface (cards/panels)
+   Text            → --text (headings), --muted (body), --faint (captions)
+   ─────────────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --bg:        #F8F9FB;
+  --bg2:       #F0F2F5;
+  --surface:   #FFFFFF;
+
+  /* Borders */
+  --border:    #E4E6EA;
+
+  /* Text */
+  --text:      #0D0F12;
+  --muted:     #5A6270;
+  --faint:     #9BA3AE;
+
+  /* Primary accent — change this to retheme the entire site */
+  --blue:      #1D4ED8;
+  --blue-l:    #3B6FE8;   /* lighter variant */
+  --blue-d:    #1338B0;   /* darker variant  */
+  --blue-bg:   rgba(29, 78, 216, 0.07);   /* tint background */
+  --blue-bdr:  rgba(29, 78, 216, 0.18);   /* tint border     */
+
+  /* Secondary colours */
+  --teal:      #0D9488;   /* success / impact */
+  --red:       #DC2626;   /* challenge / warning */
+
+  /* Radii */
+  --r:         6px;
+  --r2:        10px;
+  --r3:        14px;
+
+  /* Shadows */
+  --sh:        0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --sh2:       0 4px 16px rgba(0,0,0,0.08);
+
+  /* Transition */
+  --tr:        all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── RESET ───────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  overflow-x: hidden;
+  font-size: 15px;
+}
+
+::selection {
+  background: var(--blue);
+  color: #fff;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { max-width: 100%; }
+
+/* ─── SCROLLBAR ─────────────────────────────────── */
+::-webkit-scrollbar       { width: 3px; }
+::-webkit-scrollbar-track { background: var(--bg2); }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 2px; }
