@@ -133,7 +133,7 @@ function handleForm(e) {
     Message: document.getElementById("f-msg").value
   };
 
-  fetch("https://formsubmit.co/ajax/princeyadav841@gmail.com", {
+  fetch("https://formsubmit.co/ajax/097425fdbc4b04cceb7ba3296a1a5adf", {
     method: "POST",
     headers: { 
         'Content-Type': 'application/json',
