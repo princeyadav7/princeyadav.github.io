@@ -123,10 +123,44 @@ function handleForm(e) {
   btn.textContent = 'Sending…';
   btn.disabled    = true;
 
-  // TODO: replace setTimeout with fetch() to your form endpoint
-  setTimeout(() => {
+  const payload = {
+    _subject: "New Project Enquiry from Prince Portfolio",
+    Name: document.getElementById("f-name").value,
+    Company: document.getElementById("f-co").value,
+    Email: document.getElementById("f-email").value,
+    Service: document.getElementById("f-svc").value,
+    Budget: document.getElementById("f-bud").value,
+    Message: document.getElementById("f-msg").value
+  };
+
+  fetch("https://formsubmit.co/ajax/princeyadav841@gmail.com", {
+    method: "POST",
+    headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+    },
+    body: JSON.stringify(payload)
+  })
+  .then(response => response.json())
+  .then(data => {
     success.style.display = 'block';
+    // FormSubmit requires email activation on first run
+    if (data.message && data.message.toLowerCase().includes("activate")) {
+      success.innerHTML = '<i class="fas fa-info-circle"></i> Please check your email to activate form submissions.';
+      success.style.color = "#0284c7"; // blue
+    } else {
+      success.innerHTML = '<i class="fas fa-check-circle"></i> Message sent! I\'ll respond within 24 hours.';
+      success.style.color = ""; // reset to default
+    }
     btn.innerHTML         = '<i class="fas fa-check"></i> Sent';
     btn.style.background  = 'var(--teal)';
-  }, 1100);
+  })
+  .catch(error => {
+    console.error(error);
+    success.style.display = 'block';
+    success.innerHTML     = '<i class="fas fa-times-circle"></i> Failed to send. Please try again.';
+    success.style.color   = "red";
+    btn.textContent       = 'Send Enquiry';
+    btn.disabled          = false;
+  });
 }
