@@ -15,28 +15,28 @@
    ─────────────────────────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg:        #F8F9FB;
-  --bg2:       #F0F2F5;
+  --bg:        #F8FAFC;
+  --bg2:       #F1F5F9;
   --surface:   #FFFFFF;
 
   /* Borders */
-  --border:    #E4E6EA;
+  --border:    #E2E8F0;
 
   /* Text */
-  --text:      #0D0F12;
-  --muted:     #5A6270;
-  --faint:     #9BA3AE;
+  --text:      #0F172A;
+  --muted:     #475569;
+  --faint:     #94A3B8;
 
-  /* Primary accent — change this to retheme the entire site */
-  --blue:      #1D4ED8;
-  --blue-l:    #3B6FE8;   /* lighter variant */
-  --blue-d:    #1338B0;   /* darker variant  */
-  --blue-bg:   rgba(29, 78, 216, 0.07);   /* tint background */
-  --blue-bdr:  rgba(29, 78, 216, 0.18);   /* tint border     */
+  /* Primary accent — premium corporate identity */
+  --blue:      #0B2545;   /* Executive Deep Navy */
+  --blue-l:    #1E40AF;   /* Premium Cobalt Accent */
+  --blue-d:    #1E3A8A;   /* Darker Royal Blue */
+  --blue-bg:   rgba(30, 64, 175, 0.05);   /* tint background */
+  --blue-bdr:  rgba(30, 64, 175, 0.15);   /* tint border     */
 
   /* Secondary colours */
-  --teal:      #0D9488;   /* success / impact */
-  --red:       #DC2626;   /* challenge / warning */
+  --teal:      #0F766E;   /* Success / ROI Outcomes */
+  --red:       #BE123C;   /* Challenge / Risk Outlining */
 
   /* Radii */
   --r:         6px;
@@ -44,11 +44,11 @@
   --r3:        14px;
 
   /* Shadows */
-  --sh:        0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  --sh2:       0 4px 16px rgba(0,0,0,0.08);
+  --sh:        0 1px 3px rgba(15,23,42,0.03), 0 1px 2px rgba(15,23,42,0.02);
+  --sh2:       0 10px 25px -5px rgba(15,23,42,0.06), 0 8px 10px -6px rgba(15,23,42,0.04);
 
   /* Transition */
-  --tr:        all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  --tr:        all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ─── RESET ───────────────────────────────────────── */
@@ -63,7 +63,7 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', 'DM Sans', sans-serif;
   font-weight: 300;
   background: var(--bg);
   color: var(--text);

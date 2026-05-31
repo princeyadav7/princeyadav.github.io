@@ -2,13 +2,16 @@
    main.js — All JavaScript for Prince Yadav Portfolio
    =====================================================
    Sections:
-     1. Typing Animation (hero headline)
-     2. Navigation Scroll Behaviour
-     3. Scroll-To-Top Button
-     4. Mobile Navigation Toggle
-     5. Scroll Reveal (IntersectionObserver)
-     6. Active Nav Link Highlight
-     7. Contact Form Handler
+     1.  Typing Animation (hero headline)
+     2.  Navigation Scroll Behaviour
+     3.  Scroll-To-Top Button
+     4.  Mobile Navigation Toggle
+     5.  Scroll Reveal (IntersectionObserver)
+     6.  Active Nav Link Highlight
+     7.  Contact Form Handler
+     8.  Dynamic Currency & Region Toggler
+     9.  Case Study Moving Sliding Carousel (continuous loop)
+     10. Hero Stats Count-Up Animation
    ===================================================== */
 
 /* ─── 1. TYPING ANIMATION ────────────────────────────
@@ -120,47 +123,308 @@ function handleForm(e) {
   const btn     = document.getElementById('f-btn');
   const success = document.getElementById('f-success');
 
-  btn.textContent = 'Sending…';
-  btn.disabled    = true;
+  btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+  btn.disabled  = true;
 
-  const payload = {
-    _subject: "New Project Enquiry from Prince Portfolio",
-    Name: document.getElementById("f-name").value,
-    Company: document.getElementById("f-co").value,
-    Email: document.getElementById("f-email").value,
-    Service: document.getElementById("f-svc").value,
-    Budget: document.getElementById("f-bud").value,
-    Message: document.getElementById("f-msg").value
+  // ── Zoho Forms submission URL (from HTML & CSS embed) ──
+  const zohoUrl = 'https://forms.zohopublic.in/adminmicro1/form/StartaProjectEnquiry/formperma/hSofY-7FRWAjTpM_skXRH3o5seXYyDnVgcFzSgaB3xw/htmlRecords/submit';
+
+  // Build hidden form with EXACT Zoho field names
+  const hf = document.createElement('form');
+  hf.method  = 'POST';
+  hf.action  = zohoUrl;
+  hf.target  = 'zf_hidden';
+  hf.style.display = 'none';
+  hf.acceptCharset = 'UTF-8';
+
+  const fields = {
+    'SingleLine'      : document.getElementById('f-name').value.trim(),
+    'SingleLine1'     : document.getElementById('f-co').value.trim(),
+    'Email'           : document.getElementById('f-email').value.trim(),
+    'Dropdown'        : document.getElementById('f-svc').value,
+    'Dropdown1'       : document.getElementById('f-bud').value,
+    'MultiLine'       : document.getElementById('f-msg').value.trim(),
+    'zf_referrer_name': window.location.href,
+    'zf_redirect_url' : '',
+    'zc_gad'          : ''
   };
 
-  fetch("https://formsubmit.co/ajax/097425fdbc4b04cceb7ba3296a1a5adf", {
-    method: "POST",
-    headers: { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    },
-    body: JSON.stringify(payload)
-  })
-  .then(response => response.json())
-  .then(data => {
+  Object.entries(fields).forEach(([k, v]) => {
+    const inp = document.createElement('input');
+    inp.type  = 'hidden';
+    inp.name  = k;
+    inp.value = v;
+    hf.appendChild(inp);
+  });
+
+  document.body.appendChild(hf);
+  hf.submit();
+  document.body.removeChild(hf);
+
+  // Show success after Zoho processes
+  setTimeout(() => {
     success.style.display = 'block';
-    // FormSubmit requires email activation on first run
-    if (data.message && data.message.toLowerCase().includes("activate")) {
-      success.innerHTML = '<i class="fas fa-info-circle"></i> Please check your email to activate form submissions.';
-      success.style.color = "#0284c7"; // blue
-    } else {
-      success.innerHTML = '<i class="fas fa-check-circle"></i> Message sent! I\'ll respond within 24 hours.';
-      success.style.color = ""; // reset to default
-    }
+    success.innerHTML     = '<i class="fas fa-check-circle"></i> Message sent! I\'ll respond within 24 hours.';
+    success.style.color   = '';
     btn.innerHTML         = '<i class="fas fa-check"></i> Sent';
     btn.style.background  = 'var(--teal)';
-  })
-  .catch(error => {
-    console.error(error);
-    success.style.display = 'block';
-    success.innerHTML     = '<i class="fas fa-times-circle"></i> Failed to send. Please try again.';
-    success.style.color   = "red";
-    btn.textContent       = 'Send Enquiry';
-    btn.disabled          = false;
-  });
+    document.getElementById('cf-form').reset();
+  }, 1800);
 }
+
+/* ─── 8. DYNAMIC CURRENCY & REGION TOGGLER ─────────
+   Enables international recruiters/clients to see project
+   metrics and budgets in their home currencies.
+   ─────────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  const toggler = document.getElementById('currency-toggler');
+  if (!toggler) return;
+
+  const buttons = toggler.querySelectorAll('.curr-btn');
+  
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // 1. Remove active state from all toggles, apply to clicked
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const currency = btn.getAttribute('data-currency'); // usd, eur, gbp, aud, aed
+
+      // 2. Transmute Case Studies Metrics
+      const metrics = document.querySelectorAll('[data-curr-metric]');
+      metrics.forEach(node => {
+        const val = node.getAttribute(`data-val-${currency}`);
+        if (val) {
+          node.classList.add('transmuting');
+          setTimeout(() => {
+            node.textContent = val;
+            node.classList.remove('transmuting');
+          }, 120);
+        }
+      });
+
+      // 3. Transmute Form Budget Select Box Options
+      const options = document.querySelectorAll('#f-bud option[data-bud-usd]');
+      options.forEach(opt => {
+        const val = opt.getAttribute(`data-bud-${currency}`);
+        if (val) {
+          opt.textContent = val;
+          opt.value = val; // ensures matching currency string is emailed in backend
+        }
+      });
+    });
+  });
+});
+
+/* ─── 9. CASE STUDY MOVING SLIDING CAROUSEL ──────────
+   Handles horizontal sliding between the 6 corporate
+   case studies using tabs, arrow buttons, and touch swiping.
+   ─────────────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('case-carousel-track');
+  if (!track) return;
+
+  const originalSlides = Array.from(track.querySelectorAll('.case-card'));
+  if (originalSlides.length === 0) return;
+
+  // 1. Clone last slide and prepend to track
+  const lastClone = originalSlides[originalSlides.length - 1].cloneNode(true);
+  lastClone.id = 'card-clone-last';
+  lastClone.classList.add('carousel-clone');
+  track.insertBefore(lastClone, originalSlides[0]);
+
+  // 2. Clone first slide and append to track
+  const firstClone = originalSlides[0].cloneNode(true);
+  firstClone.id = 'card-clone-first';
+  firstClone.classList.add('carousel-clone');
+  track.appendChild(firstClone);
+
+  // Keep slides referencing the original array of slide cards
+  const slides = originalSlides;
+
+  const prevBtn = document.getElementById('carousel-prev');
+  const nextBtn = document.getElementById('carousel-next');
+  const dots = document.querySelectorAll('#carousel-dots .carousel-dot');
+  const tabBtns = document.querySelectorAll('#case-tabs .case-tab-btn');
+
+  let currentIndex = 0;
+  let startX = 0;
+  let autoScrollTimer = null;
+
+  function goToSlide(index, manual = false) {
+    if (manual) {
+      stopAutoScroll();
+    }
+
+    // Ensure transition is restored in case it was disabled previously
+    track.style.transition = 'transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)';
+
+    // Infinite wrapping transitions
+    if (index < 0) {
+      currentIndex = slides.length - 1;
+      // Slide smoothly backward to index 0 on track (the prepended clone)
+      track.style.transform = `translateX(0%)`;
+    } else if (index >= slides.length) {
+      currentIndex = 0;
+      // Slide smoothly forward to the appended clone (index slides.length + 1 on track)
+      track.style.transform = `translateX(-${(slides.length + 1) * 100}%)`;
+    } else {
+      currentIndex = index;
+      track.style.transform = `translateX(-${(currentIndex + 1) * 100}%)`;
+    }
+
+    // Update active tab buttons immediately for snappiness
+    tabBtns.forEach((btn, idx) => {
+      btn.classList.toggle('active', idx === currentIndex);
+    });
+
+    // Update active dots immediately
+    dots.forEach((dot, idx) => {
+      dot.classList.toggle('active', idx === currentIndex);
+    });
+
+    // Enable all navigation buttons since it's infinite!
+    if (prevBtn) prevBtn.disabled = false;
+    if (nextBtn) nextBtn.disabled = false;
+
+    // Force scroll reveal active class on current slide card
+    slides[currentIndex].classList.add('on');
+
+    if (manual) {
+      startAutoScroll();
+    }
+  }
+
+  // Native transitionend event listener for seamless infinite jumps
+  track.addEventListener('transitionend', () => {
+    // When transition to the appended clone ends, instantly jump to real first slide at index 1
+    if (currentIndex === 0 && track.style.transform.includes(`-${(slides.length + 1) * 100}%`)) {
+      track.style.transition = 'none';
+      track.style.transform = 'translateX(-100%)';
+      track.offsetHeight; // force reflow
+      track.style.transition = 'transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)';
+    }
+    // When transition to the prepended clone ends, instantly jump to real last slide at index 6
+    if (currentIndex === slides.length - 1 && (track.style.transform === 'translateX(0px)' || track.style.transform === 'translateX(0%)')) {
+      track.style.transition = 'none';
+      track.style.transform = `translateX(-${slides.length * 100}%)`;
+      track.offsetHeight; // force reflow
+      track.style.transition = 'transform 0.3s cubic-bezier(0.25, 1, 0.5, 1)';
+    }
+  });
+
+  function startAutoScroll() {
+    stopAutoScroll();
+    autoScrollTimer = setInterval(() => {
+      goToSlide(currentIndex + 1);
+    }, 5000); // 5.0s — enough time to read dense case study text
+  }
+
+  function stopAutoScroll() {
+    if (autoScrollTimer) {
+      clearInterval(autoScrollTimer);
+      autoScrollTimer = null;
+    }
+  }
+
+  // Prev & Next navigation button clicks
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => goToSlide(currentIndex - 1, true));
+  }
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1, true));
+  }
+
+  // Indicator Dot clicks
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const idx = parseInt(dot.getAttribute('data-index'));
+      goToSlide(idx, true);
+    });
+  });
+
+  // Segmented Tab clicks
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const idx = parseInt(btn.getAttribute('data-index'));
+      goToSlide(idx, true);
+    });
+  });
+
+  // Touch swiping gestures for mobile
+  track.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+
+  track.addEventListener('touchend', e => {
+    const endX = e.changedTouches[0].clientX;
+    const diffX = startX - endX;
+    
+    // threshold: 50px swipe distance
+    if (Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        goToSlide(currentIndex + 1, true);
+      } else {
+        goToSlide(currentIndex - 1, true);
+      }
+    }
+  }, { passive: true });
+
+  // Hover states to pause auto-scroll
+  const container = document.querySelector('.case-carousel-container');
+  if (container) {
+    container.addEventListener('mouseenter', stopAutoScroll);
+    container.addEventListener('mouseleave', startAutoScroll);
+  }
+
+  // ── Keyboard arrow key support (accessibility) ──
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft')  goToSlide(currentIndex - 1, true);
+    if (e.key === 'ArrowRight') goToSlide(currentIndex + 1, true);
+  });
+
+  // Initialize the carousel slider
+  goToSlide(0);
+  startAutoScroll();
+});
+
+
+/* ─── 10. HERO STATS COUNT-UP ANIMATION ──────────────
+   Animates the numeric stats in the hero section when
+   they first scroll into view using IntersectionObserver.
+   ─────────────────────────────────────────────────── */
+function animateCounter(el, target, suffix, duration = 1200) {
+  const start    = performance.now();
+  const isFloat  = target % 1 !== 0;
+
+  function step(now) {
+    const elapsed  = now - start;
+    const progress = Math.min(elapsed / duration, 1);
+    // Ease-out cubic
+    const eased    = 1 - Math.pow(1 - progress, 3);
+    const current  = Math.round(eased * target * 10) / 10;
+    el.textContent = (isFloat ? current.toFixed(1) : Math.round(current)) + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const statNumbers = document.querySelectorAll('.stat-n');
+  if (!statNumbers.length) return;
+
+  const countUpObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      // Extract numeric value and suffix from original text content
+      const raw    = el.textContent.trim();          // e.g. "15+" or "4+"
+      const num    = parseFloat(raw);                // 15 or 4
+      const suffix = raw.replace(/[\d.]/g, '');      // "+" or "+"
+      if (!isNaN(num)) animateCounter(el, num, suffix);
+      countUpObs.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+
+  statNumbers.forEach(el => countUpObs.observe(el));
+});

@@ -27,6 +27,8 @@
   .metrics-grid      { grid-template-columns: 1fr 1fr; }
   .sp                { padding: 40px 0; }
   .wrap              { padding: 0 16px; }
+  .exec-dash-grid    { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .exec-dash-item + .exec-dash-item { border-left: none; }
 }
 
 @media (max-width: 480px) {
@@ -38,4 +40,6 @@
   .case-card         { padding: 18px; }
   .cf                { padding: 18px; }
   .avail-tag         { width: 100%; justify-content: center; }
+  .exec-dash-grid    { grid-template-columns: 1fr; gap: 16px; }
+  .exec-dashboard    { margin-top: -20px; margin-bottom: 32px; padding: 18px; }
 }
