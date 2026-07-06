@@ -113,6 +113,12 @@ h1.hero-h strong {
 /* ════════════════════════════════════════════════════
    2. ABOUT
    ════════════════════════════════════════════════════ */
+.about-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: start;
+}
 .about-left {
   background: linear-gradient(160deg, #fff 70%, rgba(30,64,175,0.015) 100%);
   border: 1px solid var(--border);
@@ -266,7 +272,7 @@ h1.hero-h strong {
   flex: 0 0 100%;
   width: 100%;
   box-sizing: border-box;
-  display: grid !important;
+  display: grid;
   grid-template-columns: 240px 1fr;
   gap: 28px;
   align-items: start;

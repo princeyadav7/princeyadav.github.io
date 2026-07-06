@@ -1,45 +1,289 @@
 /* =====================================================
    responsive.css — Mobile & Tablet Media Queries
    Loaded LAST to ensure overrides apply correctly
+   
+   Breakpoints:
+     960px  → Tablet landscape / small desktop
+     768px  → Tablet portrait
+     680px  → Large phones / small tablets
+     480px  → Standard phones
+     360px  → Small phones
    ===================================================== */
 
+/* ─── TABLET LANDSCAPE (≤ 960px) ─────────────────── */
 @media (max-width: 960px) {
   .hero-grid         { grid-template-columns: 1fr; gap: 32px; }
   .hero-card-wrap    { display: none; }
   .grid3             { grid-template-columns: 1fr 1fr; }
-  .case-card         { grid-template-columns: 1fr; gap: 16px; }
+  .case-card         { grid-template-columns: 1fr; gap: 20px; }
   .grid4             { grid-template-columns: 1fr 1fr; }
-  .about-grid        { grid-template-columns: 1fr !important; }
+  .about-grid        { grid-template-columns: 1fr; }
   .about-left        { position: static; }
+
+  /* Exec dashboard */
+  .exec-dash-grid    { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ─── TABLET PORTRAIT (≤ 768px) ──────────────────── */
+@media (max-width: 768px) {
+  /* Hero section */
+  .hero              { padding: 90px 0 48px; }
+  h1.hero-h          { font-size: clamp(1.8rem, 5.5vw, 2.6rem); }
+  .lead              { font-size: 0.92rem; max-width: 100%; }
+  .hero-avail        { font-size: 0.68rem; }
+
+  /* Section spacing */
+  .sp                { padding: 56px 0; }
+  .wrap              { padding: 0 20px; }
+
+  /* Section headings */
+  h2.sh              { font-size: clamp(1.3rem, 4vw, 1.9rem); }
+
+  /* Currency toggler — scroll on tablet */
+  .currency-toggler  { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+  .currency-selector-wrap { padding: 0 16px; }
+
+  /* Case tabs — scroll */
+  .case-tabs-wrap    { padding: 0 16px; }
+  .case-tabs         { overflow-x: auto; -webkit-overflow-scrolling: touch; max-width: 100%; }
+
+  /* Case cards padding */
+  .case-card         { padding: 24px; }
+
+  /* Contact grid */
+  .grid2             { grid-template-columns: 1fr; gap: 24px; }
+
+  /* Footer */
+  .foot-in           { flex-direction: column; align-items: flex-start; gap: 16px; }
+}
+
+/* ─── LARGE PHONES / SMALL TABLETS (≤ 680px) ─────── */
 @media (max-width: 680px) {
+  /* Navigation */
   .nav-links         { display: none; }
   .hamburger         { display: flex; }
+
+  /* Grids */
   .grid3             { grid-template-columns: 1fr; }
   .grid2             { grid-template-columns: 1fr; }
   .grid4             { grid-template-columns: 1fr 1fr; }
+
+  /* Hero stats stacking */
   .hero-stats        { flex-direction: column; gap: 0; padding: 12px 16px; }
-  .hero-stats > div  { padding: 10px 0 !important; text-align: center; }
-  .hero-stats > div + div { border-left: none !important; border-top: 1px solid var(--border); }
+  .hero-stats > div  { padding: 12px 0; text-align: center; flex: none; }
+  .hero-stats > div + div { border-left: none; border-top: 1px solid var(--border); }
+
+  /* About section */
   .pillar-grid       { grid-template-columns: 1fr; }
+  .about-left        { padding: 20px; }
+
+  /* Form */
   .fg-row            { grid-template-columns: 1fr; }
+
+  /* Metrics grid */
   .metrics-grid      { grid-template-columns: 1fr 1fr; }
+
+  /* Spacing */
   .sp                { padding: 40px 0; }
   .wrap              { padding: 0 16px; }
+
+  /* Section head */
+  .sec-head          { margin-bottom: 28px; }
+
+  /* Exec dash */
   .exec-dash-grid    { grid-template-columns: 1fr 1fr; gap: 12px; }
   .exec-dash-item + .exec-dash-item { border-left: none; }
+
+  /* Trust badges wrap */
+  .trust-badge-grid  { gap: 6px; }
+  .trust-badge       { font-size: 0.68rem; padding: 5px 10px; }
+
+  /* Avail strip */
+  .avail-strip       { gap: 6px; }
+  .avail-tag         { font-size: 0.68rem; padding: 4px 10px; }
+
+  /* Process cards */
+  .proc-card         { padding: 16px; }
+
+  /* Contact links */
+  .cl-link           { padding: 8px 10px; }
+  .cl-val            { font-size: 0.72rem; }
+
+  /* Case brand header */
+  .case-brand-header { max-width: 100%; }
+
+  /* Timeline */
+  .tl-role           { font-size: 0.88rem; }
+  .tl-li             { font-size: 0.74rem; }
+
+  /* Vault cards */
+  .vault-card        { padding: 16px; }
+
+  /* Tech stack grid */
+  .stack-grid        { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
+  .stack-item        { padding: 10px 8px; }
+  .stack-n           { font-size: 0.68rem; }
+  .stack-t           { font-size: 0.6rem; }
+  .stack-item i      { font-size: 1rem; }
+
+  /* Carousel dots — larger tap targets */
+  .carousel-dot      { width: 10px; height: 10px; }
+  .carousel-dot.active { width: 28px; }
 }
 
+/* ─── STANDARD PHONES (≤ 480px) ──────────────────── */
 @media (max-width: 480px) {
+  /* Hero */
+  .hero              { padding: 80px 0 36px; }
+  h1.hero-h          { font-size: 1.85rem; line-height: 1.2; }
+  .hero-h br         { display: none; }
+  .lead              { font-size: 0.88rem; line-height: 1.7; }
+
+  /* Buttons — full width on phone */
+  .hero .btn         { width: 100%; justify-content: center; padding: 12px 20px; font-size: 0.85rem; }
+  .hero-btns         { flex-direction: column; width: 100%; }
+
+  /* Grid overrides */
   .grid4             { grid-template-columns: 1fr; }
-  .metrics-grid      { grid-template-columns: 1fr; }
-  .hero              { padding: 80px 0 40px; }
-  h1.hero-h          { font-size: 2.1rem; }
+  .metrics-grid      { grid-template-columns: 1fr 1fr; gap: 8px; }
+
+  /* About card */
   .about-left        { padding: 18px; }
+  .about-bio         { font-size: 0.84rem; }
+  .pillar-grid       { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .pillar            { padding: 10px; }
+  .pillar-t          { font-size: 0.75rem; }
+  .pillar-d          { font-size: 0.68rem; }
+
+  /* Case cards */
   .case-card         { padding: 18px; }
+  .case-t            { font-size: 0.88rem; }
+  .case-sector       { font-size: 0.6rem; }
+  .step-body         { font-size: 0.74rem; line-height: 1.6; }
+  .step-lbl          { font-size: 0.64rem; }
+  .m-num             { font-size: 1.15rem; }
+  .m-lbl             { font-size: 0.6rem; }
+  .metric-box        { padding: 8px 10px; }
+  .chips             { gap: 4px; }
+  .chip              { font-size: 0.64rem; padding: 2px 7px; }
+
+  /* Contact form */
   .cf                { padding: 18px; }
+  .cf-t              { font-size: 0.88rem; }
+  .fg label          { font-size: 0.68rem; }
+  .fg input, .fg textarea, .fg select { padding: 10px 12px; font-size: 0.84rem; }
+  .fg textarea       { min-height: 80px; }
+
+  /* Availability tags */
   .avail-tag         { width: 100%; justify-content: center; }
+
+  /* Exec dashboard */
   .exec-dash-grid    { grid-template-columns: 1fr; gap: 16px; }
   .exec-dashboard    { margin-top: -20px; margin-bottom: 32px; padding: 18px; }
+  .exec-dash-num     { font-size: 1.5rem; }
+
+  /* Eyebrow */
+  .eyebrow           { font-size: 0.68rem; }
+  .eyebrow::before   { width: 16px; }
+
+  /* Service cards */
+  .svc-card          { padding: 18px; }
+  .svc-t             { font-size: 0.84rem; }
+  .svc-d             { font-size: 0.74rem; }
+
+  /* Section heading */
+  h2.sh              { font-size: 1.35rem; }
+
+  /* Mobile nav */
+  .mob-nav .nav-l    { font-size: 1.15rem; }
+  .mob-nav .btn      { width: 80%; justify-content: center; }
+
+  /* Scroll to top */
+  #scroll-top        { bottom: 16px; right: 16px; width: 38px; height: 38px; }
+
+  /* Testimonial cards */
+  .oc-q              { font-size: 0.78rem; }
+  .oc-name           { font-size: 0.76rem; }
+  .oc-sub            { font-size: 0.64rem; }
+
+  /* Footer */
+  .foot-tag          { font-size: 0.68rem; }
+  .foot-bot          { font-size: 0.66rem; padding-top: 14px; }
+  .soc-l             { width: 36px; height: 36px; }
+
+  /* Currency toggler */
+  .curr-btn          { padding: 5px 10px; font-size: 0.68rem; }
+  .case-tab-btn      { padding: 6px 12px; font-size: 0.72rem; }
+
+  /* Hero stats count up */
+  .stat-n            { font-size: 1.5rem; }
+  .stat-l            { font-size: 0.66rem; }
+
+  /* Info items in about */
+  .info-item         { font-size: 0.74rem; }
+  .cert-row          { font-size: 0.7rem; }
+}
+
+/* ─── SMALL PHONES (≤ 360px) ─────────────────────── */
+@media (max-width: 360px) {
+  .wrap              { padding: 0 12px; }
+  h1.hero-h          { font-size: 1.65rem; }
+  h2.sh              { font-size: 1.2rem; }
+  .hero              { padding: 72px 0 32px; }
+  .about-left        { padding: 14px; }
+  .case-card         { padding: 14px; }
+  .cf                { padding: 14px; }
+  .svc-card          { padding: 14px; }
+  .vault-card        { padding: 14px; }
+  .pillar-grid       { grid-template-columns: 1fr; gap: 6px; }
+  .metrics-grid      { grid-template-columns: 1fr; gap: 6px; }
+  .stat-n            { font-size: 1.3rem; }
+  .exec-dash-num     { font-size: 1.3rem; }
+  .btn               { padding: 10px 18px; font-size: 0.8rem; }
+  .nav-logo          { font-size: 0.95rem; }
+  .mob-nav .nav-l    { font-size: 1rem; }
+}
+
+/* ─── TOUCH DEVICE ENHANCEMENTS ──────────────────── */
+@media (hover: none) and (pointer: coarse) {
+  /* Larger touch targets for interactive elements */
+  .btn               { min-height: 44px; }
+  .nav-l             { padding: 8px 4px; }
+  .curr-btn          { min-height: 36px; }
+  .case-tab-btn      { min-height: 36px; }
+  .carousel-dot      { min-width: 12px; min-height: 12px; }
+  .chip              { min-height: 28px; }
+  .cl-link           { min-height: 48px; }
+  .soc-l             { min-width: 40px; min-height: 40px; }
+
+  /* Disable hover-only effects on touch */
+  .svc-card:hover    { transform: none; }
+  .pillar:hover::before { opacity: 0; }
+  .vault-card:hover  { transform: none; }
+  .proc-card:hover   { transform: none; }
+  .oc-card:hover     { transform: none; }
+  .stack-item:hover  { border-color: var(--border); background: var(--surface); }
+  .stack-item:hover::before { transform: scaleX(0); }
+
+  /* Active states for touch feedback instead */
+  .btn:active        { transform: scale(0.97); }
+  .svc-card:active   { transform: scale(0.99); }
+  .cl-link:active    { transform: translateX(2px); }
+  .stack-item:active { border-color: var(--blue-bdr); background: var(--blue-bg); }
+}
+
+/* ─── LANDSCAPE ORIENTATION (short height) ───────── */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero              { padding: 60px 0 24px; }
+  .sp                { padding: 32px 0; }
+  .mob-nav           { gap: 16px; }
+  .mob-nav .nav-l    { font-size: 1rem; }
+}
+
+/* ─── SAFE AREA (notch) SUPPORT ──────────────────── */
+@supports (padding: env(safe-area-inset-bottom)) {
+  .nav-inner         { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
+  footer .wrap       { padding-bottom: env(safe-area-inset-bottom); }
+  #scroll-top        { bottom: max(16px, calc(16px + env(safe-area-inset-bottom))); right: max(16px, calc(16px + env(safe-area-inset-right))); }
+  .mob-nav           { padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); }
 }

@@ -177,6 +177,7 @@
 }
 .strip-inner {
   display: flex; gap: 48px; white-space: nowrap;
+  width: max-content;
   animation: ticker 22s linear infinite;
 }
 @keyframes ticker {

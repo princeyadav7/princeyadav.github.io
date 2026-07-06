@@ -203,7 +203,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // 3. Transmute Form Budget Select Box Options
+      // 3. Transmute Narrative Dollar Values in Case Study Text
+      const narratives = document.querySelectorAll('[data-curr-narrative]');
+      narratives.forEach(node => {
+        const val = node.getAttribute(`data-val-${currency}`);
+        if (val) {
+          node.textContent = val;
+        }
+      });
+
+      // 4. Transmute Form Budget Select Box Options
       const options = document.querySelectorAll('#f-bud option[data-bud-usd]');
       options.forEach(opt => {
         const val = opt.getAttribute(`data-bud-${currency}`);
