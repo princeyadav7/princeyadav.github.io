@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://princeyadav.github.io/sitemap.xml
