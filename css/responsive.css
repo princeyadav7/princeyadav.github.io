@@ -12,8 +12,8 @@
 
 /* ─── TABLET LANDSCAPE (≤ 960px) ─────────────────── */
 @media (max-width: 960px) {
-  .hero-grid         { grid-template-columns: 1fr; gap: 32px; }
-  .hero-card-wrap    { display: none; }
+  .hero-grid         { grid-template-columns: 1fr; gap: 48px; }
+  .hero-card-wrap    { display: block; max-width: 520px; margin: 0 auto; width: 100%; }
   .grid3             { grid-template-columns: 1fr 1fr; }
   .case-card         { grid-template-columns: 1fr; gap: 20px; }
   .grid4             { grid-template-columns: 1fr 1fr; }
@@ -61,6 +61,7 @@
 @media (max-width: 680px) {
   /* Navigation */
   .nav-links         { display: none; }
+  .nav-cta           { display: none; }
   .hamburger         { display: flex; }
 
   /* Grids */
@@ -69,9 +70,10 @@
   .grid4             { grid-template-columns: 1fr 1fr; }
 
   /* Hero stats stacking */
-  .hero-stats        { flex-direction: column; gap: 0; padding: 12px 16px; }
-  .hero-stats > div  { padding: 12px 0; text-align: center; flex: none; }
-  .hero-stats > div + div { border-left: none; border-top: 1px solid var(--border); }
+  .hero-stats        { flex-direction: column; gap: 16px; margin-top: 32px; }
+  .hero-stats > div  { padding: 0; text-align: left; flex: none; }
+  .hero-stats > div + div { border-left: none; padding-left: 0; }
+  .hero-stats > div + div::before { display: none; }
 
   /* About section */
   .pillar-grid       { grid-template-columns: 1fr; }
@@ -117,7 +119,7 @@
   .tl-li             { font-size: 0.74rem; }
 
   /* Vault cards */
-  .vault-card        { padding: 16px; }
+  .vc2-card          { padding: 20px; }
 
   /* Tech stack grid */
   .stack-grid        { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 8px; }
@@ -135,13 +137,20 @@
 @media (max-width: 480px) {
   /* Hero */
   .hero              { padding: 80px 0 36px; }
-  h1.hero-h          { font-size: 1.85rem; line-height: 1.2; }
+  h1.hero-h          { font-size: 1.85rem; line-height: 1.25; }
   .hero-h br         { display: none; }
   .lead              { font-size: 0.88rem; line-height: 1.7; }
 
   /* Buttons — full width on phone */
   .hero .btn         { width: 100%; justify-content: center; padding: 12px 20px; font-size: 0.85rem; }
   .hero-btns         { flex-direction: column; width: 100%; }
+
+  /* Dashboard card on small screen */
+  .dashboard-card    { padding: 20px; }
+  .dashboard-pipeline { margin: 24px 0; --node-offset: 19px; }
+  .pipeline-node     { width: 38px; height: 38px; font-size: 0.95rem; }
+  .telemetry-grid    { grid-template-columns: 1fr; gap: 8px; }
+  .float-tag         { font-size: 0.65rem; padding: 8px 12px; }
 
   /* Grid overrides */
   .grid4             { grid-template-columns: 1fr; }
@@ -234,7 +243,7 @@
   .case-card         { padding: 14px; }
   .cf                { padding: 14px; }
   .svc-card          { padding: 14px; }
-  .vault-card        { padding: 14px; }
+  .vc2-card          { padding: 16px; }
   .pillar-grid       { grid-template-columns: 1fr; gap: 6px; }
   .metrics-grid      { grid-template-columns: 1fr; gap: 6px; }
   .stat-n            { font-size: 1.3rem; }
@@ -259,7 +268,7 @@
   /* Disable hover-only effects on touch */
   .svc-card:hover    { transform: none; }
   .pillar:hover::before { opacity: 0; }
-  .vault-card:hover  { transform: none; }
+  .vc2-card:hover    { transform: none; }
   .proc-card:hover   { transform: none; }
   .oc-card:hover     { transform: none; }
   .stack-item:hover  { border-color: var(--border); background: var(--surface); }

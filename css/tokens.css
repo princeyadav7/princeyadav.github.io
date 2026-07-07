@@ -15,28 +15,28 @@
    ─────────────────────────────────────────────────── */
 :root {
   /* Backgrounds */
-  --bg:        #F8FAFC;
-  --bg2:       #F1F5F9;
+  --bg:        #FAFAFD;   /* Soft slate-purple tint */
+  --bg2:       #F2F2FC;   /* Secondary tint */
   --surface:   #FFFFFF;
 
   /* Borders */
-  --border:    #E2E8F0;
+  --border:    #E2E2F0;
 
   /* Text */
-  --text:      #0F172A;
-  --muted:     #475569;
-  --faint:     #64748B;
+  --text:      #0B0D17;   /* Charcoal Obsidian */
+  --muted:     #4A4C62;
+  --faint:     #6E708E;
 
-  /* Primary accent — premium corporate identity */
-  --blue:      #0B2545;   /* Executive Deep Navy */
-  --blue-l:    #1E40AF;   /* Premium Cobalt Accent */
-  --blue-d:    #1E3A8A;   /* Darker Royal Blue */
-  --blue-bg:   rgba(30, 64, 175, 0.05);   /* tint background */
-  --blue-bdr:  rgba(30, 64, 175, 0.15);   /* tint border     */
+  /* Primary accent — Sophisticated Indigo */
+  --blue:      #1F2147;   /* Executive Deep Midnight */
+  --blue-l:    #6366F1;   /* Premium Indigo Accent */
+  --blue-d:    #4F46E5;   /* Indigo Base */
+  --blue-bg:   rgba(99, 102, 241, 0.05);   /* Indigo tint background */
+  --blue-bdr:  rgba(99, 102, 241, 0.15);   /* Indigo tint border     */
 
   /* Secondary colours */
-  --teal:      #0F766E;   /* Success / ROI Outcomes */
-  --red:       #BE123C;   /* Challenge / Risk Outlining */
+  --teal:      #10B981;   /* Emerald / Green ROI outcomes */
+  --red:       #EF4444;   /* Crimson Accent */
 
   /* Radii */
   --r:         6px;
@@ -49,6 +49,13 @@
 
   /* Transition */
   --tr:        all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --tr-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Glassmorphism & Premium Glow Additions */
+  --glass-bg:      rgba(255, 255, 255, 0.45);
+  --glass-bdr:     rgba(30, 64, 175, 0.08);
+  --glass-shadow:  0 8px 32px 0 rgba(15, 23, 42, 0.06);
+  --glow-radial:   radial-gradient(circle at center, rgba(30, 64, 175, 0.05) 0%, transparent 70%);
 }
 
 /* ─── RESET ───────────────────────────────────────── */

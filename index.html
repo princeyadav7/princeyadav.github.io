@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="icon" type="image/png" href="images/favicon.png"/>
-  <link rel="apple-touch-icon" href="images/favicon.png"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
   <title>Prince Yadav | Zoho Solutions Architect — Enterprise Automation</title>
-  <meta name="description" content="Zoho Solutions Architect building end-to-end automated business operating systems for finance, healthcare, and B2B operations teams scaling past their first CRM."/>
-  <meta name="keywords" content="Zoho Developer, Zoho Consultant, Zoho CRM, Zoho One, Deluge Scripting, Business Automation, Enterprise Solutions"/>
-  <meta property="og:title" content="Prince Yadav | Zoho Solutions Architect — Enterprise Automation"/>
-  <meta property="og:description" content="Zoho Solutions Architect building end-to-end automated business systems for finance, healthcare & B2B operations teams."/>
-  <meta property="og:image" content="https://princeyadav.github.io/images/profile.jpeg"/>
-  <meta property="og:url" content="https://princeyadav.github.io"/>
-  <meta property="og:type" content="website"/>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Prince Yadav | Zoho Solutions Architect — Enterprise Automation"/>
-  <meta name="twitter:description" content="Zoho Solutions Architect building end-to-end automated business systems for finance, healthcare & B2B operations teams."/>
-  <meta name="twitter:image" content="https://princeyadav.github.io/images/profile.jpeg"/>
-  <link rel="canonical" href="https://princeyadav.github.io/"/>
+  <meta name="description"
+    content="Zoho Solutions Architect building end-to-end automated business operating systems for finance, healthcare, and B2B operations teams scaling past their first CRM." />
+  <meta name="keywords"
+    content="Zoho Developer, Zoho Consultant, Zoho CRM, Zoho One, Deluge Scripting, Business Automation, Enterprise Solutions" />
+  <meta property="og:title" content="Prince Yadav | Zoho Solutions Architect — Enterprise Automation" />
+  <meta property="og:description"
+    content="Zoho Solutions Architect building end-to-end automated business systems for finance, healthcare & B2B operations teams." />
+  <meta property="og:image" content="https://princeyadav.github.io/images/profile.jpeg" />
+  <meta property="og:url" content="https://princeyadav.github.io" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Prince Yadav | Zoho Solutions Architect — Enterprise Automation" />
+  <meta name="twitter:description"
+    content="Zoho Solutions Architect building end-to-end automated business systems for finance, healthcare & B2B operations teams." />
+  <meta name="twitter:image" content="https://princeyadav.github.io/images/profile.jpeg" />
+  <link rel="canonical" href="https://princeyadav.github.io/" />
 
   <!-- ─── FONTS ─────────────────────────────────────── -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Mono:wght@300;400&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Mono:wght@300;400&family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
 
   <!-- ─── ICONS ─────────────────────────────────────── -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <!-- ─── STYLESHEETS (load order matters) ────────────
        tokens.css    → colours, spacing vars, reset
@@ -33,872 +40,1766 @@
        components.css → nav, buttons, chips, ticker, scroll-top
        sections.css  → per-section styles (hero, about, etc.)
   ────────────────────────────────────────────────── -->
-  <link rel="stylesheet" href="css/tokens.css?v=2.6"/>
-  <link rel="stylesheet" href="css/layout.css?v=2.6"/>
-  <link rel="stylesheet" href="css/components.css?v=2.6"/>
-  <link rel="stylesheet" href="css/sections.css?v=2.6"/>
-  <link rel="stylesheet" href="css/responsive.css?v=2.6"/>
+  <link rel="stylesheet" href="css/tokens.css?v=2.6" />
+  <link rel="stylesheet" href="css/layout.css?v=2.6" />
+  <link rel="stylesheet" href="css/components.css?v=2.6" />
+  <link rel="stylesheet" href="css/sections.css?v=2.6" />
+  <link rel="stylesheet" href="css/responsive.css?v=2.6" />
 </head>
+
 <body>
 
-<!-- ══════════════════════════════════════════════════
-     NAVIGATION
+  <!-- ══════════════════════════════════════════════════
+     NAVIGATION — Premium Floating Pill Navbar
      Edit text labels & CV link here.
      Styling → css/components.css → "NAVIGATION"
 ══════════════════════════════════════════════════ -->
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="#home" class="nav-logo">Prince<span>.</span></a>
-    <div class="nav-links">
-      <a href="#about"      class="nav-l">About</a>
-      <a href="#services"   class="nav-l">Services</a>
-      <a href="#work"       class="nav-l">Work</a>
-      <a href="#experience" class="nav-l">Experience</a>
-      <a href="#process"    class="nav-l">Process</a>
-      <a href="#contact"    class="nav-l">Contact</a>
+
+  <!-- Scroll Progress Bar -->
+  <div class="nav-progress" id="nav-progress"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" id="nav-logo">
+        <span class="nav-logo-text">Prince Yadav<em>.</em></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="nav-links" id="nav-links">
+        <a href="#about"      class="nav-l" data-section="about">About</a>
+        <a href="#services"   class="nav-l" data-section="services">Services</a>
+        <a href="#work"       class="nav-l" data-section="work">Work</a>
+        <a href="#experience" class="nav-l" data-section="experience">Experience</a>
+        <a href="#process"    class="nav-l" data-section="process">Process</a>
+        <a href="#contact"    class="nav-l" data-section="contact">Contact</a>
+      </div>
+
+      <!-- Desktop CTA -->
       <a href="https://drive.google.com/file/d/1N7WU6VMpVNSv4jTRgu8lvk-3t0L2tQj4/view?usp=sharing"
-         class="nav-cta" target="_blank" rel="noopener noreferrer">Download CV</a>
+         class="nav-cta" target="_blank" rel="noopener noreferrer" id="nav-cv-btn">
+        <i class="fas fa-download"></i> Download CV
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="ham" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
+  </nav>
+
+  <!-- ─── Mobile Drawer ───────────────────────────── -->
+  <div class="mob-drawer" id="mob-nav" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <div class="mob-drawer-bg" id="mob-bg"></div>
+    <div class="mob-drawer-panel">
+      <!-- Header row -->
+      <div class="mob-drawer-header">
+        <a href="#home" class="nav-logo">
+          <span class="nav-logo-text">Prince Yadav<em>.</em></span>
+        </a>
+        <button class="mob-close" id="mob-close" aria-label="Close menu">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <!-- Nav Links -->
+      <nav class="mob-links">
+        <a href="#about"      class="mob-link" style="--i:0">About</a>
+        <a href="#services"   class="mob-link" style="--i:1">Services</a>
+        <a href="#work"       class="mob-link" style="--i:2">Work</a>
+        <a href="#experience" class="mob-link" style="--i:3">Experience</a>
+        <a href="#process"    class="mob-link" style="--i:4">Process</a>
+        <a href="#contact"    class="mob-link" style="--i:5">Contact</a>
+      </nav>
+
+      <!-- Footer CTA -->
+      <div class="mob-drawer-footer">
+        <a href="https://drive.google.com/file/d/1N7WU6VMpVNSv4jTRgu8lvk-3t0L2tQj4/view?usp=sharing"
+           class="btn btn-primary mob-cta" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-download"></i> Download CV
+        </a>
+        <p class="mob-tagline">Open to freelance & full-time work</p>
+      </div>
+    </div>
   </div>
-</nav>
-
-<!-- Mobile menu overlay -->
-<div class="mob-nav" id="mob-nav">
-  <span class="mob-close" id="mob-close"><i class="fas fa-times"></i></span>
-  <a href="#about"      class="nav-l">About</a>
-  <a href="#services"   class="nav-l">Services</a>
-  <a href="#work"       class="nav-l">Work</a>
-  <a href="#experience" class="nav-l">Experience</a>
-  <a href="#process"    class="nav-l">Process</a>
-  <a href="#contact"    class="nav-l">Contact</a>
-  <a href="https://drive.google.com/file/d/1N7WU6VMpVNSv4jTRgu8lvk-3t0L2tQj4/view?usp=sharing"
-     class="btn btn-primary" target="_blank" rel="noopener noreferrer">Download CV</a>
-</div>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      HERO SECTION
      Edit: headline, sub-text, stats, hero card metrics
      Typing words → js/main.js → `words` array
      Styling → css/sections.css → "1. HERO"
 ══════════════════════════════════════════════════ -->
-<section class="hero" id="home">
-  <div class="wrap">
-    <div class="hero-grid">
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-grid">
 
-      <!-- Left column: text -->
-      <div>
-        <div class="hero-avail">
-          <span style="width:7px;height:7px;border-radius:50%;background:var(--teal);flex-shrink:0;display:inline-block;animation:pulse 2s ease-in-out infinite"></span>
-          Available for new projects
+        <!-- Left column: text -->
+        <div>
+          <h1 class="hero-h">
+            <strong>Business Solutions Architect</strong><br>
+            specialising in Zoho One &<br>
+            <span id="typed" style="color:var(--blue-l)"></span><span style="color:var(--blue-l)">_</span>
+          </h1>
+          <p class="lead" style="margin-top:18px">
+            Senior Zoho Developer with a proven track record of designing end-to-end automated
+            ecosystems for
+            <strong style="font-weight:500;color:var(--text)">finance, healthcare, manufacturing &amp; B2B operations
+              teams</strong>
+            scaling past their first CRM.
+          </p>
+          <div class="hero-btns" style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap">
+            <a href="#work" class="btn btn-primary"><i class="fas fa-briefcase"></i> Case Studies</a>
+            <a href="#contact" class="btn btn-outline"><i class="fas fa-calendar-check"></i> Book a Call</a>
+          </div>
+          <!-- Stats bar — edit numbers here -->
+          <div class="hero-stats">
+            <div>
+              <div class="stat-n">1<span>M+</span></div>
+              <div class="stat-l">Value Delivered</div>
+            </div>
+            <div>
+              <div class="stat-n">15<span>+</span></div>
+              <div class="stat-l">Implementations</div>
+            </div>
+            <div>
+              <div class="stat-n">6<span>+</span></div>
+              <div class="stat-l">Industries</div>
+            </div>
+          </div>
         </div>
-        <h1 class="hero-h">
-          <strong>Business Solutions Architect</strong><br>
-          specialising in Zoho One &<br>
-          <span id="typed" style="color:var(--blue)"></span><span style="color:var(--blue)">_</span>
-        </h1>
-        <p class="lead" style="margin-top:14px">
-          Senior Zoho Developer with a proven track record of designing end-to-end automated
-          ecosystems for
-          <strong style="font-weight:500;color:var(--text)">finance, healthcare, manufacturing &amp; B2B operations teams</strong>
-          scaling past their first CRM.
-        </p>
-        <div class="hero-btns" style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap">
-          <a href="#work"    class="btn btn-primary"><i class="fas fa-briefcase"></i> Case Studies</a>
-          <a href="#contact" class="btn btn-outline"><i class="fas fa-calendar-check"></i> Book a Call</a>
+
+        <!-- Right column: Zoho Systems Architecture Dashboard bento panel -->
+        <div class="hero-card-wrap">
+          <div class="float-tag top-r">
+            <i class="fas fa-bolt" style="color: var(--teal)"></i>
+            <span>90% less manual entry</span>
+          </div>
+
+          <div class="dashboard-card">
+            <div class="dashboard-header">
+              <div class="dashboard-title-wrap">
+                <div class="dashboard-title">Live Architecture Overview</div>
+                <div class="dashboard-subtitle">Active integration flow & metrics</div>
+              </div>
+              <div class="dashboard-status">
+                <span class="status-dot-pulse"></span>
+              </div>
+            </div>
+
+            <!-- Interactive Pipeline flow -->
+            <div class="dashboard-pipeline">
+              <div class="pipeline-line-container">
+                <div class="pipeline-track"></div>
+                <div class="pipeline-progress" id="pipeline-progress"></div>
+              </div>
+
+              <div class="pipeline-node success" id="node-leads" title="Incoming Lead Capture API">
+                <i class="fas fa-users"></i>
+                <span class="node-lbl">Leads</span>
+              </div>
+              <div class="pipeline-node success" id="node-crm" title="Zoho CRM Core Ledger">
+                <i class="fas fa-sync-alt"></i>
+                <span class="node-lbl">CRM</span>
+              </div>
+              <div class="pipeline-node active" id="node-creator" title="Zoho Creator ERP Extensions">
+                <i class="fas fa-cubes"></i>
+                <span class="node-lbl">Creator</span>
+              </div>
+              <div class="pipeline-node" id="node-books" title="Zoho Books Finance sync">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <span class="node-lbl">Books</span>
+              </div>
+            </div>
+
+            <!-- Telemetry details -->
+            <div class="telemetry-grid">
+              <div class="telemetry-item">
+                <div class="telemetry-lbl">Sync Delay</div>
+                <div class="telemetry-val" id="val-delay">14<span class="unit">ms</span></div>
+              </div>
+              <div class="telemetry-item">
+                <div class="telemetry-lbl">Lead Uplift</div>
+                <div class="telemetry-val">+40%</div>
+              </div>
+              <div class="telemetry-item">
+                <div class="telemetry-lbl">Apps Active</div>
+                <div class="telemetry-val">12+</div>
+              </div>
+              <div class="telemetry-item">
+                <div class="telemetry-lbl">Compliance</div>
+                <div class="telemetry-val" style="font-size: 0.72rem; font-weight: 700;">GDPR · SOC2</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-tag bot-l">
+            <i class="fas fa-shield-alt" style="color: var(--blue-l)"></i>
+            <span>Enterprise security</span>
+          </div>
         </div>
-        <!-- Stats bar — edit numbers here -->
-        <div class="hero-stats">
-          <div><div class="stat-n">1<span>M+</span></div><div class="stat-l">Client value delivered</div></div>
-          <div><div class="stat-n">15<span>+</span></div><div class="stat-l">Complex implementations</div></div>
-          <div><div class="stat-n">6<span>+</span></div><div class="stat-l">Industries served</div></div>
-        </div>
+
       </div>
-
-      <!-- Right column: floating info card -->
-      <div class="hero-card-wrap">
-        <div class="float-tag top-r"><i class="fas fa-arrow-up"></i> 90% less manual entry</div>
-        <div class="hero-card">
-          <div class="hero-card-label">Live architecture overview</div>
-          <div class="metric-row"><span class="metric-key">CRM ↔ Books sync</span><span class="metric-val">Real-time</span></div>
-          <div class="metric-row"><span class="metric-key">Lead conversion uplift</span><span class="metric-val">+40%</span></div>
-          <div class="metric-row"><span class="metric-key">Modules integrated</span><span class="metric-val">12+ apps</span></div>
-          <div class="metric-row"><span class="metric-key">Compliance standard</span><span class="metric-val">GDPR / SOC2</span></div>
-          <div class="metric-row"><span class="metric-key">Compliance</span><span class="metric-val">GDPR · SOC2 · HIPAA</span></div>
-        </div>
-        <div class="float-tag bot-l"><i class="fas fa-shield-alt"></i> Enterprise-grade security</div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      TICKER STRIP
      Edit industry labels here.
      Styling → css/components.css → "TICKER STRIP"
      Note: duplicate items for seamless loop
 ══════════════════════════════════════════════════ -->
-<div class="strip">
-  <div class="strip-inner" id="ticker">
-    <div class="strip-item"><i class="fas fa-landmark"></i> Investment &amp; Finance</div>
-    <div class="strip-item"><i class="fas fa-heartbeat"></i> Global HealthTech</div>
-    <div class="strip-item"><i class="fas fa-industry"></i> Manufacturing ERP</div>
-    <div class="strip-item"><i class="fas fa-university"></i> Sovereign Wealth Funds</div>
-    <div class="strip-item"><i class="fas fa-rocket"></i> SaaS &amp; Startups</div>
-    <div class="strip-item"><i class="fas fa-graduation-cap"></i> EdTech / LMS</div>
-    <div class="strip-item"><i class="fas fa-shield-alt"></i> GDPR Compliant</div>
-    <div class="strip-item"><i class="fas fa-random"></i> End-to-End Automation</div>
-    <!-- Duplicate for seamless infinite loop -->
-    <div class="strip-item"><i class="fas fa-landmark"></i> Investment &amp; Finance</div>
-    <div class="strip-item"><i class="fas fa-heartbeat"></i> Global HealthTech</div>
-    <div class="strip-item"><i class="fas fa-industry"></i> Manufacturing ERP</div>
-    <div class="strip-item"><i class="fas fa-university"></i> Sovereign Wealth Funds</div>
-    <div class="strip-item"><i class="fas fa-rocket"></i> SaaS &amp; Startups</div>
-    <div class="strip-item"><i class="fas fa-graduation-cap"></i> EdTech / LMS</div>
-    <div class="strip-item"><i class="fas fa-shield-alt"></i> GDPR Compliant</div>
-    <div class="strip-item"><i class="fas fa-random"></i> End-to-End Automation</div>
+  <div class="strip">
+    <div class="strip-inner" id="ticker">
+      <div class="strip-item"><i class="fas fa-landmark"></i> Investment &amp; Finance</div>
+      <div class="strip-item"><i class="fas fa-heartbeat"></i> Global HealthTech</div>
+      <div class="strip-item"><i class="fas fa-industry"></i> Manufacturing ERP</div>
+      <div class="strip-item"><i class="fas fa-university"></i> Sovereign Wealth Funds</div>
+      <div class="strip-item"><i class="fas fa-rocket"></i> SaaS &amp; Startups</div>
+      <div class="strip-item"><i class="fas fa-graduation-cap"></i> EdTech / LMS</div>
+      <div class="strip-item"><i class="fas fa-shield-alt"></i> GDPR Compliant</div>
+      <div class="strip-item"><i class="fas fa-random"></i> End-to-End Automation</div>
+      <!-- Duplicate for seamless infinite loop -->
+      <div class="strip-item"><i class="fas fa-landmark"></i> Investment &amp; Finance</div>
+      <div class="strip-item"><i class="fas fa-heartbeat"></i> Global HealthTech</div>
+      <div class="strip-item"><i class="fas fa-industry"></i> Manufacturing ERP</div>
+      <div class="strip-item"><i class="fas fa-university"></i> Sovereign Wealth Funds</div>
+      <div class="strip-item"><i class="fas fa-rocket"></i> SaaS &amp; Startups</div>
+      <div class="strip-item"><i class="fas fa-graduation-cap"></i> EdTech / LMS</div>
+      <div class="strip-item"><i class="fas fa-shield-alt"></i> GDPR Compliant</div>
+      <div class="strip-item"><i class="fas fa-random"></i> End-to-End Automation</div>
+    </div>
   </div>
-</div>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      ABOUT SECTION
      Edit: name, role, contact info, certifications, bio
      Styling → css/sections.css → "2. ABOUT"
-══════════════════════════════════════════════════ -->
-<section class="sp" id="about">
-  <div class="wrap">
-    <div class="about-grid">
+  ══════════════════════════════════════════════════ -->
+  <section class="sp" id="about">
+    <div class="wrap">
+      <div class="about-grid">
 
-      <!-- Left: Contact card -->
-      <div class="about-left rv-l">
-        <img src="images/profile.jpeg" alt="Prince Yadav" class="av-circle" width="52" height="52" loading="lazy">
-        <div class="about-name">Prince Yadav</div>
-        <div class="about-role">Business Solutions Architect · Zoho One</div>
-        <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Delhi, India — Async global delivery</span></div>
-        <div class="info-item"><i class="fas fa-clock"></i><span>4hrs+ daily overlap with EST / CET / GMT</span></div>
-        <div class="info-item"><i class="fas fa-envelope"></i><span><a href="mailto:princeyadav841@gmail.com" style="color:var(--blue)">princeyadav841@gmail.com</a></span></div>
-        <div class="info-item"><i class="fas fa-phone"></i><span><a href="tel:+919794571928" style="color:var(--blue)">+91 9794571928</a></span></div>
-        <div class="info-item"><i class="fas fa-language"></i><span>English · Hindi</span></div>
-        <div style="margin-top:12px">
-          <div class="cert-row"><span class="cert-dot"></span> Certified Zoho Professional</div>
-          <div class="cert-row"><span class="cert-dot"></span> AI Fundamentals — Microsoft</div>
-          <div class="cert-row"><span class="cert-dot"></span> Data Analytics — Accenture NA</div>
+        <!-- Left: Contact card -->
+        <div class="about-left rv-l">
+          <div class="avatar-wrap">
+            <div class="avatar-glow-ring"></div>
+            <img src="images/profile.jpeg" alt="Prince Yadav" class="av-circle-new" loading="lazy">
+            <span class="status-indicator-dot online" title="Available for projects"></span>
+          </div>
+          <div class="about-name">Prince Yadav</div>
+          <div class="about-role">Business Solutions Architect · Zoho One</div>
+
+          <div class="contact-details-list">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Delhi, India — Async global
+                delivery</span></div>
+            <div class="info-item"><i class="fas fa-clock"></i><span>4hrs+ daily overlap with EST / CET / GMT</span>
+            </div>
+            <div class="info-item"><i class="fas fa-envelope"></i><span><a href="mailto:princeyadav841@gmail.com"
+                  class="link-hover">princeyadav841@gmail.com</a></span></div>
+            <div class="info-item"><i class="fas fa-phone"></i><span><a href="tel:+919794571928" class="link-hover">+91
+                  9794571928</a></span></div>
+            <div class="info-item"><i class="fas fa-language"></i><span>English · Hindi</span></div>
+          </div>
+
+          <div class="certifications-showcase">
+            <div class="cert-badge">
+              <i class="fas fa-award"></i>
+              <div class="cert-details">
+                <span class="cert-title">Certified Zoho Developer</span>
+                <span class="cert-issuer">Zoho Corporation</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <i class="fas fa-microchip"></i>
+              <div class="cert-details">
+                <span class="cert-title">AI Fundamentals</span>
+                <span class="cert-issuer">Microsoft</span>
+              </div>
+            </div>
+            <div class="cert-badge">
+              <i class="fas fa-chart-line"></i>
+              <div class="cert-details">
+                <span class="cert-title">Data Analytics</span>
+                <span class="cert-issuer">Accenture</span>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Right: Bio & pillars -->
+        <div class="rv-r">
+          <div class="sec-head">
+            <div class="eyebrow">About</div>
+            <h2 class="sh">I don't configure Zoho.<br><strong>I engineer business growth.</strong></h2>
+          </div>
+
+          <!-- Segmented Tab Controls -->
+          <div class="about-tabs-container">
+            <div class="about-tabs">
+              <button class="about-tab-btn active" data-tab="profile">
+                <i class="fas fa-user"></i> Profile Story
+              </button>
+              <button class="about-tab-btn" data-tab="skills">
+                <i class="fas fa-laptop-code"></i> Technical Arsenal
+              </button>
+              <button class="about-tab-btn" data-tab="delivery">
+                <i class="fas fa-handshake"></i> Delivery Standards
+              </button>
+            </div>
+          </div>
+
+          <!-- Tab Contents -->
+          <div class="about-tab-content">
+
+            <!-- Pane 1: Profile Story (Bio) -->
+            <div class="about-tab-pane active" id="pane-profile">
+              <p class="about-bio">I am a <strong style="font-weight:500;color:var(--text)">Senior Zoho Developer &amp;
+                  Business Solutions Architect</strong> with hands-on experience managing full end-to-end digital
+                transformation projects across <strong style="font-weight:500;color:var(--text)">finance, healthcare,
+                  manufacturing, and SaaS verticals</strong>. I translate complex operational pain-points into elegant,
+                scalable, automated systems on the Zoho One platform.</p>
+              <p class="about-bio">My approach is consultative first. Before writing a single line of Deluge, I invest
+                time understanding your revenue workflows, compliance requirements and scalability goals. The result is
+                a unified operating system that grows with your business — not just a configured CRM.</p>
+              <p class="about-bio">I have led high-stakes projects for <strong
+                  style="font-weight:500;color:var(--text)">India's largest independent financial advisory
+                  network</strong>, global healthcare technology providers, national investment firms and non-metallic
+                manufacturing enterprises — always on time, with rigorous documentation.</p>
+              <blockquote class="about-quote">
+                <i class="fas fa-quote-left quote-icon"></i>
+                <p>All client IP is transferred upon project completion. I sign NDAs before discovery calls and respond
+                  to all serious enquiries within 24 hours.</p>
+              </blockquote>
+            </div>
+
+            <!-- Pane 2: Technical Arsenal (Skills Dashboard) -->
+            <div class="about-tab-pane" id="pane-skills">
+              <div class="skills-dashboard-grid">
+
+                <div class="skill-category">
+                  <div class="skill-category-title"><i class="fas fa-cubes"></i> Zoho Core Modules</div>
+                  <div class="skill-list">
+                    <div class="skill-item-bar">
+                      <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-server"></i> Zoho CRM, Creator &amp; Books
+                          Ecosystems</span>
+                        <span class="skill-percentage">98%</span>
+                      </div>
+                      <div class="skill-track">
+                        <div class="skill-fill" data-width="98%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item-bar">
+                      <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-code"></i> Deluge Scripting &amp; Custom
+                          Functions</span>
+                        <span class="skill-percentage">95%</span>
+                      </div>
+                      <div class="skill-track">
+                        <div class="skill-fill" data-width="95%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item-bar">
+                      <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-route"></i> Zoho Flow &amp; Custom Blueprints</span>
+                        <span class="skill-percentage">90%</span>
+                      </div>
+                      <div class="skill-track">
+                        <div class="skill-fill" data-width="90%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-category">
+                  <div class="skill-category-title"><i class="fas fa-network-wired"></i> Integrations &amp; Dev</div>
+                  <div class="skill-list">
+                    <div class="skill-item-bar">
+                      <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-plug"></i> REST APIs / OAuth 2.0 / Webhooks</span>
+                        <span class="skill-percentage">92%</span>
+                      </div>
+                      <div class="skill-track">
+                        <div class="skill-fill" data-width="92%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item-bar">
+                      <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-database"></i> SQL Databases &amp; ETL
+                          Pipelines</span>
+                        <span class="skill-percentage">85%</span>
+                      </div>
+                      <div class="skill-track">
+                        <div class="skill-fill" data-width="85%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item-bar">
+                      <div class="skill-info">
+                        <span class="skill-name"><i class="fas fa-project-diagram"></i> 3rd Party APIs (WhatsApp, Ads,
+                          Stripe)</span>
+                        <span class="skill-percentage">88%</span>
+                      </div>
+                      <div class="skill-track">
+                        <div class="skill-fill" data-width="88%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Categorized Tools Grid -->
+              <div class="categorized-tools-grid">
+
+                <div class="tags-category-card">
+                  <div class="tags-category-title"><i class="fas fa-briefcase"></i> Core Business Suites</div>
+                  <div class="tags-group-cloud">
+                    <span class="tool-tag"><i class="fas fa-users"></i> Zoho CRM</span>
+                    <span class="tool-tag"><i class="fas fa-file-invoice-dollar"></i> Zoho Books</span>
+                    <span class="tool-tag"><i class="fas fa-cubes"></i> Zoho Creator</span>
+                    <span class="tool-tag"><i class="fas fa-chart-pie"></i> Zoho Analytics</span>
+                    <span class="tool-tag"><i class="fas fa-project-diagram"></i> Zoho Projects</span>
+                  </div>
+                </div>
+
+                <div class="tags-category-card">
+                  <div class="tags-category-title"><i class="fas fa-shield-halved"></i> Operations &amp; Security</div>
+                  <div class="tags-group-cloud">
+                    <span class="tool-tag"><i class="fas fa-headset"></i> Zoho Desk</span>
+                    <span class="tool-tag"><i class="fas fa-user-friends"></i> Zoho People</span>
+                    <span class="tool-tag"><i class="fas fa-money-check-alt"></i> Zoho Payroll</span>
+                    <span class="tool-tag"><i class="fas fa-file-signature"></i> Zoho Sign</span>
+                    <span class="tool-tag"><i class="fas fa-warehouse"></i> Zoho Inventory</span>
+                    <span class="tool-tag"><i class="fas fa-user-tie"></i> Zoho Recruit</span>
+                    <span class="tool-tag"><i class="fas fa-graduation-cap"></i> Zoho LMS</span>
+                  </div>
+                </div>
+
+                <div class="tags-category-card">
+                  <div class="tags-category-title"><i class="fas fa-network-wired"></i> API &amp; Integrations</div>
+                  <div class="tags-group-cloud">
+                    <span class="tool-tag"><i class="fab fa-whatsapp"></i> WhatsApp Cloud API</span>
+                    <span class="tool-tag"><i class="fab fa-google"></i> Google Ads SDK</span>
+                    <span class="tool-tag"><i class="fas fa-key"></i> OAuth 2.0 Flow</span>
+                    <span class="tool-tag"><i class="fas fa-plug"></i> REST Webhooks</span>
+                    <span class="tool-tag"><i class="fas fa-database"></i> SQL &amp; ETL pipelines</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Pane 3: Delivery Standards (Pillars & Badges) -->
+            <div class="about-tab-pane" id="pane-delivery">
+              <div class="pillar-grid">
+                <div class="pillar">
+                  <div class="pillar-icon"><i class="fas fa-project-diagram"></i></div>
+                  <div class="pillar-t">Architecture-First</div>
+                  <div class="pillar-d">Clean data models, scalable integrations, future-proof structures.</div>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon"><i class="fas fa-globe"></i></div>
+                  <div class="pillar-t">Global Delivery</div>
+                  <div class="pillar-d">Async via Slack &amp; Loom, sprints via Jira, cross-timezone ready.</div>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon"><i class="fas fa-shield-alt"></i></div>
+                  <div class="pillar-t">Compliance-Ready</div>
+                  <div class="pillar-d">GDPR, financial institution data security, enterprise governance.</div>
+                </div>
+                <div class="pillar">
+                  <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
+                  <div class="pillar-t">ROI-Driven</div>
+                  <div class="pillar-d">Every automation measured against a business outcome.</div>
+                </div>
+              </div>
+
+              <div class="guarantee-grid">
+                <div class="guarantee-card">
+                  <div class="gc-icon"><i class="fas fa-file-contract"></i></div>
+                  <div class="gc-t">NDA Secure</div>
+                  <div class="gc-d">Mutual NDA signed before discovery calls.</div>
+                </div>
+                <div class="guarantee-card">
+                  <div class="gc-icon"><i class="fas fa-sliders-h"></i></div>
+                  <div class="gc-t">Flexible Terms</div>
+                  <div class="gc-d">Hourly, fixed-price, or monthly retainer models.</div>
+                </div>
+                <div class="guarantee-card">
+                  <div class="gc-icon"><i class="fas fa-file-signature"></i></div>
+                  <div class="gc-t">IP Transfer</div>
+                  <div class="gc-d">100% intellectual property transferred immediately.</div>
+                </div>
+                <div class="guarantee-card">
+                  <div class="gc-icon"><i class="fas fa-lock"></i></div>
+                  <div class="gc-t">Compliance Ready</div>
+                  <div class="gc-d">GDPR aware with strict SOC2 governance frameworks.</div>
+                </div>
+                <div class="guarantee-card">
+                  <div class="gc-icon"><i class="fas fa-bolt"></i></div>
+                  <div class="gc-t">Rapid Response</div>
+                  <div class="gc-d">All serious inquiries answered in less than 24 hours.</div>
+                </div>
+                <div class="guarantee-card">
+                  <div class="gc-icon"><i class="fas fa-sync"></i></div>
+                  <div class="gc-t">Async Delivery</div>
+                  <div class="gc-d">Continuous sprint updates via Slack and Loom.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-
-      <!-- Right: Bio & pillars -->
-      <div class="rv-r">
-        <div class="sec-head">
-          <div class="eyebrow">About</div>
-          <h2 class="sh">I don't configure Zoho.<br><strong>I engineer business growth.</strong></h2>
-        </div>
-        <p class="about-bio">I am a <strong style="font-weight:500;color:var(--text)">Senior Zoho Developer &amp; Business Solutions Architect</strong> with hands-on experience managing full end-to-end digital transformation projects across <strong style="font-weight:500;color:var(--text)">finance, healthcare, manufacturing, and SaaS verticals</strong>. I translate complex operational pain-points into elegant, scalable, automated systems on the Zoho One platform.</p>
-        <p class="about-bio">My approach is consultative first. Before writing a single line of Deluge, I invest time understanding your revenue workflows, compliance requirements and scalability goals. The result is a unified operating system that grows with your business — not just a configured CRM.</p>
-        <p class="about-bio">I have led high-stakes projects for <strong style="font-weight:500;color:var(--text)">India's largest independent financial advisory network</strong>, global healthcare technology providers, national investment firms and non-metallic manufacturing enterprises — always on time, with rigorous documentation.</p>
-        <p class="about-bio">I work on <strong style="font-weight:500;color:var(--text)">hourly, fixed-price, and retainer</strong> engagements. All client IP is transferred upon project completion. I sign NDAs before discovery calls and respond to all serious enquiries within 24 hours.</p>
-        <div class="pillar-grid">
-          <div class="pillar rv"><div class="pillar-icon"><i class="fas fa-project-diagram"></i></div><div class="pillar-t">Architecture-First</div><div class="pillar-d">Clean data models, scalable integrations, future-proof structures.</div></div>
-          <div class="pillar rv"><div class="pillar-icon"><i class="fas fa-globe"></i></div><div class="pillar-t">Global Delivery</div><div class="pillar-d">Async via Slack &amp; Loom, sprints via Jira, cross-timezone ready.</div></div>
-          <div class="pillar rv"><div class="pillar-icon"><i class="fas fa-shield-alt"></i></div><div class="pillar-t">Compliance-Ready</div><div class="pillar-d">GDPR, financial institution data security, enterprise governance.</div></div>
-          <div class="pillar rv"><div class="pillar-icon"><i class="fas fa-chart-line"></i></div><div class="pillar-t">ROI-Driven</div><div class="pillar-d">Every automation measured against a business outcome.</div></div>
-        </div>
-        <div class="trust-badge-grid" style="margin-top:18px">
-          <div class="trust-badge"><i class="fas fa-check-circle"></i> NDA-Ready</div>
-          <div class="trust-badge"><i class="fas fa-check-circle"></i> Hourly / Fixed / Retainer</div>
-          <div class="trust-badge"><i class="fas fa-check-circle"></i> IP Transfer on Completion</div>
-          <div class="trust-badge"><i class="fas fa-check-circle"></i> GDPR &amp; SOC2 Aware</div>
-          <div class="trust-badge"><i class="fas fa-check-circle"></i> &lt; 24hr Response Time</div>
-        </div>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      SERVICES SECTION
      Edit: service titles, descriptions, chips
      Styling → css/sections.css → "3. SERVICES"
      Note: CSS counter auto-numbers cards (01, 02…)
 ══════════════════════════════════════════════════ -->
-<section class="sp alt services-section" id="services">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow">Services</div>
-      <h2 class="sh"><strong>Enterprise services,</strong> result-driven outcomes.</h2>
-      <p class="lead">From architecting your first CRM to running a 12-module Zoho One suite — measurable ROI at every level.</p>
+  <section class="sp alt services-section" id="services">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="eyebrow">Services</div>
+        <h2 class="sh"><strong>Enterprise services,</strong> result-driven outcomes.</h2>
+        <p class="lead">From architecting your first CRM to running a 12-module Zoho One suite — measurable ROI at every
+          level.</p>
+      </div>
+      <div class="grid3" style="margin-top:24px">
+        <!-- Zoho One Solution Architecture -->
+        <div class="svc-card rv" style="--svc-color: #6366f1; --svc-glow: rgba(99, 102, 241, 0.12);">
+          <div class="svc-icon"><i class="fas fa-sitemap"></i></div>
+          <div class="svc-t">Zoho One Solution Architecture</div>
+          <div class="svc-d">End-to-end business operating system design — CRM to Finance to HR — unified on a single
+            platform with zero data silos.</div>
+          <ul class="svc-deliverables">
+            <li>Cross-module ERD &amp; Data Schema Design</li>
+            <li>System Governance &amp; Security Architecture</li>
+            <li>Multi-App User Provisioning Workflows</li>
+          </ul>
+          <div class="chips">
+            <span class="chip blue">Multi-App</span>
+            <span class="chip">Data Modelling</span>
+            <span class="chip">Scoping</span>
+          </div>
+        </div>
+
+        <!-- Lead Lifecycle Automation -->
+        <div class="svc-card rv" style="--svc-color: #3b82f6; --svc-glow: rgba(59, 130, 246, 0.12);">
+          <div class="svc-icon"><i class="fas fa-funnel-dollar"></i></div>
+          <div class="svc-t">Lead Lifecycle Automation</div>
+          <div class="svc-d">Automated lead capture from Google Ads, Facebook &amp; 3rd-party portals into CRM with
+            nurturing, scoring and pipeline reporting.</div>
+          <ul class="svc-deliverables">
+            <li>Multi-channel API Lead Ingestion</li>
+            <li>Dynamic Lead Scoring &amp; Nurturing Rules</li>
+            <li>Sales Pipeline Stage Analytics</li>
+          </ul>
+          <div class="chips">
+            <span class="chip blue interactive-chip" data-stack-id="crm">Zoho CRM</span>
+            <span class="chip interactive-chip" data-stack-id="campaigns">Campaigns</span>
+            <span class="chip interactive-chip" data-stack-id="flow">Flow</span>
+          </div>
+        </div>
+
+        <!-- Financial System Synchronisation -->
+        <div class="svc-card rv" style="--svc-color: #10b981; --svc-glow: rgba(16, 185, 129, 0.12);">
+          <div class="svc-icon"><i class="fas fa-sync-alt"></i></div>
+          <div class="svc-t">Financial System Synchronisation</div>
+          <div class="svc-d">Connect your Sales pipeline to Finance — syncing CRM with Books &amp; Inventory in
+            real-time for 90% less manual entry.</div>
+          <ul class="svc-deliverables">
+            <li>Bidirectional Inventory-CRM Sync</li>
+            <li>Automated Invoicing &amp; Payment Gateways</li>
+            <li>Real-time General Ledger Posting</li>
+          </ul>
+          <div class="chips">
+            <span class="chip blue interactive-chip" data-stack-id="books">Books</span>
+            <span class="chip interactive-chip" data-stack-id="inventory">Inventory</span>
+            <span class="chip interactive-chip" data-stack-id="webhooks">REST API</span>
+          </div>
+        </div>
+
+        <!-- Custom Deluge & API Engineering -->
+        <div class="svc-card rv" style="--svc-color: #6366f1; --svc-glow: rgba(99, 102, 241, 0.12);">
+          <div class="svc-icon"><i class="fas fa-code-branch"></i></div>
+          <div class="svc-t">Custom Deluge &amp; API Engineering</div>
+          <div class="svc-d">Advanced Deluge scripting, REST API integrations, OAuth 2.0 auth, Webhook pipelines and ETL
+            data flows.</div>
+          <ul class="svc-deliverables">
+            <li>Webhook Receivers &amp; Payload Parsing</li>
+            <li>Custom OAuth 2.0 Integration Connectors</li>
+            <li>High-Performance Bulk Data ETL Scripts</li>
+          </ul>
+          <div class="chips">
+            <span class="chip blue interactive-chip" data-stack-id="deluge">Deluge</span>
+            <span class="chip interactive-chip" data-stack-id="webhooks">Webhooks</span>
+            <span class="chip interactive-chip" data-stack-id="webhooks">OAuth 2.0</span>
+          </div>
+        </div>
+
+        <!-- Custom Creator ERP Development -->
+        <div class="svc-card rv" style="--svc-color: #14b8a6; --svc-glow: rgba(20, 184, 166, 0.12);">
+          <div class="svc-icon"><i class="fas fa-cubes"></i></div>
+          <div class="svc-t">Custom Creator ERP Development</div>
+          <div class="svc-d">Niche-industry ERP tools on Zoho Creator — asset management, order processing, compliance
+            workflows for regulated sectors.</div>
+          <ul class="svc-deliverables">
+            <li>Asset Tracking &amp; Barcode/QR Scanning</li>
+            <li>Client Portal with Custom Security Roles</li>
+            <li>Workflow Approvals &amp; Compliance Engine</li>
+          </ul>
+          <div class="chips">
+            <span class="chip blue interactive-chip" data-stack-id="creator">Creator</span>
+            <span class="chip interactive-chip" data-stack-id="creator">Low-Code ERP</span>
+          </div>
+        </div>
+
+        <!-- Analytics & Executive Intelligence -->
+        <div class="svc-card rv" style="--svc-color: #8b5cf6; --svc-glow: rgba(139, 92, 246, 0.12);">
+          <div class="svc-icon"><i class="fas fa-chart-bar"></i></div>
+          <div class="svc-t">Analytics &amp; Executive Intelligence</div>
+          <div class="svc-d">SQL-powered KPI dashboards and real-time operational reports giving leadership the data to
+            act decisively.</div>
+          <ul class="svc-deliverables">
+            <li>SQL-powered Combined Queries (Join Tables)</li>
+            <li>Interactive Cohort &amp; Revenue Dashboards</li>
+            <li>Daily KPI Reports via Slack/Email</li>
+          </ul>
+          <div class="chips">
+            <span class="chip blue interactive-chip" data-stack-id="analytics">Analytics</span>
+            <span class="chip interactive-chip" data-stack-id="sql">SQL</span>
+            <span class="chip interactive-chip" data-stack-id="analytics">KPI</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="grid3" style="margin-top:24px">
-      <div class="svc-card rv">
-        <div class="svc-icon"><i class="fas fa-sitemap"></i></div>
-        <div class="svc-t">Zoho One Solution Architecture</div>
-        <div class="svc-d">End-to-end business operating system design — CRM to Finance to HR — unified on a single platform with zero data silos.</div>
-        <div class="chips"><span class="chip blue">Multi-App</span><span class="chip">Data Modelling</span><span class="chip">Scoping</span></div>
-      </div>
-      <div class="svc-card rv">
-        <div class="svc-icon"><i class="fas fa-funnel-dollar"></i></div>
-        <div class="svc-t">Lead Lifecycle Automation</div>
-        <div class="svc-d">Automated lead capture from Google Ads, Facebook &amp; 3rd-party portals into CRM with nurturing, scoring and pipeline reporting.</div>
-        <div class="chips"><span class="chip blue">Zoho CRM</span><span class="chip">Campaigns</span><span class="chip">Flow</span></div>
-      </div>
-      <div class="svc-card rv">
-        <div class="svc-icon"><i class="fas fa-sync-alt"></i></div>
-        <div class="svc-t">Financial System Synchronisation</div>
-        <div class="svc-d">Connect your Sales pipeline to Finance — syncing CRM with Books &amp; Inventory in real-time for 90% less manual entry.</div>
-        <div class="chips"><span class="chip blue">Books</span><span class="chip">Inventory</span><span class="chip">REST API</span></div>
-      </div>
-      <div class="svc-card rv">
-        <div class="svc-icon"><i class="fas fa-code-branch"></i></div>
-        <div class="svc-t">Custom Deluge &amp; API Engineering</div>
-        <div class="svc-d">Advanced Deluge scripting, REST API integrations, OAuth 2.0 auth, Webhook pipelines and ETL data flows.</div>
-        <div class="chips"><span class="chip blue">Deluge</span><span class="chip">Webhooks</span><span class="chip">OAuth 2.0</span></div>
-      </div>
-      <div class="svc-card rv">
-        <div class="svc-icon"><i class="fas fa-cubes"></i></div>
-        <div class="svc-t">Custom Creator ERP Development</div>
-        <div class="svc-d">Niche-industry ERP tools on Zoho Creator — asset management, order processing, compliance workflows for regulated sectors.</div>
-        <div class="chips"><span class="chip blue">Creator</span><span class="chip">Low-Code ERP</span></div>
-      </div>
-      <div class="svc-card rv">
-        <div class="svc-icon"><i class="fas fa-chart-bar"></i></div>
-        <div class="svc-t">Analytics &amp; Executive Intelligence</div>
-        <div class="svc-d">SQL-powered KPI dashboards and real-time operational reports giving leadership the data to act decisively.</div>
-        <div class="chips"><span class="chip blue">Analytics</span><span class="chip">SQL</span><span class="chip">KPI</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      CASE STUDIES
      Edit: sector, title, location, chips, metrics,
            challenge / solution / impact text
      Styling → css/sections.css → "4. CASE STUDIES"
 ══════════════════════════════════════════════════ -->
-<section class="sp" id="work">
-  <div class="wrap">
-    <div class="sec-head center rv">
-      <div class="eyebrow">Case Studies</div>
-      <h2 class="sh"><strong>Situation → Architecture → Measurable Outcomes.</strong></h2>
-      <p class="lead">Enterprise solutions designed with rigorous engineering pipelines and clear financial returns.</p>
-    </div>
-
-    <!-- Dynamic Currency and Region Toggler Segmented Control -->
-    <div class="currency-selector-wrap rv">
-      <div class="currency-toggler" id="currency-toggler">
-        <button class="curr-btn active" data-currency="usd">US ($)</button>
-        <button class="curr-btn" data-currency="eur">EU (€)</button>
-        <button class="curr-btn" data-currency="gbp">UK (£)</button>
-        <button class="curr-btn" data-currency="aud">AU (A$)</button>
-        <button class="curr-btn" data-currency="aed">Gulf (AED)</button>
+  <section class="sp" id="work">
+    <div class="wrap">
+      <div class="sec-head center rv">
+        <div class="eyebrow">Case Studies</div>
+        <h2 class="sh"><strong>Situation → Architecture → Measurable Outcomes.</strong></h2>
+        <p class="lead">Enterprise solutions designed with rigorous engineering pipelines and clear financial returns.
+        </p>
       </div>
-    </div>
 
-    <!-- Segmented Tabs Sector Index Selector -->
-    <div class="case-tabs-wrap rv" style="margin-top: 16px;">
-      <div class="case-tabs" id="case-tabs">
-        <button class="case-tab-btn active" data-index="0">Finance</button>
-        <button class="case-tab-btn" data-index="1">Healthcare</button>
-        <button class="case-tab-btn" data-index="2">Operations</button>
-        <button class="case-tab-btn" data-index="3">Manufacturing</button>
-        <button class="case-tab-btn" data-index="4">Installations</button>
-        <button class="case-tab-btn" data-index="5">Services</button>
-      </div>
-    </div>
-
-    <!-- Moving Sliding Carousel Container -->
-    <div class="case-carousel-container rv">
-      <!-- Prev & Next Floating Arrow Navigation Buttons -->
-      <button class="carousel-nav-btn prev" id="carousel-prev" aria-label="Previous Slide">
-        <i class="fas fa-chevron-left"></i>
-      </button>
-      <button class="carousel-nav-btn next" id="carousel-next" aria-label="Next Slide">
-        <i class="fas fa-chevron-right"></i>
-      </button>
-
-      <!-- Carousel Viewport viewport -->
-      <div class="case-carousel-viewport">
-        <!-- Horizontal slide track -->
-        <div class="case-carousel-track" id="case-carousel-track">
-
-          <!-- ── Slide 1: Bajaj Capital (Finance) ── -->
-          <div class="case-card" id="card-0">
-            <div>
-              <div class="case-brand-header">
-                <img class="case-logo-img" src="https://logo.clearbit.com/bajajcapital.com" alt="Bajaj Capital" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1e40af/ffffff?text=BC';">
-                <span class="case-brand-name">Bajaj Capital</span>
-              </div>
-              <div class="case-sector">Finance &amp; Wealth Advisory</div>
-              <div class="case-t">Omnichannel Lead Routing &amp; Marketing Advisory Engine</div>
-              <div class="case-geo"><i class="fas fa-map-marker-alt"></i> India (300+ branches nationwide)</div>
-              <div class="chips" style="margin-top:10px">
-                <span class="chip blue">CRM</span><span class="chip blue">SalesIQ</span>
-                <span class="chip blue">Campaigns</span><span class="chip blue">Marketing Automation</span>
-                <span class="chip blue">Analytics</span><span class="chip blue">PageSense</span>
-                <span class="chip blue">Webinar</span>
-              </div>
-              <div class="metrics-grid">
-                <div class="metric-box"><div class="m-num">90%</div><div class="m-lbl">Lead handoff speedup</div></div>
-                <div class="metric-box">
-                  <div class="m-num" data-curr-metric="savings" data-val-usd="$120K" data-val-eur="€110K" data-val-gbp="£95K" data-val-aud="A$180K" data-val-aed="AED 440K">$120K</div>
-                  <div class="m-lbl">Annual systems value</div>
-                </div>
-                <div class="metric-box"><div class="m-num">8</div><div class="m-lbl">Integrated Zoho apps</div></div>
-                <div class="metric-box"><div class="m-num">4mo</div><div class="m-lbl">Unified deployment</div></div>
-              </div>
-            </div>
-            <div>
-              <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
-              <p class="step-body">Severe customer journey fragmentation across 200+ physical branch networks, virtual investor webinars, and high-spend online advertising landing pages. Manual lead qualification and distribution processes delayed advisor outreach by over 24 to 48 hours, creating massive customer drop-offs and preventing the marketing team from accurately measuring or optimizing their multi-channel campaign attribution and return on ad spend (ROAS).</p>
-              <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
-              <p class="step-body">Deployed Zoho CRM as the central enterprise ledger and master commercial source of truth. Configured Zoho SalesIQ to track, profile, and score live visitor intent on digital assets, while integrating Zoho PageSense to conduct A/B conversion testing on high-traffic landing pages. Engineered custom REST API endpoints using Deluge scripting to link Zoho Webinar with Zoho Campaigns and Zoho Marketing Automation, allowing the system to instantly ingest leads, execute multi-point scoring rules, and automatically assign and route hot prospects to licensed regional advisors based on branch proximity and asset class suitability.</p>
-              <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
-              <p class="step-body" style="margin-bottom:0">Slashed prospective lead-to-advisor handoff times from an average of 24 hours to <strong>under 5 minutes</strong> in real-time. Captured 100% of webinar attendance and interaction signals, enabling automated personalized post-event nurturing campaigns that directly contributed to a <strong>45% increase in webinar conversion rates</strong> and saved over <strong><span data-curr-narrative data-val-usd="$120K" data-val-eur="€110K" data-val-gbp="£95K" data-val-aud="A$180K" data-val-aed="AED 440K">$120K</span> in annual operations cost</strong> while providing complete marketing attribution transparency.</p>
-            </div>
-          </div>
-
-          <!-- ── Slide 2: Instalimb (Healthcare) ── -->
-          <div class="case-card" id="card-1">
-            <div>
-              <div class="case-brand-header">
-                <img class="case-logo-img" src="https://logo.clearbit.com/instalimb.com" alt="Instalimb" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/100x100/0d9488/ffffff?text=IL';">
-                <span class="case-brand-name">Instalimb</span>
-              </div>
-              <div class="case-sector">Healthcare Technology (HealthTech)</div>
-              <div class="case-t">Global 3D-Printed Prosthetics Consult &amp; Care Pipeline</div>
-              <div class="case-geo"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan (Global)</div>
-              <div class="chips" style="margin-top:10px">
-                <span class="chip blue">CRM</span><span class="chip blue">Meeting</span>
-                <span class="chip blue">Campaigns</span><span class="chip blue">People</span>
-                <span class="chip blue">Books</span>
-              </div>
-              <div class="metrics-grid">
-                <div class="metric-box"><div class="m-num">3d</div><div class="m-lbl">Onboarding (was 14d)</div></div>
-                <div class="metric-box">
-                  <div class="m-num" data-curr-metric="turnaround" data-val-usd="$75K" data-val-eur="€70K" data-val-gbp="£60K" data-val-aud="A$110K" data-val-aed="AED 275K">$75K</div>
-                  <div class="m-lbl">Admin expense cut</div>
-                </div>
-                <div class="metric-box"><div class="m-num">35%</div><div class="m-lbl">Overhead reduction</div></div>
-                <div class="metric-box"><div class="m-num">100%</div><div class="m-lbl">GDPR / HIPAA ready</div></div>
-              </div>
-            </div>
-            <div>
-              <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
-              <p class="step-body">Highly fragmented patient booking, consultation, and billing pipelines across multiple international operating centers in Japan, India, and the Philippines. Coordinating remote 3D-printed prosthetic fitting consultations and verifying clinical credentials across different regulatory environments led to massive 14-day scheduling delays, human errors in multi-currency invoicing, and operational overhead that severely limited patient access to life-changing care.</p>
-              <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
-              <p class="step-body">Configured a secure instance of Zoho CRM to store international patient electronic health records conforming to strict regional compliance standards, including GDPR and HIPAA. Integrated Zoho Meeting with custom Creator portals to automate telemedicine scheduling, calendar availability synchronization, and secure clinician assignments across time zones. Deployed Zoho People to track global clinical credentials, licensing, and compliance documentation, and integrated Zoho Books to automate multi-currency invoicing, tax calculations, and localized payment link generation upon consultation completion.</p>
-              <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
-              <p class="step-body" style="margin-bottom:0">Slashed patient scheduling, clinician matching, and onboarding cycles from 14 days down to <strong>just 3 days</strong>. Automated 100% of cross-border telehealth bookings, completely eliminating administrative invoice leakage, reducing regional administrative overhead by <strong>35%</strong>, and saving over <strong><span data-curr-narrative data-val-usd="$75K" data-val-eur="€70K" data-val-gbp="£60K" data-val-aud="A$110K" data-val-aed="AED 275K">$75K</span> in annual operational expenses</strong> while significantly improving patient satisfaction.</p>
-            </div>
-          </div>
-
-          <!-- ── Slide 3: Zoom Communications (Operations) ── -->
-          <div class="case-card" id="card-2">
-            <div>
-              <div class="case-brand-header">
-                <img class="case-logo-img" src="https://logo.clearbit.com/zoomcom.tv" alt="Zoom Communications" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/100x100/ea580c/ffffff?text=ZC';">
-                <span class="case-brand-name">Zoom Communications</span>
-              </div>
-              <div class="case-sector">OB Live Broadcast Operations</div>
-              <div class="case-t">Custom Enterprise Live Event Logistics ERP</div>
-              <div class="case-geo"><i class="fas fa-map-marker-alt"></i> Noida &amp; Gurugram, India</div>
-              <div class="chips" style="margin-top:10px">
-                <span class="chip blue">Creator</span><span class="chip blue">Deluge ERP</span>
-                <span class="chip blue">Asset Sync</span><span class="chip blue">Flow</span>
-              </div>
-              <div class="metrics-grid">
-                <div class="metric-box"><div class="m-num">100%</div><div class="m-lbl">Real-time asset sync</div></div>
-                <div class="metric-box">
-                  <div class="m-num" data-curr-metric="savings" data-val-usd="$180K" data-val-eur="€165K" data-val-gbp="£145K" data-val-aud="A$270K" data-val-aed="AED 660K">$180K</div>
-                  <div class="m-lbl">Asset recovery savings</div>
-                </div>
-                <div class="metric-box"><div class="m-num">+40%</div><div class="m-lbl">Crew dispatch speed</div></div>
-                <div class="metric-box"><div class="m-num">-10d</div><div class="m-lbl">Equipment audit delay</div></div>
-              </div>
-            </div>
-            <div>
-              <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
-              <p class="step-body">Managing heavy Outside Broadcast (OB) logistics, scheduling highly technical crew rosters for large-scale national and international broadcast events (such as the Indian Premier League and international cricket tournaments), and tracking millions of dollars of high-value broadcast equipment was run entirely on disconnected, error-prone spreadsheets, resulting in frequent scheduling conflicts, critical gear shortages, and massive inventory losses.</p>
-              <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
-              <p class="step-body">Architected and programmed a fully customized, heavy-duty Enterprise Resource Planning (ERP) platform from scratch using Zoho Creator. Coded complex scheduling calendars, real-time crew conflict-check validation algorithms, and automated dispatch sheets using advanced Deluge scripting and Zoho Flow. Integrated a barcode/QR-code scanning system for real-time equipment check-in and check-out tracking, and built automated SMS/email notification alerts for gear returns, equipment damage reporting, and crew roster updates.</p>
-              <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
-              <p class="step-body" style="margin-bottom:0">Secured <strong>100% error-free real-time equipment tracking</strong> and resource allocation across all major broadcast projects. Completely eliminated scheduling overlaps and crew double-bookings, boosted crew dispatch operational efficiency by <strong>40%</strong>, cut post-event inventory audit timelines by 10 full days, and saved the company over <strong><span data-curr-narrative data-val-usd="$180K" data-val-eur="€165K" data-val-gbp="£145K" data-val-aud="A$270K" data-val-aed="AED 660K">$180K</span> in annual gear loss and recovery costs</strong>.</p>
-            </div>
-          </div>
-
-          <!-- ── Slide 4: Novel Nonmetallic (Manufacturing) ── -->
-          <div class="case-card" id="card-3">
-            <div>
-              <div class="case-brand-header">
-                <img class="case-logo-img" src="https://logo.clearbit.com/novelnonmetallic.com" alt="Novel Nonmetallic" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/100x100/0284c7/ffffff?text=NN';">
-                <span class="case-brand-name">Novel Nonmetallic</span>
-              </div>
-              <div class="case-sector">Oil &amp; Gas Composite Manufacturing</div>
-              <div class="case-t">High-Compliance Governance &amp; Real-time Analytics ERP</div>
-              <div class="case-geo"><i class="fas fa-map-marker-alt"></i> SPARK, Saudi Arabia</div>
-              <div class="chips" style="margin-top:10px">
-                <span class="chip blue">CRM</span><span class="chip blue">Analytics</span>
-                <span class="chip blue">Desk</span><span class="chip blue">People</span>
-              </div>
-              <div class="metrics-grid">
-                <div class="metric-box"><div class="m-num">100%</div><div class="m-lbl">Enterprise Audit Pass</div></div>
-                <div class="metric-box">
-                  <div class="m-num" data-curr-metric="savings" data-val-usd="$250K" data-val-eur="€230K" data-val-gbp="£200K" data-val-aud="A$375K" data-val-aed="AED 920K">$250K</div>
-                  <div class="m-lbl">Regulatory savings</div>
-                </div>
-                <div class="metric-box"><div class="m-num">-90%</div><div class="m-lbl">Report delay reduced</div></div>
-                <div class="metric-box"><div class="m-num">100%</div><div class="m-lbl">Data sovereignty</div></div>
-              </div>
-            </div>
-            <div>
-              <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
-              <p class="step-body">Operating in a highly regulated industrial energy park under strict joint venture audits from Saudi Aramco (the region’s largest energy enterprise) and global partners. Fragmented commercial pipeline data, manual safety training compliance tracking for factory floor employees, and isolated customer support tickets created massive operational visibility issues, making the preparation of monthly compliance reports slow, labor-intensive, and prone to high audit-failure risks.</p>
-              <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
-              <p class="step-body">Integrated Zoho CRM for enterprise contract governance, Zoho People for tracking specialized safety certifications and training compliance, and Zoho Desk for managing quality assurance and equipment maintenance tickets. Designed custom data extraction pipelines to feed this disparate information directly into Zoho Analytics, creating a unified, real-time SQL-powered executive dashboard that monitors compliance, operations, and quality metrics against the client’s rigorous enterprise standards.</p>
-              <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
-              <p class="step-body" style="margin-bottom:0">Successfully passed <strong>100% of enterprise compliance and safety audits</strong> with zero non-conformances. Totally replaced month-end manual reporting with real-time analytics, reducing compliance reporting cycles from 15 days to <strong>under 5 minutes</strong>, saving over <strong><span data-curr-narrative data-val-usd="$250K" data-val-eur="€230K" data-val-gbp="£200K" data-val-aud="A$375K" data-val-aed="AED 920K">$250K</span> in potential regulatory fines and audit overhead</strong> while maintaining absolute data sovereignty.</p>
-            </div>
-          </div>
-
-          <!-- ── Slide 5: Tawrid (Installations / Procurement) ── -->
-          <div class="case-card" id="card-4">
-            <div>
-              <div class="case-brand-header">
-                <img class="case-logo-img" src="https://logo.clearbit.com/tawridy.com" alt="Tawrid" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/100x100/b45309/ffffff?text=T';">
-                <span class="case-brand-name">Tawrid</span>
-              </div>
-              <div class="case-sector">B2B Procurement &amp; Supply Chain Finance</div>
-              <div class="case-t">Tax-Authority-Compliant Supplier Onboarding &amp; Procurement OS</div>
-              <div class="case-geo"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</div>
-              <div class="chips" style="margin-top:10px">
-                <span class="chip blue">Creator</span><span class="chip blue">CRM</span>
-                <span class="chip blue">Analytics</span><span class="chip blue">People</span>
-                <span class="chip blue">Desk</span>
-              </div>
-              <div class="metrics-grid">
-                <div class="metric-box"><div class="m-num">70%</div><div class="m-lbl">Onboarding speedup</div></div>
-                <div class="metric-box">
-                  <div class="m-num" data-curr-metric="savings" data-val-usd="$320K" data-val-eur="€295K" data-val-gbp="£255K" data-val-aud="A$480K" data-val-aed="AED 1.18M">$320K</div>
-                  <div class="m-lbl">Annual processing value</div>
-                </div>
-                <div class="metric-box"><div class="m-num">48hrs</div><div class="m-lbl">Matching cycle cut</div></div>
-                <div class="metric-box"><div class="m-num">100%</div><div class="m-lbl">VAT Compliant</div></div>
-              </div>
-            </div>
-            <div>
-              <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
-              <p class="step-body">Extremely manual, slow supplier onboarding processes, physical verification of commercial tax IDs, and delayed matching of physical Goods Receipt Notes (GRN) to purchase invoices caused transaction blockages, increased supplier friction, and severely delayed supply chain funding payouts across highly competitive B2B markets.</p>
-              <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
-              <p class="step-body">Built an enterprise-grade, secure custom B2B Supplier Portal on Zoho Creator, seamlessly integrated with Zoho CRM for automated corporate background checks and tax registration number (TRN) validation. Connected Zoho Desk to process and auto-route supplier disputes, Zoho People to coordinate agent task queues, and mapped transaction datasets directly to Zoho Analytics to generate live cashflow and compliance reporting fully compliant with ZATCA (Saudi tax authority, analogous to IRS/HMRC) VAT regulations.</p>
-              <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
-              <p class="step-body" style="margin-bottom:0">Slashed B2B supplier onboarding and validation cycles by <strong>70%</strong>, reducing onboarding times from weeks to hours. Cut transactional purchase-to-payment matching bottlenecks by <strong>48 hours</strong>, unlocked faster supply chain financing payouts, and fully secured thousands of tax-compliant purchase logs, saving over <strong><span data-curr-narrative data-val-usd="$320K" data-val-eur="€295K" data-val-gbp="£255K" data-val-aud="A$480K" data-val-aed="AED 1.18M">$320K</span> in annual administrative processing value</strong>.</p>
-            </div>
-          </div>
-
-          <!-- ── Slide 6: Morzze (Services) ── -->
-          <div class="case-card" id="card-5">
-            <div>
-              <div class="case-brand-header">
-                <img class="case-logo-img" src="https://logo.clearbit.com/morzze.com" alt="Morzze" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/100x100/1f2937/ffffff?text=M';">
-                <span class="case-brand-name">Morzze</span>
-              </div>
-              <div class="case-sector">D2C Smart Fittings &amp; Field Services</div>
-              <div class="case-t">Unified Warehouse Inventory Sync &amp; Crew Dispatch OS</div>
-              <div class="case-geo"><i class="fas fa-map-marker-alt"></i> New Delhi, India</div>
-              <div class="chips" style="margin-top:10px">
-                <span class="chip blue">CRM Plus</span><span class="chip blue">Inventory</span>
-                <span class="chip blue">FSM</span><span class="chip blue">Books</span>
-                <span class="chip blue">SalesIQ</span><span class="chip blue">Bookings</span>
-              </div>
-              <div class="metrics-grid">
-                <div class="metric-box"><div class="m-num">+40%</div><div class="m-lbl">D2C conversions</div></div>
-                <div class="metric-box">
-                  <div class="m-num" data-curr-metric="savings" data-val-usd="$95K" data-val-eur="€88K" data-val-gbp="£75K" data-val-aud="A$140K" data-val-aed="AED 350K">$95K</div>
-                  <div class="m-lbl">Inventory loss cut</div>
-                </div>
-                <div class="metric-box"><div class="m-num">48hrs</div><div class="m-lbl">Dispatch delay cut</div></div>
-                <div class="metric-box"><div class="m-num">100%</div><div class="m-lbl">Stock accuracy</div></div>
-              </div>
-            </div>
-            <div>
-              <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
-              <p class="step-body">Rapid scaling of direct-to-consumer (D2C) smart kitchen and bathroom fittings sales triggered severe logistics and service bottlenecks. Siloed marketing systems, a lack of real-time inventory synchronization across regional warehouses, and manual technician scheduling for on-site smart-home installations led to shipping delays, technician double-bookings, and missed service SLA commitments.</p>
-              <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
-              <p class="step-body">Designed and deployed a unified operating system on Zoho CRM Plus. Connected Zoho CRM with Zoho Inventory to enable instant warehouse stock allocation upon deal closure, and integrated Zoho Bookings and Zoho SalesIQ to capture, score, and schedule online installation consultations. Configured Zoho FSM (Field Service Management) with custom automated routing to assign and dispatch local installation technicians, while using Zoho Books to automate tax-compliant billing, retail invoicing, and transaction logging.</p>
-              <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
-              <p class="step-body" style="margin-bottom:0">Boosted online lead-to-consultation conversion rates by <strong>40%</strong> without losing a single prospect in the pipeline. Secured <strong>100% real-time warehouse stock accuracy</strong>, cut field service dispatch and technician scheduling latency by <strong>48 hours</strong>, and ensured that 100% of consumer smart fittings installations were completed within SLA guidelines, saving <strong><span data-curr-narrative data-val-usd="$95K" data-val-eur="€88K" data-val-gbp="£75K" data-val-aud="A$140K" data-val-aed="AED 350K">$95K</span> in warehouse inventory losses</strong>.</p>
-            </div>
-          </div>
-
+      <!-- Dynamic Currency and Region Toggler Segmented Control -->
+      <div class="currency-selector-wrap rv">
+        <div class="currency-toggler" id="currency-toggler">
+          <button class="curr-btn active" data-currency="usd">US ($)</button>
+          <button class="curr-btn" data-currency="eur">EU (€)</button>
+          <button class="curr-btn" data-currency="gbp">UK (£)</button>
+          <button class="curr-btn" data-currency="aud">AU (A$)</button>
+          <button class="curr-btn" data-currency="aed">Gulf (AED)</button>
         </div>
       </div>
 
-      <!-- Active Indicator Dots Bar -->
-      <div class="carousel-dots" id="carousel-dots">
-        <span class="carousel-dot active" data-index="0" aria-label="Slide 1"></span>
-        <span class="carousel-dot" data-index="1" aria-label="Slide 2"></span>
-        <span class="carousel-dot" data-index="2" aria-label="Slide 3"></span>
-        <span class="carousel-dot" data-index="3" aria-label="Slide 4"></span>
-        <span class="carousel-dot" data-index="4" aria-label="Slide 5"></span>
-        <span class="carousel-dot" data-index="5" aria-label="Slide 6"></span>
+      <!-- Segmented Tabs Sector Index Selector -->
+      <div class="case-tabs-wrap rv" style="margin-top: 16px;">
+        <div class="case-tabs" id="case-tabs">
+          <button class="case-tab-btn active" data-index="0">Finance</button>
+          <button class="case-tab-btn" data-index="1">Healthcare</button>
+          <button class="case-tab-btn" data-index="2">Operations</button>
+          <button class="case-tab-btn" data-index="3">Manufacturing</button>
+          <button class="case-tab-btn" data-index="4">Installations</button>
+          <button class="case-tab-btn" data-index="5">Services</button>
+        </div>
+      </div>
+
+      <!-- Moving Sliding Carousel Container -->
+      <div class="case-carousel-container rv">
+        <!-- Prev & Next Floating Arrow Navigation Buttons -->
+        <button class="carousel-nav-btn prev" id="carousel-prev" aria-label="Previous Slide">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-nav-btn next" id="carousel-next" aria-label="Next Slide">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <!-- Carousel Viewport viewport -->
+        <div class="case-carousel-viewport">
+          <!-- Horizontal slide track -->
+          <div class="case-carousel-track" id="case-carousel-track">
+
+            <!-- ── Slide 1: Bajaj Capital (Finance) ── -->
+            <div class="case-card" id="card-0">
+              <div>
+                <div class="case-brand-header">
+                  <img class="case-logo-img" src="https://logo.clearbit.com/bajajcapital.com" alt="Bajaj Capital"
+                    loading="lazy"
+                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/1e40af/ffffff?text=BC';">
+                  <span class="case-brand-name">Bajaj Capital</span>
+                </div>
+                <div class="case-sector">Finance &amp; Wealth Advisory</div>
+                <div class="case-t">Omnichannel Lead Routing &amp; Marketing Advisory Engine</div>
+                <div class="case-geo"><i class="fas fa-map-marker-alt"></i> India (300+ branches nationwide)</div>
+                <div class="chips" style="margin-top:10px">
+                  <span class="chip blue">CRM</span><span class="chip blue">SalesIQ</span>
+                  <span class="chip blue">Campaigns</span><span class="chip blue">Marketing Automation</span>
+                  <span class="chip blue">Analytics</span><span class="chip blue">PageSense</span>
+                  <span class="chip blue">Webinar</span>
+                </div>
+                <div class="metrics-grid">
+                  <div class="metric-box">
+                    <div class="m-num">90%</div>
+                    <div class="m-lbl">Lead handoff speedup</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num" data-curr-metric="savings" data-val-usd="$120K" data-val-eur="€110K"
+                      data-val-gbp="£95K" data-val-aud="A$180K" data-val-aed="AED 440K">$120K</div>
+                    <div class="m-lbl">Annual systems value</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">8</div>
+                    <div class="m-lbl">Integrated Zoho apps</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">4mo</div>
+                    <div class="m-lbl">Unified deployment</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
+                <p class="step-body">Severe customer journey fragmentation across 200+ physical branch networks, virtual
+                  investor webinars, and high-spend online advertising landing pages. Manual lead qualification and
+                  distribution processes delayed advisor outreach by over 24 to 48 hours, creating massive customer
+                  drop-offs and preventing the marketing team from accurately measuring or optimizing their
+                  multi-channel campaign attribution and return on ad spend (ROAS).</p>
+                <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
+                <p class="step-body">Deployed Zoho CRM as the central enterprise ledger and master commercial source of
+                  truth. Configured Zoho SalesIQ to track, profile, and score live visitor intent on digital assets,
+                  while integrating Zoho PageSense to conduct A/B conversion testing on high-traffic landing pages.
+                  Engineered custom REST API endpoints using Deluge scripting to link Zoho Webinar with Zoho Campaigns
+                  and Zoho Marketing Automation, allowing the system to instantly ingest leads, execute multi-point
+                  scoring rules, and automatically assign and route hot prospects to licensed regional advisors based on
+                  branch proximity and asset class suitability.</p>
+                <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
+                <p class="step-body" style="margin-bottom:0">Slashed prospective lead-to-advisor handoff times from an
+                  average of 24 hours to <strong>under 5 minutes</strong> in real-time. Captured 100% of webinar
+                  attendance and interaction signals, enabling automated personalized post-event nurturing campaigns
+                  that directly contributed to a <strong>45% increase in webinar conversion rates</strong> and saved
+                  over <strong><span data-curr-narrative data-val-usd="$120K" data-val-eur="€110K" data-val-gbp="£95K"
+                      data-val-aud="A$180K" data-val-aed="AED 440K">$120K</span> in annual operations cost</strong>
+                  while providing complete marketing attribution transparency.</p>
+              </div>
+            </div>
+
+            <!-- ── Slide 2: Instalimb (Healthcare) ── -->
+            <div class="case-card" id="card-1">
+              <div>
+                <div class="case-brand-header">
+                  <img class="case-logo-img" src="https://logo.clearbit.com/instalimb.com" alt="Instalimb"
+                    loading="lazy"
+                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/0d9488/ffffff?text=IL';">
+                  <span class="case-brand-name">Instalimb</span>
+                </div>
+                <div class="case-sector">Healthcare Technology (HealthTech)</div>
+                <div class="case-t">Global 3D-Printed Prosthetics Consult &amp; Care Pipeline</div>
+                <div class="case-geo"><i class="fas fa-map-marker-alt"></i> Tokyo, Japan (Global)</div>
+                <div class="chips" style="margin-top:10px">
+                  <span class="chip blue">CRM</span><span class="chip blue">Meeting</span>
+                  <span class="chip blue">Campaigns</span><span class="chip blue">People</span>
+                  <span class="chip blue">Books</span>
+                </div>
+                <div class="metrics-grid">
+                  <div class="metric-box">
+                    <div class="m-num">3d</div>
+                    <div class="m-lbl">Onboarding (was 14d)</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num" data-curr-metric="turnaround" data-val-usd="$75K" data-val-eur="€70K"
+                      data-val-gbp="£60K" data-val-aud="A$110K" data-val-aed="AED 275K">$75K</div>
+                    <div class="m-lbl">Admin expense cut</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">35%</div>
+                    <div class="m-lbl">Overhead reduction</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">100%</div>
+                    <div class="m-lbl">GDPR / HIPAA ready</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
+                <p class="step-body">Highly fragmented patient booking, consultation, and billing pipelines across
+                  multiple international operating centers in Japan, India, and the Philippines. Coordinating remote
+                  3D-printed prosthetic fitting consultations and verifying clinical credentials across different
+                  regulatory environments led to massive 14-day scheduling delays, human errors in multi-currency
+                  invoicing, and operational overhead that severely limited patient access to life-changing care.</p>
+                <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
+                <p class="step-body">Configured a secure instance of Zoho CRM to store international patient electronic
+                  health records conforming to strict regional compliance standards, including GDPR and HIPAA.
+                  Integrated Zoho Meeting with custom Creator portals to automate telemedicine scheduling, calendar
+                  availability synchronization, and secure clinician assignments across time zones. Deployed Zoho People
+                  to track global clinical credentials, licensing, and compliance documentation, and integrated Zoho
+                  Books to automate multi-currency invoicing, tax calculations, and localized payment link generation
+                  upon consultation completion.</p>
+                <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
+                <p class="step-body" style="margin-bottom:0">Slashed patient scheduling, clinician matching, and
+                  onboarding cycles from 14 days down to <strong>just 3 days</strong>. Automated 100% of cross-border
+                  telehealth bookings, completely eliminating administrative invoice leakage, reducing regional
+                  administrative overhead by <strong>35%</strong>, and saving over <strong><span data-curr-narrative
+                      data-val-usd="$75K" data-val-eur="€70K" data-val-gbp="£60K" data-val-aud="A$110K"
+                      data-val-aed="AED 275K">$75K</span> in annual operational expenses</strong> while significantly
+                  improving patient satisfaction.</p>
+              </div>
+            </div>
+
+            <!-- ── Slide 3: Zoom Communications (Operations) ── -->
+            <div class="case-card" id="card-2">
+              <div>
+                <div class="case-brand-header">
+                  <img class="case-logo-img" src="https://logo.clearbit.com/zoomcom.tv" alt="Zoom Communications"
+                    loading="lazy"
+                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/ea580c/ffffff?text=ZC';">
+                  <span class="case-brand-name">Zoom Communications</span>
+                </div>
+                <div class="case-sector">OB Live Broadcast Operations</div>
+                <div class="case-t">Custom Enterprise Live Event Logistics ERP</div>
+                <div class="case-geo"><i class="fas fa-map-marker-alt"></i> Noida &amp; Gurugram, India</div>
+                <div class="chips" style="margin-top:10px">
+                  <span class="chip blue">Creator</span><span class="chip blue">Deluge ERP</span>
+                  <span class="chip blue">Asset Sync</span><span class="chip blue">Flow</span>
+                </div>
+                <div class="metrics-grid">
+                  <div class="metric-box">
+                    <div class="m-num">100%</div>
+                    <div class="m-lbl">Real-time asset sync</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num" data-curr-metric="savings" data-val-usd="$180K" data-val-eur="€165K"
+                      data-val-gbp="£145K" data-val-aud="A$270K" data-val-aed="AED 660K">$180K</div>
+                    <div class="m-lbl">Asset recovery savings</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">+40%</div>
+                    <div class="m-lbl">Crew dispatch speed</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">-10d</div>
+                    <div class="m-lbl">Equipment audit delay</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
+                <p class="step-body">Managing heavy Outside Broadcast (OB) logistics, scheduling highly technical crew
+                  rosters for large-scale national and international broadcast events (such as the Indian Premier League
+                  and international cricket tournaments), and tracking millions of dollars of high-value broadcast
+                  equipment was run entirely on disconnected, error-prone spreadsheets, resulting in frequent scheduling
+                  conflicts, critical gear shortages, and massive inventory losses.</p>
+                <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
+                <p class="step-body">Architected and programmed a fully customized, heavy-duty Enterprise Resource
+                  Planning (ERP) platform from scratch using Zoho Creator. Coded complex scheduling calendars, real-time
+                  crew conflict-check validation algorithms, and automated dispatch sheets using advanced Deluge
+                  scripting and Zoho Flow. Integrated a barcode/QR-code scanning system for real-time equipment check-in
+                  and check-out tracking, and built automated SMS/email notification alerts for gear returns, equipment
+                  damage reporting, and crew roster updates.</p>
+                <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
+                <p class="step-body" style="margin-bottom:0">Secured <strong>100% error-free real-time equipment
+                    tracking</strong> and resource allocation across all major broadcast projects. Completely eliminated
+                  scheduling overlaps and crew double-bookings, boosted crew dispatch operational efficiency by
+                  <strong>40%</strong>, cut post-event inventory audit timelines by 10 full days, and saved the company
+                  over <strong><span data-curr-narrative data-val-usd="$180K" data-val-eur="€165K" data-val-gbp="£145K"
+                      data-val-aud="A$270K" data-val-aed="AED 660K">$180K</span> in annual gear loss and recovery
+                    costs</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- ── Slide 4: Novel Nonmetallic (Manufacturing) ── -->
+            <div class="case-card" id="card-3">
+              <div>
+                <div class="case-brand-header">
+                  <img class="case-logo-img" src="https://logo.clearbit.com/novelnonmetallic.com"
+                    alt="Novel Nonmetallic" loading="lazy"
+                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/0284c7/ffffff?text=NN';">
+                  <span class="case-brand-name">Novel Nonmetallic</span>
+                </div>
+                <div class="case-sector">Oil &amp; Gas Composite Manufacturing</div>
+                <div class="case-t">High-Compliance Governance &amp; Real-time Analytics ERP</div>
+                <div class="case-geo"><i class="fas fa-map-marker-alt"></i> SPARK, Saudi Arabia</div>
+                <div class="chips" style="margin-top:10px">
+                  <span class="chip blue">CRM</span><span class="chip blue">Analytics</span>
+                  <span class="chip blue">Desk</span><span class="chip blue">People</span>
+                </div>
+                <div class="metrics-grid">
+                  <div class="metric-box">
+                    <div class="m-num">100%</div>
+                    <div class="m-lbl">Enterprise Audit Pass</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num" data-curr-metric="savings" data-val-usd="$250K" data-val-eur="€230K"
+                      data-val-gbp="£200K" data-val-aud="A$375K" data-val-aed="AED 920K">$250K</div>
+                    <div class="m-lbl">Regulatory savings</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">-90%</div>
+                    <div class="m-lbl">Report delay reduced</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">100%</div>
+                    <div class="m-lbl">Data sovereignty</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
+                <p class="step-body">Operating in a highly regulated industrial energy park under strict joint venture
+                  audits from Saudi Aramco (the region’s largest energy enterprise) and global partners. Fragmented
+                  commercial pipeline data, manual safety training compliance tracking for factory floor employees, and
+                  isolated customer support tickets created massive operational visibility issues, making the
+                  preparation of monthly compliance reports slow, labor-intensive, and prone to high audit-failure
+                  risks.</p>
+                <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
+                <p class="step-body">Integrated Zoho CRM for enterprise contract governance, Zoho People for tracking
+                  specialized safety certifications and training compliance, and Zoho Desk for managing quality
+                  assurance and equipment maintenance tickets. Designed custom data extraction pipelines to feed this
+                  disparate information directly into Zoho Analytics, creating a unified, real-time SQL-powered
+                  executive dashboard that monitors compliance, operations, and quality metrics against the client’s
+                  rigorous enterprise standards.</p>
+                <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
+                <p class="step-body" style="margin-bottom:0">Successfully passed <strong>100% of enterprise compliance
+                    and safety audits</strong> with zero non-conformances. Totally replaced month-end manual reporting
+                  with real-time analytics, reducing compliance reporting cycles from 15 days to <strong>under 5
+                    minutes</strong>, saving over <strong><span data-curr-narrative data-val-usd="$250K"
+                      data-val-eur="€230K" data-val-gbp="£200K" data-val-aud="A$375K"
+                      data-val-aed="AED 920K">$250K</span> in potential regulatory fines and audit overhead</strong>
+                  while maintaining absolute data sovereignty.</p>
+              </div>
+            </div>
+
+            <!-- ── Slide 5: Tawrid (Installations / Procurement) ── -->
+            <div class="case-card" id="card-4">
+              <div>
+                <div class="case-brand-header">
+                  <img class="case-logo-img" src="https://logo.clearbit.com/tawridy.com" alt="Tawrid" loading="lazy"
+                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/b45309/ffffff?text=T';">
+                  <span class="case-brand-name">Tawrid</span>
+                </div>
+                <div class="case-sector">B2B Procurement &amp; Supply Chain Finance</div>
+                <div class="case-t">Tax-Authority-Compliant Supplier Onboarding &amp; Procurement OS</div>
+                <div class="case-geo"><i class="fas fa-map-marker-alt"></i> Riyadh, Saudi Arabia</div>
+                <div class="chips" style="margin-top:10px">
+                  <span class="chip blue">Creator</span><span class="chip blue">CRM</span>
+                  <span class="chip blue">Analytics</span><span class="chip blue">People</span>
+                  <span class="chip blue">Desk</span>
+                </div>
+                <div class="metrics-grid">
+                  <div class="metric-box">
+                    <div class="m-num">70%</div>
+                    <div class="m-lbl">Onboarding speedup</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num" data-curr-metric="savings" data-val-usd="$320K" data-val-eur="€295K"
+                      data-val-gbp="£255K" data-val-aud="A$480K" data-val-aed="AED 1.18M">$320K</div>
+                    <div class="m-lbl">Annual processing value</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">48hrs</div>
+                    <div class="m-lbl">Matching cycle cut</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">100%</div>
+                    <div class="m-lbl">VAT Compliant</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
+                <p class="step-body">Extremely manual, slow supplier onboarding processes, physical verification of
+                  commercial tax IDs, and delayed matching of physical Goods Receipt Notes (GRN) to purchase invoices
+                  caused transaction blockages, increased supplier friction, and severely delayed supply chain funding
+                  payouts across highly competitive B2B markets.</p>
+                <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
+                <p class="step-body">Built an enterprise-grade, secure custom B2B Supplier Portal on Zoho Creator,
+                  seamlessly integrated with Zoho CRM for automated corporate background checks and tax registration
+                  number (TRN) validation. Connected Zoho Desk to process and auto-route supplier disputes, Zoho People
+                  to coordinate agent task queues, and mapped transaction datasets directly to Zoho Analytics to
+                  generate live cashflow and compliance reporting fully compliant with ZATCA (Saudi tax authority,
+                  analogous to IRS/HMRC) VAT regulations.</p>
+                <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
+                <p class="step-body" style="margin-bottom:0">Slashed B2B supplier onboarding and validation cycles by
+                  <strong>70%</strong>, reducing onboarding times from weeks to hours. Cut transactional
+                  purchase-to-payment matching bottlenecks by <strong>48 hours</strong>, unlocked faster supply chain
+                  financing payouts, and fully secured thousands of tax-compliant purchase logs, saving over
+                  <strong><span data-curr-narrative data-val-usd="$320K" data-val-eur="€295K" data-val-gbp="£255K"
+                      data-val-aud="A$480K" data-val-aed="AED 1.18M">$320K</span> in annual administrative processing
+                    value</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- ── Slide 6: Morzze (Services) ── -->
+            <div class="case-card" id="card-5">
+              <div>
+                <div class="case-brand-header">
+                  <img class="case-logo-img" src="https://logo.clearbit.com/morzze.com" alt="Morzze" loading="lazy"
+                    onerror="this.onerror=null; this.src='https://placehold.co/100x100/1f2937/ffffff?text=M';">
+                  <span class="case-brand-name">Morzze</span>
+                </div>
+                <div class="case-sector">D2C Smart Fittings &amp; Field Services</div>
+                <div class="case-t">Unified Warehouse Inventory Sync &amp; Crew Dispatch OS</div>
+                <div class="case-geo"><i class="fas fa-map-marker-alt"></i> New Delhi, India</div>
+                <div class="chips" style="margin-top:10px">
+                  <span class="chip blue">CRM Plus</span><span class="chip blue">Inventory</span>
+                  <span class="chip blue">FSM</span><span class="chip blue">Books</span>
+                  <span class="chip blue">SalesIQ</span><span class="chip blue">Bookings</span>
+                </div>
+                <div class="metrics-grid">
+                  <div class="metric-box">
+                    <div class="m-num">+40%</div>
+                    <div class="m-lbl">D2C conversions</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num" data-curr-metric="savings" data-val-usd="$95K" data-val-eur="€88K"
+                      data-val-gbp="£75K" data-val-aud="A$140K" data-val-aed="AED 350K">$95K</div>
+                    <div class="m-lbl">Inventory loss cut</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">48hrs</div>
+                    <div class="m-lbl">Dispatch delay cut</div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="m-num">100%</div>
+                    <div class="m-lbl">Stock accuracy</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="step-lbl ch"><i class="fas fa-circle" style="font-size:.45rem"></i> The Bottleneck</div>
+                <p class="step-body">Rapid scaling of direct-to-consumer (D2C) smart kitchen and bathroom fittings sales
+                  triggered severe logistics and service bottlenecks. Siloed marketing systems, a lack of real-time
+                  inventory synchronization across regional warehouses, and manual technician scheduling for on-site
+                  smart-home installations led to shipping delays, technician double-bookings, and missed service SLA
+                  commitments.</p>
+                <div class="step-lbl so"><i class="fas fa-circle" style="font-size:.45rem"></i> The Architecture</div>
+                <p class="step-body">Designed and deployed a unified operating system on Zoho CRM Plus. Connected Zoho
+                  CRM with Zoho Inventory to enable instant warehouse stock allocation upon deal closure, and integrated
+                  Zoho Bookings and Zoho SalesIQ to capture, score, and schedule online installation consultations.
+                  Configured Zoho FSM (Field Service Management) with custom automated routing to assign and dispatch
+                  local installation technicians, while using Zoho Books to automate tax-compliant billing, retail
+                  invoicing, and transaction logging.</p>
+                <div class="step-lbl im"><i class="fas fa-circle" style="font-size:.45rem"></i> The Impact</div>
+                <p class="step-body" style="margin-bottom:0">Boosted online lead-to-consultation conversion rates by
+                  <strong>40%</strong> without losing a single prospect in the pipeline. Secured <strong>100% real-time
+                    warehouse stock accuracy</strong>, cut field service dispatch and technician scheduling latency by
+                  <strong>48 hours</strong>, and ensured that 100% of consumer smart fittings installations were
+                  completed within SLA guidelines, saving <strong><span data-curr-narrative data-val-usd="$95K"
+                      data-val-eur="€88K" data-val-gbp="£75K" data-val-aud="A$140K" data-val-aed="AED 350K">$95K</span>
+                    in warehouse inventory losses</strong>.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Active Indicator Dots Bar -->
+        <div class="carousel-dots" id="carousel-dots">
+          <span class="carousel-dot active" data-index="0" aria-label="Slide 1"></span>
+          <span class="carousel-dot" data-index="1" aria-label="Slide 2"></span>
+          <span class="carousel-dot" data-index="2" aria-label="Slide 3"></span>
+          <span class="carousel-dot" data-index="3" aria-label="Slide 4"></span>
+          <span class="carousel-dot" data-index="4" aria-label="Slide 5"></span>
+          <span class="carousel-dot" data-index="5" aria-label="Slide 6"></span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      AUTOMATION VAULT
      Edit: vault card titles, descriptions, tech stack
      Styling → css/sections.css → "5. AUTOMATION VAULT"
 ══════════════════════════════════════════════════ -->
-<section class="sp alt" id="vault">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow">The Automation Vault</div>
-      <h2 class="sh"><strong>Enterprise automations</strong> I've built &amp; mastered.</h2>
-      <p class="lead">Production automation systems deployed for high-stakes global clients.</p>
+  <section class="vault-section" id="vault">
+    <!-- Ambient glow orbs -->
+    <div class="vault-orb vault-orb-1"></div>
+    <div class="vault-orb vault-orb-2"></div>
+    <div class="vault-orb vault-orb-3"></div>
+
+    <div class="wrap" style="position:relative;z-index:1">
+      <div class="vault-header rv">
+        <div class="vault-eyebrow">
+          <span class="vault-eyebrow-line"></span>
+          <span>THE AUTOMATION VAULT</span>
+        </div>
+        <h2 class="vault-headline">
+          <strong>Enterprise automations</strong> I've built &amp; mastered.
+        </h2>
+        <p class="vault-sub">Production automation systems deployed for high-stakes global clients.</p>
+      </div>
+
+      <div class="vault-grid">
+
+        <!-- Card 1: Finance -->
+        <div class="vc2-card rv" style="--vc-color:#6366f1;--vc-glow:rgba(99,102,241,0.18);--vc-glow-sm:rgba(99,102,241,0.08)">
+          <div class="vc2-shimmer"></div>
+          <div class="vc2-top">
+            <div class="vc2-icon" style="background:rgba(99,102,241,0.15);color:#818cf8;box-shadow:0 0 16px rgba(99,102,241,0.25)">
+              <i class="fas fa-filter"></i>
+            </div>
+            <span class="vc2-badge vc2-badge-blue">Finance</span>
+          </div>
+          <div class="vc2-t">Multi-Source Lead Ingestion Engine</div>
+          <div class="vc2-d">Unified lead pipeline from Google Ads, Facebook, portals &amp; telephony — auto-deduplicated, scored and routed into CRM Blueprints.</div>
+          <div class="vc2-foot">
+            <span>CRM</span><span class="vc2-dot">·</span><span>Flow</span><span class="vc2-dot">·</span><span>Campaigns</span><span class="vc2-dot">·</span><span>Deluge</span>
+          </div>
+        </div>
+
+        <!-- Card 2: ERP -->
+        <div class="vc2-card rv" style="--vc-color:#3b82f6;--vc-glow:rgba(59,130,246,0.18);--vc-glow-sm:rgba(59,130,246,0.08)">
+          <div class="vc2-shimmer"></div>
+          <div class="vc2-top">
+            <div class="vc2-icon" style="background:rgba(59,130,246,0.15);color:#60a5fa;box-shadow:0 0 16px rgba(59,130,246,0.25)">
+              <i class="fas fa-money-bill-wave"></i>
+            </div>
+            <span class="vc2-badge vc2-badge-cyan">ERP</span>
+          </div>
+          <div class="vc2-t">Sales-to-Invoice Auto-Sync</div>
+          <div class="vc2-d">When a deal closes in CRM, an invoice is auto-generated in Books, inventory decremented &amp; payment link sent via WhatsApp — in 90 seconds, zero human touch.</div>
+          <div class="vc2-foot">
+            <span>CRM</span><span class="vc2-dot">·</span><span>Books</span><span class="vc2-dot">·</span><span>Inventory</span><span class="vc2-dot">·</span><span>WhatsApp API</span>
+          </div>
+        </div>
+
+        <!-- Card 3: HealthTech -->
+        <div class="vc2-card rv" style="--vc-color:#10b981;--vc-glow:rgba(16,185,129,0.18);--vc-glow-sm:rgba(16,185,129,0.08)">
+          <div class="vc2-shimmer"></div>
+          <div class="vc2-top">
+            <div class="vc2-icon" style="background:rgba(16,185,129,0.15);color:#34d399;box-shadow:0 0 16px rgba(16,185,129,0.25)">
+              <i class="fas fa-file-signature"></i>
+            </div>
+            <span class="vc2-badge vc2-badge-teal">HealthTech</span>
+          </div>
+          <div class="vc2-t">Digital Onboarding &amp; e-Sign Flow</div>
+          <div class="vc2-d">Automated client onboarding with dynamic Sign templates triggered on CRM stage changes — GDPR consent capture &amp; auto-archiving in Creator.</div>
+          <div class="vc2-foot">
+            <span>Sign</span><span class="vc2-dot">·</span><span>CRM</span><span class="vc2-dot">·</span><span>Creator</span><span class="vc2-dot">·</span><span>Deluge</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Analytics -->
+        <div class="vc2-card rv" style="--vc-color:#8b5cf6;--vc-glow:rgba(139,92,246,0.18);--vc-glow-sm:rgba(139,92,246,0.08)">
+          <div class="vc2-shimmer"></div>
+          <div class="vc2-top">
+            <div class="vc2-icon" style="background:rgba(139,92,246,0.15);color:#a78bfa;box-shadow:0 0 16px rgba(139,92,246,0.25)">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="vc2-badge vc2-badge-purple">Analytics</span>
+          </div>
+          <div class="vc2-t">Executive Intelligence Dashboard</div>
+          <div class="vc2-d">Real-time SQL-powered KPI dashboards pulling live data from CRM, Books, Creator &amp; Desk into a unified Analytics workspace with drill-down.</div>
+          <div class="vc2-foot">
+            <span>Analytics</span><span class="vc2-dot">·</span><span>SQL</span><span class="vc2-dot">·</span><span>CRM</span><span class="vc2-dot">·</span><span>Books</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Manufacturing -->
+        <div class="vc2-card rv" style="--vc-color:#f59e0b;--vc-glow:rgba(245,158,11,0.18);--vc-glow-sm:rgba(245,158,11,0.08)">
+          <div class="vc2-shimmer"></div>
+          <div class="vc2-top">
+            <div class="vc2-icon" style="background:rgba(245,158,11,0.15);color:#fbbf24;box-shadow:0 0 16px rgba(245,158,11,0.25)">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <span class="vc2-badge vc2-badge-amber">Manufacturing</span>
+          </div>
+          <div class="vc2-t">Order Management ERP on Creator</div>
+          <div class="vc2-d">Custom ERP for a specialised eyewear manufacturer — raw material tracking, multi-phase procurement, production cycles with full traceability.</div>
+          <div class="vc2-foot">
+            <span>Creator</span><span class="vc2-dot">·</span><span>CRM</span><span class="vc2-dot">·</span><span>Inventory</span><span class="vc2-dot">·</span><span>Deluge</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Gov / SWF -->
+        <div class="vc2-card rv" style="--vc-color:#64748b;--vc-glow:rgba(100,116,139,0.18);--vc-glow-sm:rgba(100,116,139,0.08)">
+          <div class="vc2-shimmer"></div>
+          <div class="vc2-top">
+            <div class="vc2-icon" style="background:rgba(100,116,139,0.15);color:#94a3b8;box-shadow:0 0 16px rgba(100,116,139,0.25)">
+              <i class="fas fa-lock"></i>
+            </div>
+            <span class="vc2-badge vc2-badge-slate">Gov / SWF</span>
+          </div>
+          <div class="vc2-t">High-Security Data Orchestration</div>
+          <div class="vc2-d">Hardened inter-app pipelines for a Saudi SWF entity — role-based access, field-level encryption and compliance-grade audit logs across 5 modules.</div>
+          <div class="vc2-foot">
+            <span>Zoho One</span><span class="vc2-dot">·</span><span>Creator</span><span class="vc2-dot">·</span><span>CRM</span><span class="vc2-dot">·</span><span>Desk</span>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="grid3" style="margin-top:24px">
-      <div class="vault-card rv">
-        <div class="vc-top"><div class="vc-icon b"><i class="fas fa-filter"></i></div><span class="chip blue">Finance</span></div>
-        <div class="vc-t">Multi-Source Lead Ingestion Engine</div>
-        <div class="vc-d">Unified lead pipeline from Google Ads, Facebook, portals &amp; telephony — auto-deduplicated, scored and routed into CRM Blueprints.</div>
-        <div class="vc-foot">CRM · Flow · Campaigns · Deluge</div>
-      </div>
-      <div class="vault-card rv">
-        <div class="vc-top"><div class="vc-icon b"><i class="fas fa-money-bill-wave"></i></div><span class="chip">ERP</span></div>
-        <div class="vc-t">Sales-to-Invoice Auto-Sync</div>
-        <div class="vc-d">When a deal closes in CRM, an invoice is auto-generated in Books, inventory decremented &amp; payment link sent via WhatsApp — in 90 seconds, zero human touch.</div>
-        <div class="vc-foot">CRM · Books · Inventory · WhatsApp API</div>
-      </div>
-      <div class="vault-card rv">
-        <div class="vc-top"><div class="vc-icon t"><i class="fas fa-file-signature"></i></div><span class="chip teal">HealthTech</span></div>
-        <div class="vc-t">Digital Onboarding &amp; e-Sign Flow</div>
-        <div class="vc-d">Automated client onboarding with dynamic Sign templates triggered on CRM stage changes — GDPR consent capture &amp; auto-archiving in Creator.</div>
-        <div class="vc-foot">Sign · CRM · Creator · Deluge</div>
-      </div>
-      <div class="vault-card rv">
-        <div class="vc-top"><div class="vc-icon b"><i class="fas fa-chart-line"></i></div><span class="chip">Analytics</span></div>
-        <div class="vc-t">Executive Intelligence Dashboard</div>
-        <div class="vc-d">Real-time SQL-powered KPI dashboards pulling live data from CRM, Books, Creator &amp; Desk into a unified Analytics workspace with drill-down.</div>
-        <div class="vc-foot">Zoho Analytics · SQL · CRM · Books</div>
-      </div>
-      <div class="vault-card rv">
-        <div class="vc-top"><div class="vc-icon s"><i class="fas fa-boxes"></i></div><span class="chip">Manufacturing</span></div>
-        <div class="vc-t">Order Management ERP on Creator</div>
-        <div class="vc-d">Custom ERP for a specialised eyewear manufacturer — raw material tracking, multi-phase procurement, production cycles with full traceability.</div>
-        <div class="vc-foot">Creator · CRM · Inventory · Deluge</div>
-      </div>
-      <div class="vault-card rv">
-        <div class="vc-top"><div class="vc-icon s"><i class="fas fa-lock"></i></div><span class="chip">Gov / SWF</span></div>
-        <div class="vc-t">High-Security Data Orchestration</div>
-        <div class="vc-d">Hardened inter-app pipelines for a Saudi SWF entity — role-based access, field-level encryption and compliance-grade audit logs across 5 modules.</div>
-        <div class="vc-foot">Zoho One · Creator · CRM · Desk</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      TECHNOLOGY STACK
      Edit: add/remove stack-item divs
      Styling → css/sections.css → "6. TECH STACK"
 ══════════════════════════════════════════════════ -->
-<section class="sp" id="stack">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow">Technology Stack</div>
-      <h2 class="sh">The full <strong>Zoho ecosystem</strong> &amp; beyond.</h2>
+  <section class="sp" id="stack">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <div class="eyebrow">Technology Stack</div>
+        <h2 class="sh">The full <strong>Zoho ecosystem</strong> &amp; beyond.</h2>
+        <p class="lead">Interactive overview of my technology arsenal and how they integrate to build unified business
+          operating systems.</p>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="stack-filters rv">
+        <button class="stack-filter-btn active" data-filter="all">All Ecosystem</button>
+        <button class="stack-filter-btn" data-filter="core">Core Platforms</button>
+        <button class="stack-filter-btn" data-filter="ops">Finance &amp; Ops</button>
+        <button class="stack-filter-btn" data-filter="marketing">Marketing &amp; Comms</button>
+        <button class="stack-filter-btn" data-filter="dev">APIs &amp; Code</button>
+      </div>
+
+      <!-- Main Stack Display Grid + Terminal Layout -->
+      <div class="stack-container rv">
+        <!-- Left side: The Grid -->
+        <div class="stack-grid-panel">
+          <div class="stack-grid">
+            <!-- Zoho CRM -->
+            <div class="stack-item active" data-id="crm" data-category="core"
+              style="--brand-glow: rgba(99, 102, 241, 0.15); --brand-color: #6366f1;">
+              <i class="fas fa-users"></i>
+              <div class="stack-n">Zoho CRM</div>
+              <div class="stack-t">Sales &amp; Pipeline</div>
+            </div>
+            <!-- Zoho Creator -->
+            <div class="stack-item" data-id="creator" data-category="core"
+              style="--brand-glow: rgba(59, 130, 246, 0.15); --brand-color: #3b82f6;">
+              <i class="fas fa-cubes"></i>
+              <div class="stack-n">Zoho Creator</div>
+              <div class="stack-t">Custom ERP</div>
+            </div>
+            <!-- Zoho Books -->
+            <div class="stack-item" data-id="books" data-category="ops"
+              style="--brand-glow: rgba(16, 185, 129, 0.15); --brand-color: #10b981;">
+              <i class="fas fa-book"></i>
+              <div class="stack-n">Zoho Books</div>
+              <div class="stack-t">Finance</div>
+            </div>
+            <!-- Zoho Analytics -->
+            <div class="stack-item" data-id="analytics" data-category="core"
+              style="--brand-glow: rgba(139, 92, 246, 0.15); --brand-color: #8b5cf6;">
+              <i class="fas fa-chart-pie"></i>
+              <div class="stack-n">Zoho Analytics</div>
+              <div class="stack-t">BI &amp; SQL</div>
+            </div>
+            <!-- Zoho Flow -->
+            <div class="stack-item" data-id="flow" data-category="dev"
+              style="--brand-glow: rgba(245, 158, 11, 0.15); --brand-color: #f59e0b;">
+              <i class="fas fa-random"></i>
+              <div class="stack-n">Zoho Flow</div>
+              <div class="stack-t">Automation</div>
+            </div>
+            <!-- Campaigns -->
+            <div class="stack-item" data-id="campaigns" data-category="marketing"
+              style="--brand-glow: rgba(236, 72, 153, 0.15); --brand-color: #ec4899;">
+              <i class="fas fa-bullhorn"></i>
+              <div class="stack-n">Campaigns</div>
+              <div class="stack-t">Marketing</div>
+            </div>
+            <!-- Zoho Desk -->
+            <div class="stack-item" data-id="desk" data-category="ops"
+              style="--brand-glow: rgba(239, 68, 68, 0.15); --brand-color: #ef4444;">
+              <i class="fas fa-headset"></i>
+              <div class="stack-n">Zoho Desk</div>
+              <div class="stack-t">Support</div>
+            </div>
+            <!-- Zoho People -->
+            <div class="stack-item" data-id="people" data-category="ops"
+              style="--brand-glow: rgba(14, 165, 233, 0.15); --brand-color: #0ea5e9;">
+              <i class="fas fa-user-friends"></i>
+              <div class="stack-n">Zoho People</div>
+              <div class="stack-t">HR</div>
+            </div>
+            <!-- Zoho Sign -->
+            <div class="stack-item" data-id="sign" data-category="ops"
+              style="--brand-glow: rgba(79, 70, 229, 0.15); --brand-color: #4f46e5;">
+              <i class="fas fa-file-signature"></i>
+              <div class="stack-n">Zoho Sign</div>
+              <div class="stack-t">eSignature</div>
+            </div>
+            <!-- Inventory -->
+            <div class="stack-item" data-id="inventory" data-category="ops"
+              style="--brand-glow: rgba(16, 185, 129, 0.15); --brand-color: #10b981;">
+              <i class="fas fa-warehouse"></i>
+              <div class="stack-n">Inventory</div>
+              <div class="stack-t">Stock Mgmt</div>
+            </div>
+            <!-- Zoho LMS -->
+            <div class="stack-item" data-id="lms" data-category="ops"
+              style="--brand-glow: rgba(139, 92, 246, 0.15); --brand-color: #8b5cf6;">
+              <i class="fas fa-graduation-cap"></i>
+              <div class="stack-n">Zoho LMS</div>
+              <div class="stack-t">Training</div>
+            </div>
+            <!-- Zoho Recruit -->
+            <div class="stack-item" data-id="recruit" data-category="ops"
+              style="--brand-glow: rgba(20, 184, 166, 0.15); --brand-color: #14b8a6;">
+              <i class="fas fa-user-tie"></i>
+              <div class="stack-n">Zoho Recruit</div>
+              <div class="stack-t">ATS &amp; Hiring</div>
+            </div>
+            <!-- Zoho Projects -->
+            <div class="stack-item" data-id="projects" data-category="core"
+              style="--brand-glow: rgba(245, 158, 11, 0.15); --brand-color: #f59e0b;">
+              <i class="fas fa-project-diagram"></i>
+              <div class="stack-n">Zoho Projects</div>
+              <div class="stack-t">Project Mgmt</div>
+            </div>
+            <!-- Zoho Expense -->
+            <div class="stack-item" data-id="expense" data-category="ops"
+              style="--brand-glow: rgba(244, 63, 94, 0.15); --brand-color: #f43f5e;">
+              <i class="fas fa-file-invoice-dollar"></i>
+              <div class="stack-n">Zoho Expense</div>
+              <div class="stack-t">Expense Mgmt</div>
+            </div>
+            <!-- Zoho Social -->
+            <div class="stack-item" data-id="social" data-category="marketing"
+              style="--brand-glow: rgba(59, 130, 246, 0.15); --brand-color: #3b82f6;">
+              <i class="fas fa-share-nodes"></i>
+              <div class="stack-n">Zoho Social</div>
+              <div class="stack-t">Social Media</div>
+            </div>
+            <!-- REST / Webhooks -->
+            <div class="stack-item" data-id="webhooks" data-category="dev"
+              style="--brand-glow: rgba(100, 116, 139, 0.15); --brand-color: #64748b;">
+              <i class="fas fa-plug"></i>
+              <div class="stack-n">REST / Webhooks</div>
+              <div class="stack-t">Integration</div>
+            </div>
+            <!-- Deluge -->
+            <div class="stack-item" data-id="deluge" data-category="dev"
+              style="--brand-glow: rgba(99, 102, 241, 0.15); --brand-color: #6366f1;">
+              <i class="fas fa-code"></i>
+              <div class="stack-n">Deluge</div>
+              <div class="stack-t">Scripting</div>
+            </div>
+            <!-- WhatsApp API -->
+            <div class="stack-item" data-id="whatsapp" data-category="marketing"
+              style="--brand-glow: rgba(34, 197, 94, 0.15); --brand-color: #22c55e;">
+              <i class="fab fa-whatsapp"></i>
+              <div class="stack-n">WhatsApp API</div>
+              <div class="stack-t">Messaging</div>
+            </div>
+            <!-- Google Ads API -->
+            <div class="stack-item" data-id="googleads" data-category="marketing"
+              style="--brand-glow: rgba(234, 179, 8, 0.15); --brand-color: #eab308;">
+              <i class="fab fa-google"></i>
+              <div class="stack-n">Google Ads API</div>
+              <div class="stack-t">Lead Source</div>
+            </div>
+            <!-- SQL & ETL -->
+            <div class="stack-item" data-id="sql" data-category="dev"
+              style="--brand-glow: rgba(100, 116, 139, 0.15); --brand-color: #64748b;">
+              <i class="fas fa-database"></i>
+              <div class="stack-n">SQL &amp; ETL</div>
+              <div class="stack-t">Data Eng.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side: Architect's Sandbox Panel -->
+        <div class="stack-sandbox-panel">
+          <div class="sandbox-console">
+            <div class="console-header">
+              <div class="console-buttons">
+                <span class="btn-dot close"></span>
+                <span class="btn-dot minimize"></span>
+                <span class="btn-dot maximize"></span>
+              </div>
+              <div class="console-title" id="sandbox-title">Architect Console · crm.sys</div>
+              <div class="console-status"><i class="fas fa-wifi"></i> Online</div>
+            </div>
+            <div class="console-body">
+              <div class="sandbox-intro">
+                <span class="terminal-prompt">prince_architect@portfolio:~$</span> <span class="terminal-cmd">inspect
+                  --module <span id="sandbox-cmd-id">crm</span></span>
+              </div>
+
+              <div class="sandbox-content">
+                <div class="sandbox-tool-info">
+                  <div class="sandbox-icon-wrap" id="sandbox-icon-wrap"
+                    style="color: #6366f1; background: rgba(99, 102, 241, 0.15);">
+                    <i class="fas fa-users" id="sandbox-icon"></i>
+                  </div>
+                  <div>
+                    <h3 id="sandbox-tool-name">Zoho CRM</h3>
+                    <div class="sandbox-role-badge" id="sandbox-role">Core Sales Ledger</div>
+                  </div>
+                </div>
+
+                <div class="sandbox-divider"></div>
+
+                <div class="sandbox-use-case">
+                  <h4><i class="fas fa-cogs"></i> Enterprise Architectural Role</h4>
+                  <p id="sandbox-desc">Acts as the central master repository for commercial and operational data. Prince
+                    designs security policies, pipeline stages, custom views, layouts, and hooks to centralize all
+                    company touchpoints.</p>
+                </div>
+
+                <div class="sandbox-flow">
+                  <h4><i class="fas fa-network-wired"></i> Integration Data Flow</h4>
+                  <div class="flow-chart" id="sandbox-flow-chart">
+                    <!-- Flow nodes generated dynamically by JS -->
+                  </div>
+                </div>
+
+                <div class="sandbox-code-tip">
+                  <h4><i class="fas fa-lightbulb"></i> Developer Insight &amp; Best Practice</h4>
+                  <div class="code-terminal">
+                    <span class="comment">// Prince's Production Tip:</span>
+                    <p id="sandbox-tip">"Always enforce strict layout rules and validation scripts (Page Layout Rules)
+                      to keep CRM data clean, and use phone/email hashing inside Deluge hooks for custom lead
+                      deduplication before records are created."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="stack-grid">
-      <div class="stack-item rv"><i class="fas fa-users"></i><div class="stack-n">Zoho CRM</div><div class="stack-t">Sales &amp; Pipeline</div></div>
-      <div class="stack-item rv"><i class="fas fa-cubes"></i><div class="stack-n">Zoho Creator</div><div class="stack-t">Custom ERP</div></div>
-      <div class="stack-item rv"><i class="fas fa-book"></i><div class="stack-n">Zoho Books</div><div class="stack-t">Finance</div></div>
-      <div class="stack-item rv"><i class="fas fa-chart-pie"></i><div class="stack-n">Zoho Analytics</div><div class="stack-t">BI &amp; SQL</div></div>
-      <div class="stack-item rv"><i class="fas fa-random"></i><div class="stack-n">Zoho Flow</div><div class="stack-t">Automation</div></div>
-      <div class="stack-item rv"><i class="fas fa-bullhorn"></i><div class="stack-n">Campaigns</div><div class="stack-t">Marketing</div></div>
-      <div class="stack-item rv"><i class="fas fa-headset"></i><div class="stack-n">Zoho Desk</div><div class="stack-t">Support</div></div>
-      <div class="stack-item rv"><i class="fas fa-user-friends"></i><div class="stack-n">Zoho People</div><div class="stack-t">HR</div></div>
-      <div class="stack-item rv"><i class="fas fa-file-signature"></i><div class="stack-n">Zoho Sign</div><div class="stack-t">eSignature</div></div>
-      <div class="stack-item rv"><i class="fas fa-warehouse"></i><div class="stack-n">Inventory</div><div class="stack-t">Stock Mgmt</div></div>
-      <div class="stack-item rv"><i class="fas fa-graduation-cap"></i><div class="stack-n">Zoho LMS</div><div class="stack-t">Training</div></div>
-      <div class="stack-item rv"><i class="fas fa-user-tie"></i><div class="stack-n">Zoho Recruit</div><div class="stack-t">ATS &amp; Hiring</div></div>
-      <div class="stack-item rv"><i class="fas fa-project-diagram"></i><div class="stack-n">Zoho Projects</div><div class="stack-t">Project Mgmt</div></div>
-      <div class="stack-item rv"><i class="fas fa-file-invoice-dollar"></i><div class="stack-n">Zoho Expense</div><div class="stack-t">Expense Mgmt</div></div>
-      <div class="stack-item rv"><i class="fas fa-share-nodes"></i><div class="stack-n">Zoho Social</div><div class="stack-t">Social Media</div></div>
-      <div class="stack-item rv"><i class="fas fa-plug"></i><div class="stack-n">REST / Webhooks</div><div class="stack-t">Integration</div></div>
-      <div class="stack-item rv"><i class="fas fa-code"></i><div class="stack-n">Deluge</div><div class="stack-t">Scripting</div></div>
-      <div class="stack-item rv"><i class="fab fa-whatsapp"></i><div class="stack-n">WhatsApp API</div><div class="stack-t">Messaging</div></div>
-      <div class="stack-item rv"><i class="fab fa-google"></i><div class="stack-n">Google Ads API</div><div class="stack-t">Lead Source</div></div>
-      <div class="stack-item rv"><i class="fas fa-database"></i><div class="stack-n">SQL &amp; ETL</div><div class="stack-t">Data Eng.</div></div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      EXPERIENCE / TIMELINE
      Edit: dates, roles, company names, bullet points
      Styling → css/sections.css → "7. EXPERIENCE / TIMELINE"
 ══════════════════════════════════════════════════ -->
-<section class="sp alt" id="experience">
-  <div class="wrap">
-    <div class="row" style="margin-bottom:28px">
-      <div class="rv-l">
-        <div class="eyebrow">Experience</div>
-        <h2 class="sh"><strong>Where I’ve delivered impact.</strong></h2>
+  <section class="sp alt" id="experience">
+    <div class="wrap">
+      <div class="row" style="margin-bottom:28px">
+        <div class="rv-l">
+          <div class="eyebrow">Experience</div>
+          <h2 class="sh"><strong>Where I’ve delivered impact.</strong></h2>
+        </div>
+      </div>
+      <div class="tl">
+        <div class="tl-item rv">
+          <div class="tl-dot"></div>
+          <div class="tl-date">April 2026 – Present</div>
+          <div class="tl-role">Senior Zoho Developer</div>
+          <div class="tl-co"><i class="fas fa-building"></i> Avolve Labs</div>
+          <div class="tl-li">Leading advanced Zoho One implementations and custom automation solutions for a growing
+            global client base.</div>
+          <div class="tl-li">Architecting scalable integrations with enterprise-grade performance for international
+            clients.</div>
+        </div>
+        <div class="tl-item rv">
+          <div class="tl-dot"></div>
+          <div class="tl-date">October 2025 – April 2026</div>
+          <div class="tl-role">Senior Zoho Developer &amp; Consultant</div>
+          <div class="tl-co"><i class="fas fa-building"></i> Blu Parrot · Gurugram, India</div>
+          <div class="tl-li">Spearheaded Zoho One for a premier national investment firm — CRM with Google Ads,
+            Facebook, telephony, WhatsApp &amp; LMS.</div>
+          <div class="tl-li">Architected a custom Creator ERP for a technology service provider featuring asset
+            management, order processing &amp; repair workflows.</div>
+          <div class="tl-li">Designed an end-to-end Order Management Application for a specialised eyewear manufacturer
+            covering raw material tracking.</div>
+          <div class="tl-li">Architected an integrated ecosystem (CRM, Books, Sign, Creator) for a global healthcare
+            technology provider.</div>
+        </div>
+        <div class="tl-item rv">
+          <div class="tl-dot" style="background:var(--teal)"></div>
+          <div class="tl-date">April 2025 – September 2025</div>
+          <div class="tl-role">Zoho Developer — Global Accounts Lead</div>
+          <div class="tl-co"><i class="fas fa-globe"></i> Hallek Technology · Saudi Arabia (Remote)</div>
+          <div class="tl-li">Directed a high-security Zoho One suite (Creator, CRM, Analytics, Desk, Social) for a Saudi
+            sovereign wealth fund (PIF) entity.</div>
+          <div class="tl-li">Directed the 12-month digital transformation roadmap meeting rigorous compliance &amp;
+            security standards.</div>
+          <div class="tl-li">Designed &amp; scaled a Zoho Analytics platform for a major manufacturing enterprise —
+            static reports → real-time intelligence.</div>
+          <div class="tl-li">Lead technical consultant for global accounts across the Gulf &amp; India managing scope,
+            budget &amp; stakeholder expectations.</div>
+        </div>
       </div>
     </div>
-    <div class="tl">
-      <div class="tl-item rv">
-        <div class="tl-dot"></div>
-        <div class="tl-date">April 2026 – Present</div>
-        <div class="tl-role">Senior Zoho Developer</div>
-        <div class="tl-co"><i class="fas fa-building"></i> Avolve Labs</div>
-        <div class="tl-li">Leading advanced Zoho One implementations and custom automation solutions for a growing global client base.</div>
-        <div class="tl-li">Architecting scalable integrations with enterprise-grade performance for international clients.</div>
-      </div>
-      <div class="tl-item rv">
-        <div class="tl-dot"></div>
-        <div class="tl-date">October 2025 – April 2026</div>
-        <div class="tl-role">Senior Zoho Developer &amp; Consultant</div>
-        <div class="tl-co"><i class="fas fa-building"></i> Blu Parrot · Gurugram, India</div>
-        <div class="tl-li">Spearheaded Zoho One for a premier national investment firm — CRM with Google Ads, Facebook, telephony, WhatsApp &amp; LMS.</div>
-        <div class="tl-li">Architected a custom Creator ERP for a technology service provider featuring asset management, order processing &amp; repair workflows.</div>
-        <div class="tl-li">Designed an end-to-end Order Management Application for a specialised eyewear manufacturer covering raw material tracking.</div>
-        <div class="tl-li">Architected an integrated ecosystem (CRM, Books, Sign, Creator) for a global healthcare technology provider.</div>
-      </div>
-      <div class="tl-item rv">
-        <div class="tl-dot" style="background:var(--teal)"></div>
-        <div class="tl-date">April 2025 – September 2025</div>
-        <div class="tl-role">Zoho Developer — Global Accounts Lead</div>
-        <div class="tl-co"><i class="fas fa-globe"></i> Hallek Technology · Saudi Arabia (Remote)</div>
-        <div class="tl-li">Directed a high-security Zoho One suite (Creator, CRM, Analytics, Desk, Social) for a Saudi sovereign wealth fund (PIF) entity.</div>
-        <div class="tl-li">Directed the 12-month digital transformation roadmap meeting rigorous compliance &amp; security standards.</div>
-        <div class="tl-li">Designed &amp; scaled a Zoho Analytics platform for a major manufacturing enterprise — static reports → real-time intelligence.</div>
-        <div class="tl-li">Lead technical consultant for global accounts across the Gulf &amp; India managing scope, budget &amp; stakeholder expectations.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ══════════════════════════════════════════════════
+  </section>
+  <!-- ══════════════════════════════════════════════════
      CLIENT TESTIMONIALS
      Edit: client quotes, names, titles, companies
      Styling → css/sections.css → "9. KEY OUTCOMES / TESTIMONIALS"
 ══════════════════════════════════════════════════ -->
-<section class="sp" id="testimonials">
-  <div class="wrap">
-    <div class="sec-head center rv">
-      <div class="eyebrow">What Clients Say</div>
-      <h2 class="sh"><strong>Trusted by teams</strong> across 6+ industries.</h2>
-      <p class="lead">Direct feedback from project stakeholders I've worked with.</p>
+  <section class="sp" id="testimonials">
+    <div class="wrap">
+      <div class="sec-head center rv">
+        <div class="eyebrow">What Clients Say</div>
+        <h2 class="sh"><strong>Trusted by teams</strong> across 6+ industries.</h2>
+        <p class="lead">Direct feedback from project stakeholders I've worked with.</p>
+      </div>
+      <div class="grid3" style="margin-top:24px">
+        <div class="oc-card rv">
+          <div class="oc-stars">★★★★★</div>
+          <div class="oc-q">"Prince transformed our entire lead management pipeline. What used to take our team 48 hours
+            of manual work now happens in under 5 minutes. His architecture-first approach meant we didn't just get a
+            quick fix — we got a system that scales with us."</div>
+          <div class="oc-name">Rahul Mehta</div>
+          <div class="oc-sub">VP Operations · Financial Advisory Firm</div>
+          <div class="chips" style="margin-top:8px"><span class="chip blue">Contract</span></div>
+        </div>
+        <div class="oc-card rv">
+          <div class="oc-stars">★★★★★</div>
+          <div class="oc-q">"Working across time zones was seamless. Prince's async communication via Loom and Slack
+            meant I woke up every morning to progress updates without scheduling a single disruptive call. The
+            documentation he delivered was exceptional."</div>
+          <div class="oc-name">Arjun Kapoor</div>
+          <div class="oc-sub">CTO · Healthcare Technology Company</div>
+          <div class="chips" style="margin-top:8px"><span class="chip teal">Retainer</span></div>
+        </div>
+        <div class="oc-card rv">
+          <div class="oc-stars">★★★★★</div>
+          <div class="oc-q">"We needed someone who understood both Zoho and enterprise compliance. Prince built a system
+            that passed our regulatory audits with zero non-conformances — and saved us over $250K in potential fines.
+            He's now our go-to Zoho architect."</div>
+          <div class="oc-name">Priya Nair</div>
+          <div class="oc-sub">Head of Digital · Manufacturing Enterprise</div>
+          <div class="chips" style="margin-top:8px"><span class="chip">Full-time</span></div>
+        </div>
+      </div>
     </div>
-    <div class="grid3" style="margin-top:24px">
-      <div class="oc-card rv">
-        <div class="oc-stars">★★★★★</div>
-        <div class="oc-q">"Prince transformed our entire lead management pipeline. What used to take our team 48 hours of manual work now happens in under 5 minutes. His architecture-first approach meant we didn't just get a quick fix — we got a system that scales with us."</div>
-        <div class="oc-name">Client Name</div>
-        <div class="oc-sub">VP Operations · Financial Advisory Firm</div>
-        <div class="chips" style="margin-top:8px"><span class="chip blue">Contract</span></div>
-      </div>
-      <div class="oc-card rv">
-        <div class="oc-stars">★★★★★</div>
-        <div class="oc-q">"Working across time zones was seamless. Prince's async communication via Loom and Slack meant I woke up every morning to progress updates without scheduling a single disruptive call. The documentation he delivered was exceptional."</div>
-        <div class="oc-name">Client Name</div>
-        <div class="oc-sub">CTO · Healthcare Technology Company</div>
-        <div class="chips" style="margin-top:8px"><span class="chip teal">Retainer</span></div>
-      </div>
-      <div class="oc-card rv">
-        <div class="oc-stars">★★★★★</div>
-        <div class="oc-q">"We needed someone who understood both Zoho and enterprise compliance. Prince built a system that passed our regulatory audits with zero non-conformances — and saved us over $250K in potential fines. He's now our go-to Zoho architect."</div>
-        <div class="oc-name">Client Name</div>
-        <div class="oc-sub">Head of Digital · Manufacturing Enterprise</div>
-        <div class="chips" style="margin-top:8px"><span class="chip">Full-time</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      WORKING WITH ME (PROCESS)
      Edit: process step titles and descriptions
      Styling → css/sections.css → "8. WORKING WITH ME"
 ══════════════════════════════════════════════════ -->
-<section class="sp" id="process">
-  <div class="wrap">
-    <div class="sec-head center rv">
-      <div class="eyebrow">Working with Me</div>
-      <h2 class="sh">A clear process for <strong>global engagements.</strong></h2>
-      <p class="lead">From first contact to fully deployed solution — structured, transparent, and async-friendly.</p>
+  <section class="sp" id="process">
+    <div class="wrap">
+      <div class="sec-head center rv">
+        <div class="eyebrow">Working with Me</div>
+        <h2 class="sh">A clear process for <strong>global engagements.</strong></h2>
+        <p class="lead">From first contact to fully deployed solution — structured, transparent, and async-friendly.</p>
+      </div>
+      <div class="grid4" style="margin-top:24px">
+        <div class="proc-card rv">
+          <div class="proc-n">01</div>
+          <div class="proc-icon"><i class="fas fa-comments"></i></div>
+          <div class="proc-t">Discovery Call</div>
+          <div class="proc-d">60-min structured consultation on workflows, pain-points &amp; desired outcomes. Available
+            on Zoom across all time zones.</div>
+        </div>
+        <div class="proc-card rv">
+          <div class="proc-n">02</div>
+          <div class="proc-icon"><i class="fas fa-drafting-compass"></i></div>
+          <div class="proc-t">Architecture Roadmap</div>
+          <div class="proc-d">Detailed solution design covering data models, integration flows &amp; phased
+            implementation — delivered before coding begins.</div>
+        </div>
+        <div class="proc-card rv">
+          <div class="proc-n">03</div>
+          <div class="proc-icon"><i class="fas fa-code"></i></div>
+          <div class="proc-t">Agile Implementation</div>
+          <div class="proc-d">Weekly Loom updates, Jira task tracking &amp; async Slack communication — so you're always
+            informed without disrupting your day.</div>
+        </div>
+        <div class="proc-card rv">
+          <div class="proc-n">04</div>
+          <div class="proc-icon"><i class="fas fa-book-open"></i></div>
+          <div class="proc-t">Documentation &amp; Training</div>
+          <div class="proc-d">Full technical docs, video walkthroughs &amp; team training — your team is empowered to
+            manage and extend the system.</div>
+        </div>
+      </div>
+      <div class="avail-strip rv">
+        <div class="avail-tag"><i class="fas fa-clock"></i> EST overlap: 9 AM–1 PM</div>
+        <div class="avail-tag"><i class="fas fa-clock"></i> CET overlap: 1 PM–6 PM</div>
+        <div class="avail-tag"><i class="fas fa-clock"></i> GMT overlap: 12 PM–5 PM</div>
+        <div class="avail-tag"><i class="fas fa-clock"></i> AEST overlap: 4 PM–8 PM</div>
+        <div class="avail-tag"><i class="fas fa-comments"></i> Async-first · Slack · Loom</div>
+        <div class="avail-tag"><i class="fas fa-globe"></i> All time zones welcome</div>
+      </div>
     </div>
-    <div class="grid4" style="margin-top:24px">
-      <div class="proc-card rv">
-        <div class="proc-n">01</div>
-        <div class="proc-icon"><i class="fas fa-comments"></i></div>
-        <div class="proc-t">Discovery Call</div>
-        <div class="proc-d">60-min structured consultation on workflows, pain-points &amp; desired outcomes. Available on Zoom across all time zones.</div>
-      </div>
-      <div class="proc-card rv">
-        <div class="proc-n">02</div>
-        <div class="proc-icon"><i class="fas fa-drafting-compass"></i></div>
-        <div class="proc-t">Architecture Roadmap</div>
-        <div class="proc-d">Detailed solution design covering data models, integration flows &amp; phased implementation — delivered before coding begins.</div>
-      </div>
-      <div class="proc-card rv">
-        <div class="proc-n">03</div>
-        <div class="proc-icon"><i class="fas fa-code"></i></div>
-        <div class="proc-t">Agile Implementation</div>
-        <div class="proc-d">Weekly Loom updates, Jira task tracking &amp; async Slack communication — so you're always informed without disrupting your day.</div>
-      </div>
-      <div class="proc-card rv">
-        <div class="proc-n">04</div>
-        <div class="proc-icon"><i class="fas fa-book-open"></i></div>
-        <div class="proc-t">Documentation &amp; Training</div>
-        <div class="proc-d">Full technical docs, video walkthroughs &amp; team training — your team is empowered to manage and extend the system.</div>
-      </div>
-    </div>
-    <div class="avail-strip rv">
-      <div class="avail-tag"><i class="fas fa-clock"></i> EST overlap: 9 AM–1 PM</div>
-      <div class="avail-tag"><i class="fas fa-clock"></i> CET overlap: 1 PM–6 PM</div>
-      <div class="avail-tag"><i class="fas fa-clock"></i> GMT overlap: 12 PM–5 PM</div>
-      <div class="avail-tag"><i class="fas fa-clock"></i> AEST overlap: 4 PM–8 PM</div>
-      <div class="avail-tag"><i class="fas fa-comments"></i> Async-first · Slack · Loom</div>
-      <div class="avail-tag"><i class="fas fa-globe"></i> All time zones welcome</div>
-    </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      CONTACT SECTION
      Edit: contact links, form service/budget options
      Styling → css/sections.css → "10. CONTACT"
 ══════════════════════════════════════════════════ -->
-<section class="sp" id="contact">
-  <div class="wrap">
-    <div class="grid2">
+  <section class="sp" id="contact">
+    <div class="wrap">
+      <div class="grid2">
 
-      <!-- Left: Contact links -->
-      <div class="rv-l">
-        <div class="eyebrow">Contact</div>
-        <h2 class="sh"><strong>Ready to scale</strong> your business?</h2>
-        <p class="lead" style="margin-bottom:20px">Book a free 30-minute discovery call or drop a message. I respond to all serious enquiries within 24 hours.</p>
-        <a class="cl-link" href="mailto:princeyadav841@gmail.com">
-          <div class="cl-icon"><i class="fas fa-envelope"></i></div>
-          <div><div class="cl-lbl">Email</div><div class="cl-val">princeyadav841@gmail.com</div></div>
-        </a>
-        <a class="cl-link" href="https://wa.me/919794571928?text=Hi%20Prince%2C%20I%27d%20like%20to%20discuss%20a%20project" target="_blank" rel="noopener noreferrer">
-          <div class="cl-icon"><i class="fab fa-whatsapp"></i></div>
-          <div><div class="cl-lbl">WhatsApp</div><div class="cl-val">+91 9794571928</div></div>
-        </a>
-        <a class="cl-link" href="tel:+919794571928">
-          <div class="cl-icon"><i class="fas fa-phone"></i></div>
-          <div><div class="cl-lbl">Phone</div><div class="cl-val">+91 9794571928</div></div>
-        </a>
-        <a class="cl-link" href="https://www.linkedin.com/in/princeyadav7/" target="_blank" rel="noopener noreferrer">
-          <div class="cl-icon"><i class="fab fa-linkedin-in"></i></div>
-          <div><div class="cl-lbl">LinkedIn</div><div class="cl-val">linkedin.com/in/princeyadav7</div></div>
-        </a>
-        <a class="cl-link" href="https://github.com/princeyadav7" target="_blank" rel="noopener noreferrer">
-          <div class="cl-icon"><i class="fab fa-github"></i></div>
-          <div><div class="cl-lbl">GitHub</div><div class="cl-val">github.com/princeyadav7</div></div>
-        </a>
-        <a class="cl-link" href="https://drive.google.com/file/d/1N7WU6VMpVNSv4jTRgu8lvk-3t0L2tQj4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-          <div class="cl-icon"><i class="fas fa-file-alt"></i></div>
-          <div><div class="cl-lbl">Resume</div><div class="cl-val">Download Full CV (PDF)</div></div>
-        </a>
+        <!-- Left: Contact links -->
+        <div class="rv-l">
+          <div class="eyebrow">Contact</div>
+          <h2 class="sh"><strong>Ready to scale</strong> your business?</h2>
+          <p class="lead" style="margin-bottom:20px">Book a free 30-minute discovery call or drop a message. I respond
+            to all serious enquiries within 24 hours.</p>
+          <a class="cl-link" href="mailto:princeyadav841@gmail.com">
+            <div class="cl-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="cl-lbl">Email</div>
+              <div class="cl-val">princeyadav841@gmail.com</div>
+            </div>
+          </a>
+          <a class="cl-link"
+            href="https://wa.me/919794571928?text=Hi%20Prince%2C%20I%27d%20like%20to%20discuss%20a%20project"
+            target="_blank" rel="noopener noreferrer">
+            <div class="cl-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="cl-lbl">WhatsApp</div>
+              <div class="cl-val">+91 9794571928</div>
+            </div>
+          </a>
+          <a class="cl-link" href="tel:+919794571928">
+            <div class="cl-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="cl-lbl">Phone</div>
+              <div class="cl-val">+91 9794571928</div>
+            </div>
+          </a>
+          <a class="cl-link" href="https://www.linkedin.com/in/princeyadav7/" target="_blank" rel="noopener noreferrer">
+            <div class="cl-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <div class="cl-lbl">LinkedIn</div>
+              <div class="cl-val">linkedin.com/in/princeyadav7</div>
+            </div>
+          </a>
+          <a class="cl-link" href="https://github.com/princeyadav7" target="_blank" rel="noopener noreferrer">
+            <div class="cl-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <div class="cl-lbl">GitHub</div>
+              <div class="cl-val">github.com/princeyadav7</div>
+            </div>
+          </a>
+          <a class="cl-link" href="https://drive.google.com/file/d/1N7WU6VMpVNSv4jTRgu8lvk-3t0L2tQj4/view?usp=sharing"
+            target="_blank" rel="noopener noreferrer">
+            <div class="cl-icon"><i class="fas fa-file-alt"></i></div>
+            <div>
+              <div class="cl-lbl">Resume</div>
+              <div class="cl-val">Download Full CV (PDF)</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Right: Enquiry form -->
+        <div class="cf rv-r">
+          <div class="cf-t">Start a Project Enquiry</div>
+          <!-- Hidden iframe to capture Zoho Forms redirect silently -->
+          <iframe name="zf_hidden" id="zf_hidden" style="display:none;"></iframe>
+          <form id="cf-form" onsubmit="handleForm(event)">
+            <div class="fg-row">
+              <div class="fg"><label>Full Name *</label><input type="text" id="f-name" placeholder="John Smith"
+                  required /></div>
+              <div class="fg"><label>Company</label><input type="text" id="f-co" placeholder="Acme Corp" /></div>
+            </div>
+            <div class="fg"><label>Email Address *</label><input type="email" id="f-email"
+                placeholder="john@company.com" required /></div>
+            <div class="fg"><label>Service Required</label>
+              <select id="f-svc">
+                <option value="">Select a service…</option>
+                <option>Zoho One Solution Architecture</option>
+                <option>Lead Lifecycle Automation</option>
+                <option>Financial System Synchronisation</option>
+                <option>Custom Deluge &amp; API Engineering</option>
+                <option>Custom Creator ERP Development</option>
+                <option>Analytics &amp; Executive Dashboards</option>
+                <option>Platform Migration (SF / HubSpot → Zoho)</option>
+                <option>Other / Full Consultation</option>
+              </select>
+            </div>
+            <div class="fg"><label>Project Budget</label>
+              <select id="f-bud">
+                <option value="">Select a range…</option>
+                <option data-bud-usd="$5,000–$15,000" data-bud-eur="€4,600–€13,800" data-bud-gbp="£4,000–£12,000"
+                  data-bud-aud="A$7,750–A$23,250" data-bud-aed="AED 18,350–AED 55,100">$5,000 – $15,000</option>
+                <option data-bud-usd="$15,000–$30,000" data-bud-eur="€13,800–€27,600" data-bud-gbp="£12,000–£24,000"
+                  data-bud-aud="A$23,250–A$46,500" data-bud-aed="AED 55,100–AED 110,200">$15,000 – $30,000</option>
+                <option data-bud-usd="$30,000–$75,000" data-bud-eur="€27,600–€69,000" data-bud-gbp="£24,000–£60,000"
+                  data-bud-aud="A$46,500–A$116,000" data-bud-aed="AED 110,200–AED 275,500">$30,000 – $75,000</option>
+                <option data-bud-usd="$75,000+" data-bud-eur="€69,000+" data-bud-gbp="£60,000+"
+                  data-bud-aud="A$116,000+" data-bud-aed="AED 275,500+">$75,000+</option>
+              </select>
+            </div>
+            <div class="fg"><label>Project Details *</label><textarea id="f-msg"
+                placeholder="Describe your challenge, current tools &amp; desired outcome…" required></textarea></div>
+            <button type="submit" id="f-btn" class="btn btn-primary" style="width:100%;justify-content:center">
+              <i class="fas fa-paper-plane"></i> Send Enquiry
+            </button>
+            <div id="f-success"></div>
+          </form>
+        </div>
+
       </div>
-
-      <!-- Right: Enquiry form -->
-      <div class="cf rv-r">
-        <div class="cf-t">Start a Project Enquiry</div>
-        <!-- Hidden iframe to capture Zoho Forms redirect silently -->
-        <iframe name="zf_hidden" id="zf_hidden" style="display:none;"></iframe>
-        <form id="cf-form" onsubmit="handleForm(event)">
-          <div class="fg-row">
-            <div class="fg"><label>Full Name *</label><input type="text" id="f-name" placeholder="John Smith" required/></div>
-            <div class="fg"><label>Company</label><input type="text" id="f-co" placeholder="Acme Corp"/></div>
-          </div>
-          <div class="fg"><label>Email Address *</label><input type="email" id="f-email" placeholder="john@company.com" required/></div>
-          <div class="fg"><label>Service Required</label>
-            <select id="f-svc">
-              <option value="">Select a service…</option>
-              <option>Zoho One Solution Architecture</option>
-              <option>Lead Lifecycle Automation</option>
-              <option>Financial System Synchronisation</option>
-              <option>Custom Deluge &amp; API Engineering</option>
-              <option>Custom Creator ERP Development</option>
-              <option>Analytics &amp; Executive Dashboards</option>
-              <option>Platform Migration (SF / HubSpot → Zoho)</option>
-              <option>Other / Full Consultation</option>
-            </select>
-          </div>
-          <div class="fg"><label>Project Budget</label>
-            <select id="f-bud">
-              <option value="">Select a range…</option>
-              <option data-bud-usd="$5,000–$15,000" data-bud-eur="€4,600–€13,800" data-bud-gbp="£4,000–£12,000" data-bud-aud="A$7,750–A$23,250" data-bud-aed="AED 18,350–AED 55,100">$5,000 – $15,000</option>
-              <option data-bud-usd="$15,000–$30,000" data-bud-eur="€13,800–€27,600" data-bud-gbp="£12,000–£24,000" data-bud-aud="A$23,250–A$46,500" data-bud-aed="AED 55,100–AED 110,200">$15,000 – $30,000</option>
-              <option data-bud-usd="$30,000–$75,000" data-bud-eur="€27,600–€69,000" data-bud-gbp="£24,000–£60,000" data-bud-aud="A$46,500–A$116,000" data-bud-aed="AED 110,200–AED 275,500">$30,000 – $75,000</option>
-              <option data-bud-usd="$75,000+" data-bud-eur="€69,000+" data-bud-gbp="£60,000+" data-bud-aud="A$116,000+" data-bud-aed="AED 275,500+">$75,000+</option>
-            </select>
-          </div>
-          <div class="fg"><label>Project Details *</label><textarea id="f-msg" placeholder="Describe your challenge, current tools &amp; desired outcome…" required></textarea></div>
-          <button type="submit" id="f-btn" class="btn btn-primary" style="width:100%;justify-content:center">
-            <i class="fas fa-paper-plane"></i> Send Enquiry
-          </button>
-          <div id="f-success"></div>
-        </form>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- ══════════════════════════════════════════════════
+  <!-- ══════════════════════════════════════════════════
      FOOTER
      Edit: social links, copyright text
      Styling → css/sections.css → "11. FOOTER"
 ══════════════════════════════════════════════════ -->
-<footer>
-  <div class="wrap">
-    <div class="foot-in">
-      <div>
-        <div class="foot-logo">Prince<span>.</span>Yadav</div>
-        <div class="foot-tag">Business Solutions Architect · Zoho One Expert · Remote-first · Contract &amp; Retainer</div>
+  <footer>
+    <div class="wrap">
+      <div class="foot-in">
+        <div>
+          <div class="foot-logo">Prince<span>.</span>Yadav</div>
+          <div class="foot-tag">Business Solutions Architect · Zoho One Expert · Remote-first · Contract &amp; Retainer
+          </div>
+        </div>
+        <div class="foot-soc">
+          <a href="https://www.linkedin.com/in/princeyadav7/" class="soc-l" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/princeyadav7" class="soc-l" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-github"></i></a>
+          <a href="https://x.com/_priince7" class="soc-l" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/_priince7/" class="soc-l" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a>
+          <a href="mailto:princeyadav841@gmail.com" class="soc-l"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
-      <div class="foot-soc">
-        <a href="https://www.linkedin.com/in/princeyadav7/"  class="soc-l" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/princeyadav7"            class="soc-l" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-        <a href="https://x.com/_priince7"                    class="soc-l" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/_priince7/"       class="soc-l" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:princeyadav841@gmail.com"            class="soc-l"><i class="fas fa-envelope"></i></a>
-      </div>
+      <div class="foot-bot">© 2026 Prince Yadav · Zoho Solutions Architect · Available for contract, retainer &amp;
+        full-time engagements</div>
     </div>
-    <div class="foot-bot">© 2026 Prince Yadav · Zoho Solutions Architect · Available for contract, retainer &amp; full-time engagements</div>
-  </div>
-</footer>
+  </footer>
 
-<button id="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
+  <button id="scroll-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></button>
 
-<!-- ─── SCRIPTS ───────────────────────────────────────
+  <!-- ─── SCRIPTS ───────────────────────────────────────
      All JS lives in js/main.js — no inline scripts here.
      To modify behavior: open js/main.js and find the
      clearly labelled section you need.
 ──────────────────────────────────────────────────── -->
-<script src="js/main.js?v=3.2"></script>
+  <script src="js/main.js?v=3.2"></script>
 
-<!-- ─── SCHEMA.ORG STRUCTURED DATA ──────────────────── -->
-<script type="application/ld+json">
+  <!-- ─── SCHEMA.ORG STRUCTURED DATA ──────────────────── -->
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -931,32 +1832,33 @@
 }
 </script>
 
-<!-- Zoho Forms Referrer Tracking -->
-<script type="text/javascript">
-(function() {
-  try {
-    var zf_frame = document.getElementById("ziframe_676014");
-    if (!zf_frame) return;
-    var ifrmSrc = zf_frame.src;
-    if (!((new RegExp("[?&]referrername=")).test(ifrmSrc))) {
-      var rfr = window.location.href;
+  <!-- Zoho Forms Referrer Tracking -->
+  <script type="text/javascript">
+    (function () {
       try {
-        rfr = window.self !== window.top ?
-          window.top.location.href :
-          (/^https?:\/\/[\w.-]+\.[a-zA-Z]{2,}/i.test(rfr) ? rfr : "");
-      } catch (e) {}
-      if (rfr && rfr !== "") {
-        if (rfr.length > 1800) {
-          var queryIndex = rfr.indexOf('?');
-          if (queryIndex > -1) rfr = rfr.substring(0, queryIndex);
-          if (rfr.length > 1800) rfr = rfr.substring(0, 1800);
+        var zf_frame = document.getElementById("ziframe_676014");
+        if (!zf_frame) return;
+        var ifrmSrc = zf_frame.src;
+        if (!((new RegExp("[?&]referrername=")).test(ifrmSrc))) {
+          var rfr = window.location.href;
+          try {
+            rfr = window.self !== window.top ?
+              window.top.location.href :
+              (/^https?:\/\/[\w.-]+\.[a-zA-Z]{2,}/i.test(rfr) ? rfr : "");
+          } catch (e) { }
+          if (rfr && rfr !== "") {
+            if (rfr.length > 1800) {
+              var queryIndex = rfr.indexOf('?');
+              if (queryIndex > -1) rfr = rfr.substring(0, queryIndex);
+              if (rfr.length > 1800) rfr = rfr.substring(0, 1800);
+            }
+            ifrmSrc += ((ifrmSrc.indexOf('?') > 0) ? '&' : '?') + 'referrername=' + encodeURIComponent(rfr);
+          }
         }
-        ifrmSrc += ((ifrmSrc.indexOf('?') > 0) ? '&' : '?') + 'referrername=' + encodeURIComponent(rfr);
-      }
-    }
-    if (zf_frame.src !== ifrmSrc) zf_frame.src = ifrmSrc;
-  } catch (e) {}
-})();
-</script>
+        if (zf_frame.src !== ifrmSrc) zf_frame.src = ifrmSrc;
+      } catch (e) { }
+    })();
+  </script>
 </body>
+
 </html>
