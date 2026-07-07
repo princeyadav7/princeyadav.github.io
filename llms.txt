@@ -1,0 +1,43 @@
+# Prince Yadav — Zoho Solutions Architect
+
+> Zoho Solutions Architect building end-to-end automated business operating systems for finance, healthcare, and B2B operations teams scaling past their first CRM.
+
+## Who I Am
+
+Prince Yadav is a Zoho Solutions Architect and enterprise automation specialist based in India. He designs, builds, and deploys complete business operating systems using the Zoho One suite, helping companies automate workflows, eliminate manual effort, and scale operations efficiently.
+
+## What I Do
+
+- **Zoho CRM Architecture**: Custom modules, automation rules, blueprint workflows, and Deluge scripting
+- **Zoho One Implementation**: End-to-end rollout of Zoho Books, Zoho Desk, Zoho Projects, Zoho Creator, and 40+ Zoho apps
+- **Business Process Automation**: Lead-to-invoice pipelines, SLA enforcement, multi-department workflow orchestration
+- **Custom Application Development**: Zoho Creator low-code apps tailored to unique business processes
+- **API & Webhook Integrations**: Connecting Zoho with third-party tools like Stripe, Twilio, Slack, and payment gateways
+- **Data Migration**: Migrating legacy CRM data (Salesforce, HubSpot, spreadsheets) to Zoho
+- **Training & Adoption**: Team onboarding, SOP documentation, and live training sessions
+
+## Industries Served
+
+- Finance & Fintech
+- Healthcare & Medical Practices
+- B2B SaaS & Professional Services
+- E-commerce & Retail Operations
+
+## Technology Stack
+
+- **Primary Platform**: Zoho One (CRM, Books, Desk, Creator, Projects, Analytics, Campaigns, Sign, Cliq)
+- **Scripting**: Deluge (Zoho's proprietary scripting language)
+- **Integrations**: REST APIs, Webhooks, Zapier, Make (Integromat)
+- **Front-end**: HTML, CSS, JavaScript
+- **Version Control**: Git / GitHub
+
+## Contact
+
+- **Website**: https://princeyadav7.github.io/princeyadav.github.io/
+- **Email**: Available via contact form on the website
+- **GitHub**: https://github.com/princeyadav7
+
+## Optional: Full Details
+
+For detailed project case studies, service packages, pricing, and the full experience timeline, visit the portfolio:
+https://princeyadav7.github.io/princeyadav.github.io/
