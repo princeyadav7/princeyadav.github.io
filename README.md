@@ -289,7 +289,7 @@ I'm open to:
 **📧** [princeyadav841@gmail.com](mailto:princeyadav841@gmail.com)
 **📞** [+91 9794571928](tel:+919794571928)
 **🌐** [Portfolio Website](https://princeyadav7.github.io/princeyadav.github.io/)
-**📄** [Download CV](https://drive.google.com/file/d/1N7WU6VMpVNSv4jTRgu8lvk-3t0L2tQj4/view?usp=sharing)
+**📄** [Download CV](https://drive.google.com/file/d/1xQwUY2QEppSHTrD6b1EciLhpT0Cgtm4g/view?usp=sharing)
 
 ---
 
