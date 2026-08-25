@@ -16,6 +16,7 @@ Key credentials and facts:
 - 4+ hours daily overlap with EST / CET / GMT timezones
 
 ## Primary Services
+- **All Services Hub**: Full overview of all 6 specialized Zoho consulting and engineering services. URL: https://princeyadav7.github.io/princeyadav.github.io/services/
 - **Zoho CRM Development**: Custom module architecture, Blueprint sales processes, Deluge automation, lead scoring, pipeline optimization, and KPI dashboards. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-crm-development/
 - **Zoho One Consulting**: Multi-app implementation connecting CRM, Books, Inventory, Desk, Sign, People, Analytics, and Marketing Automation with zero data silos. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-one-consulting/
 - **Zoho Creator ERP Development**: Custom low-code business applications, manufacturing ERPs, client portals, shop-floor tools, and approval workflows. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-creator-development/
