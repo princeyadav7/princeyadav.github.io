@@ -241,6 +241,9 @@
   grid-template-columns: 80px 1.2fr 1.8fr 40px;
   gap: 32px;
   align-items: start;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .editorial-item:last-child {
@@ -250,6 +253,10 @@
 .editorial-item:hover {
   padding-left: 12px;
   background-color: rgba(0, 0, 0, 0.015);
+}
+
+.editorial-item:hover .editorial-title {
+  color: var(--accent);
 }
 
 .editorial-num {
@@ -264,6 +271,7 @@
   font-weight: 500;
   letter-spacing: -0.015em;
   color: var(--text);
+  transition: var(--tr-fast);
 }
 
 .editorial-desc {
