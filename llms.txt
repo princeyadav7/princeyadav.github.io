@@ -1,75 +1,46 @@
-# Prince Yadav — Zoho Developer & Consultant
+# Prince Yadav — Zoho Developer & CRM/ERP Consultant
 
-> Certified Zoho Developer and Consultant building end-to-end automated business operating systems using Zoho CRM, Zoho One, and Deluge scripting for finance, healthcare, manufacturing, and B2B operations teams worldwide.
+> Direct personal consulting and hands-on Zoho development for businesses across the US, Europe, Middle East, and Asia.
 
-## Who I Am
+## About Prince Yadav
+Prince Yadav is a Zoho Developer and CRM/ERP Consultant with 2+ years of professional experience, 16+ client engagements across 6+ countries (India, Saudi Arabia, UAE, Japan, USA, Italy), 30+ custom modules delivered, 50+ automations deployed, and 400,000+ records migrated.
 
-Prince Yadav is a **Certified Zoho Developer and Zoho Consultant** and enterprise automation specialist based in Delhi, India. He designs, builds, and deploys complete business operating systems using the Zoho One suite, helping companies automate workflows, eliminate manual effort, and scale operations efficiently.
+## Primary Services
+- **Zoho CRM Development**: Custom module architecture, Blueprint sales processes, Deluge automation, lead scoring, and pipeline optimization. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-crm-development/
+- **Zoho One Consulting**: Multi-app implementation connecting CRM, Books, Inventory, Desk, Sign, and Analytics with zero data silos. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-one-consulting/
+- **Zoho Creator Development**: Custom low-code business applications, client portals, and shop floor tools. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-creator-development/
+- **Custom ERP Development**: Modular ERP systems for manufacturing, inventory, and operations. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-erp-development/
+- **API & System Integrations**: REST APIs, OAuth 2.0, Deluge webhooks, Stripe, and QuickBooks integrations. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-api-integrations/
+- **Data Migration**: Secure CRM migration from Salesforce, HubSpot, and spreadsheets. URL: https://princeyadav7.github.io/princeyadav.github.io/services/zoho-data-migration/
 
-**Job Titles / Search Terms:** Zoho Developer, Zoho Consultant, Zoho CRM Expert, Zoho One Implementation Specialist, Hire Zoho Developer, Zoho CRM Consultant India, Deluge Scripting Expert, Zoho Partner, Zoho One Partner, Senior Zoho Developer, Zoho Solutions Architect, Zoho Creator Developer.
+## Regional Consulting Pages
+- **United States (USA)**: Remote consulting, 4+ hours daily EST overlap, Salesforce/HubSpot migrations, QuickBooks/Stripe integrations. URL: https://princeyadav7.github.io/princeyadav.github.io/zoho-consultant-usa/
+- **Europe (EU)**: CET timezone alignment, multi-currency Zoho Books, GDPR-aware data practices, Creator ERP. URL: https://princeyadav7.github.io/princeyadav.github.io/zoho-consultant-europe/
+- **United Kingdom (UK)**: GMT alignment, UK VAT invoicing, Zoho CRM automation. URL: https://princeyadav7.github.io/princeyadav.github.io/zoho-consultant-uk/
 
-## What I Do
+## Case Studies
+- **Financial Services CRM**: 300K+ records migrated from legacy CRM silos, omni-channel lead capture, and round-robin routing for one of India's largest financial institutes. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/financial-services-crm/
+- **Software Services CRM & HRMS**: End-to-end Lead-to-Deal-to-Quote sales pipeline, dynamic CPQ quote module, 100-user Outlook to Zoho Mail migration, and Zoho People HRMS. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/software-services-crm/
+- **Broadcast Operations & RFID Asset ERP**: Custom Zoho Creator ERP with RFID gear tracking, multi-tier procurement, repair & maintenance, and CRM/Books sync for a global live broadcast leader across 21+ countries. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/manufacturing-creator-erp/
+- **Global MedTech & Healthcare Operations**: Multi-app Zoho One ecosystem (CRM, Books, Sign, Contracts, Meeting, Forms, People) with compliant patient data locking, bank reconciliation, and multi-country HRMS for 200+ users across Japan, India & the Philippines. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/healthcare-operations/
+- **Renewable Energy & Solar EPC Operations**: End-to-end Zoho One ecosystem (CRM, Projects, Books, SalesIQ, Marketing Automation) for government infrastructure & residential solar EPC deployments. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/renewable-energy-solar-crm/
+- **Industrial Sensor Manufacturing ERP**: Discrete manufacturing ERP on Zoho Creator with multi-level BOMs, incoming/in-process QC, 5-stage WIP routing, and batch inventory for an instrumentation manufacturer. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/sensor-manufacturing-creator-erp/
 
-- **Zoho CRM Implementation**: Custom modules, automation rules, blueprint workflows, canvas views, and Deluge scripting
-- **Zoho One Implementation**: End-to-end rollout of Zoho Books, Zoho Desk, Zoho Projects, Zoho Creator, Zoho People, Zoho Analytics, and 40+ Zoho apps
-- **Business Process Automation**: Lead-to-invoice pipelines, SLA enforcement, multi-department workflow orchestration
-- **Custom Deluge & API Engineering**: Advanced Deluge scripting, REST API integrations, OAuth 2.0, webhook pipelines, ETL data flows
-- **Zoho Creator ERP Development**: Niche-industry ERP tools — asset management, order processing, compliance workflows
-- **CRM Data Migration**: Migrating from Salesforce, HubSpot, Pipedrive, and legacy spreadsheets to Zoho CRM
-- **Analytics & BI Dashboards**: SQL-powered KPI dashboards and real-time reporting in Zoho Analytics
-- **Training & Adoption**: Team onboarding, SOP documentation, and live training sessions
-
-## Industries Served
-
-- Finance & Wealth Advisory (Bajaj Capital, investment firms)
-- Healthcare Technology (global HealthTech, medical practices)
-- Manufacturing (non-metallic composites, eyewear, oil & gas)
-- B2B SaaS & Professional Services
-- E-commerce, D2C & Retail Operations (Morzze)
-- Sovereign Wealth Funds & Government entities (Gulf region)
-- Live Events & Broadcast Operations (Zoom Communications)
-
-## Technology Stack
-
-- **Primary Platform**: Zoho One (CRM, Books, Desk, Creator, Projects, Analytics, Campaigns, Sign, Cliq, People, FSM, Inventory, Recruit, Flow)
-- **Scripting**: Deluge (Zoho's proprietary scripting language)
-- **Integrations**: REST APIs, Webhooks, OAuth 2.0, Zapier, Make (Integromat)
-- **3rd Party APIs**: WhatsApp Cloud API, Google Ads API, Stripe, Twilio, Facebook Ads
-- **Data**: SQL, ETL pipelines, Zoho Analytics combined queries
-- **Front-end**: HTML, CSS, JavaScript
-- **Version Control**: Git / GitHub
-
-## Frequently Asked Questions
-
-**Q: What does a Zoho Developer do?**
-A: A Zoho Developer customises and extends Zoho applications using Deluge scripting, custom modules, automation workflows, and API integrations. They build tailored CRM solutions, automated pipelines, and connect Zoho with third-party tools.
-
-**Q: What is Deluge scripting?**
-A: Deluge is Zoho's proprietary scripting language for writing custom functions, automation workflows, webhook handlers, and business logic within Zoho CRM, Zoho Creator, Zoho Books, and other Zoho apps.
-
-**Q: Can you migrate from Salesforce or HubSpot to Zoho?**
-A: Yes. Prince Yadav specialises in data migration from Salesforce, HubSpot, Pipedrive, and spreadsheets to Zoho CRM — including field mapping, data cleansing, validation, and post-migration testing.
-
-**Q: Do you work with international clients?**
-A: Yes. Prince works with clients in the US, UK, Gulf (Saudi Arabia, UAE), Japan, and Australia through async delivery via Slack and Loom with 4+ hours of daily timezone overlap.
-
-## Verified Client Results
-
-- Bajaj Capital: 90% faster lead handoff, $120K annual systems value
-- Instalimb (Tokyo): 3-day onboarding (was 14 days), $75K admin savings
-- Novel Nonmetallic (Saudi Arabia): 100% audit pass, $250K regulatory savings
-- Tawrid (Riyadh): 70% faster supplier onboarding, $320K processing value
-- Morzze (Delhi): +40% D2C conversions, $95K inventory loss cut
+## Technical Articles & Guides
+- Zoho CRM Implementation Cost Guide: https://princeyadav7.github.io/princeyadav.github.io/insights/zoho-crm-implementation-cost/
+- Salesforce vs Zoho CRM Comparison: https://princeyadav7.github.io/princeyadav.github.io/insights/salesforce-vs-zoho-crm/
+- HubSpot to Zoho CRM Migration Guide: https://princeyadav7.github.io/princeyadav.github.io/insights/hubspot-to-zoho-migration-guide/
+- Zoho Creator vs Traditional ERP: https://princeyadav7.github.io/princeyadav.github.io/insights/zoho-creator-vs-traditional-erp/
+- Automate Sales Processes with Zoho CRM: https://princeyadav7.github.io/princeyadav.github.io/insights/automate-sales-processes-zoho-crm/
+- 10 Zoho CRM Automations Guide: https://princeyadav7.github.io/princeyadav.github.io/insights/10-zoho-crm-automations/
+- Zoho CRM & QuickBooks Integration: https://princeyadav7.github.io/princeyadav.github.io/insights/zoho-crm-quickbooks-integration/
+- Custom ERP on Zoho Creator Guide: https://princeyadav7.github.io/princeyadav.github.io/insights/custom-erp-zoho-creator-guide/
+- Zoho CRM API & Webhook Guide: https://princeyadav7.github.io/princeyadav.github.io/insights/zoho-crm-api-integration-guide/
+- Common Implementation Mistakes: https://princeyadav7.github.io/princeyadav.github.io/insights/common-zoho-crm-implementation-mistakes/
 
 ## Contact
-
-- **Website**: https://princeyadav7.github.io/princeyadav.github.io/
-- **Email**: princeyadav841@gmail.com
-- **Phone / WhatsApp**: +91 9794571928
-- **LinkedIn**: https://www.linkedin.com/in/princeyadav7/
-- **GitHub**: https://github.com/princeyadav7
-
-## Optional: Full Details
-
-For detailed project case studies, service packages, pricing, and the full experience timeline, visit the portfolio:
-https://princeyadav7.github.io/princeyadav.github.io/
+- Email: princeyadav841@gmail.com
+- Phone / WhatsApp: +91 9794571928
+- Website: https://princeyadav7.github.io/princeyadav.github.io/
+- LinkedIn: https://linkedin.com/in/prince-yadav-zoho
+- GitHub: https://github.com/princeyadav7

@@ -1,45 +1,13 @@
+# robots.txt for https://princeyadav7.github.io/princeyadav.github.io/
 User-agent: *
 Allow: /
 
-# ── AI Crawlers (explicitly allowed) ────────────────────────
-User-agent: GPTBot
-Allow: /
+# Disallow private development assets
+Disallow: /.git/
+Disallow: /.vscode/
+Disallow: /.cursor/
+Disallow: /scratch/
+Disallow: /server.js
 
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Amazonbot
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: meta-externalagent
-Allow: /
-
-User-agent: Omgilibot
-Allow: /
-
-# ── Sitemaps ─────────────────────────────────────────────────
+# Sitemap location
 Sitemap: https://princeyadav7.github.io/princeyadav.github.io/sitemap.xml
-
-# ── AI-specific content file ─────────────────────────────────
-# llms.txt: https://princeyadav7.github.io/princeyadav.github.io/llms.txt

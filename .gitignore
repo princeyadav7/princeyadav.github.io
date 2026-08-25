@@ -1,0 +1,26 @@
+# ─── Environment & Secrets ───────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ─── Node.js ─────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ─── Dev / Scratch Scripts ───────────────────────────────────────────────────
+# These are local build/fix scripts, not part of the deployed site
+scratch/
+
+# ─── OS / Editor ─────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+.cursor/
+
+# ─── Build Artifacts ─────────────────────────────────────────────────────────
+dist/
+build/
+.cache/

@@ -1,0 +1,739 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study: Broadcast Operations, RFID Asset Tracking &amp; Creator ERP | Prince Yadav</title>
+  <meta name="description"
+    content="How Prince Yadav engineered a mission-critical ERP for Asia's pioneer Outside Broadcast (OB) enterprise on Zoho Creator—integrating RFID scanning, procurement hierarchy, digital dispatch challans, and multi-app CRM &amp; Books synchronization across 21+ countries." />
+  <link rel="canonical" href="https://princeyadav7.github.io/princeyadav.github.io/case-studies/manufacturing-creator-erp/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="icon" type="image/png" href="../../images/favicon.png" />
+  <link rel="apple-touch-icon" href="../../images/favicon.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://princeyadav7.github.io/princeyadav.github.io/case-studies/manufacturing-creator-erp/" />
+  <meta property="og:title" content="Case Study: Broadcast Operations, RFID Asset Tracking &amp; Creator ERP | Prince Yadav" />
+  <meta property="og:description"
+    content="Outside Broadcast (OB) Creator ERP Case Study: Hierarchical asset master, automated RFID tracking, digital dispatch challans, maintenance work orders, and 21-country operations." />
+  <meta property="og:image" content="https://princeyadav7.github.io/princeyadav.github.io/images/profile.jpeg" />
+
+  <meta name="theme-color" content="#0f1117" />
+
+  <link rel="alternate" hreflang="en"         href="https://princeyadav7.github.io/princeyadav.github.io/case-studies/manufacturing-creator-erp/" />
+  <link rel="alternate" hreflang="x-default"  href="https://princeyadav7.github.io/princeyadav.github.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+
+  <link rel="stylesheet" href="../../css/tokens.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/sections.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://princeyadav7.github.io/princeyadav.github.io/case-studies/manufacturing-creator-erp/#article",
+        "headline": "Custom Operations, RFID Asset Tracking & ERP Architecture on Zoho Creator",
+        "author": {
+          "@type": "Person",
+          "name": "Prince Yadav",
+          "url": "https://princeyadav7.github.io/princeyadav.github.io/"
+        },
+        "description": "Architectural case study on deploying a bespoke Zoho Creator ERP, RFID gear tracking, multi-tier procurement, and R&M lifecycle management for a global Outside Broadcast enterprise across 21+ countries.",
+        "publisher": {
+          "@type": "Person",
+          "name": "Prince Yadav",
+          "url": "https://princeyadav7.github.io/princeyadav.github.io/",
+          "image": "https://princeyadav7.github.io/princeyadav.github.io/images/profile.jpeg"
+        },
+        "image": "https://princeyadav7.github.io/princeyadav.github.io/images/profile.jpeg",
+        "wordCount": 2200,
+        "dateModified": "2026-08-25",
+        "datePublished": "2025-09-01"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://princeyadav7.github.io/princeyadav.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Case Studies",
+            "item": "https://princeyadav7.github.io/princeyadav.github.io/case-studies/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Broadcast & Production Operations ERP",
+            "item": "https://princeyadav7.github.io/princeyadav.github.io/case-studies/manufacturing-creator-erp/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ─── NAVIGATION ──────────────────────────────────── -->
+  <header class="site-header" id="header">
+    <div class="wrap nav-container">
+      <a href="../../" class="nav-brand" aria-label="Prince Yadav — Home">
+        <span class="nav-brand-title">PRINCE YADAV</span>
+        <span class="nav-brand-subtitle">SYSTEMS CONSULTING</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../../case-studies/" class="nav-item active">Case Studies</a>
+        <a href="../../#services" class="nav-item">Services</a>
+        <a href="../../about-prince-yadav/" class="nav-item">About</a>
+        <a href="../../insights/" class="nav-item">Insights</a>
+      </nav>
+
+      <div class="flex gap-sm">
+        <a href="../../#contact" class="nav-contact-link">
+          Contact
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <button class="mobile-menu-btn" aria-label="Open Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16M4 16h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-panel">
+      <div>
+        <div class="mobile-nav-header">
+          <span class="mono-label">Navigation</span>
+          <button class="mobile-nav-close" aria-label="Close Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="mobile-nav-links">
+          <a href="../../case-studies/" class="mobile-nav-link">Case Studies</a>
+          <a href="../../#services" class="mobile-nav-link">Services</a>
+          <a href="../../about-prince-yadav/" class="mobile-nav-link">About</a>
+          <a href="../../insights/" class="mobile-nav-link">Insights</a>
+        </div>
+      </div>
+      <div class="mobile-nav-footer">
+        <a href="../../#contact" class="btn btn-primary" style="width: 100%;">Discuss Your Project</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── CASE DETAIL HERO ─────────────────────────────── -->
+  <section class="case-detail-hero">
+    <div class="wrap">
+      <div class="breadcrumbs">
+        <a href="../../">Home</a>
+        <span class="breadcrumbs-sep">/</span>
+        <a href="../../case-studies/">Case Studies</a>
+        <span class="breadcrumbs-sep">/</span>
+        <span>Broadcast &amp; Production Operations ERP</span>
+      </div>
+
+      <div class="case-hero-meta-strip">
+        <span class="case-category-badge">Live Broadcast &amp; Media Production</span>
+        <span class="mono-label">Custom Creator ERP</span>
+        <span class="mono-label">&bull;</span>
+        <span class="mono-label">21+ Countries Footprint</span>
+        <span class="mono-label">&bull;</span>
+        <span class="mono-label">RFID Gear Tracking</span>
+      </div>
+
+      <h1 class="case-hero-title">Custom Operations, RFID Asset Tracking &amp; ERP Architecture on Zoho Creator</h1>
+      
+      <p class="case-hero-lead">
+        Engineering a mission-critical ERP for Asia&rsquo;s pioneer Outside Broadcast (OB) enterprise&mdash;integrating RFID gear movements, multi-tier procurement approvals, digital dispatch challans, repair lifecycles, and bi-directional CRM &amp; Books synchronization.
+      </p>
+
+      <!-- Key Metrics Strip -->
+      <div class="case-hero-metrics-bar">
+        <div class="hero-metric-box">
+          <div class="hero-metric-val">100%</div>
+          <div class="hero-metric-lbl">Asset Traceability</div>
+        </div>
+        <div class="hero-metric-box">
+          <div class="hero-metric-val">75%</div>
+          <div class="hero-metric-lbl">Faster Dispatch Check-in</div>
+        </div>
+        <div class="hero-metric-box">
+          <div class="hero-metric-val">21+</div>
+          <div class="hero-metric-lbl">Countries Deployed</div>
+        </div>
+        <div class="hero-metric-box">
+          <div class="hero-metric-val">0</div>
+          <div class="hero-metric-lbl">Lost Flypack Components</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MAIN 2-COLUMN ARTICLE LAYOUT ─────────────────── -->
+  <main class="wrap">
+    <div class="case-detail-layout">
+      
+      <!-- LEFT STICKY SIDEBAR -->
+      <aside class="case-sidebar-col">
+        <!-- Project Specifications -->
+        <div class="case-specs-card">
+          <div class="case-specs-header">
+            <span>Project Specs</span>
+            <span class="mono-accent">#OB-05</span>
+          </div>
+
+          <div class="specs-list">
+            <div class="spec-item">
+              <span class="spec-label">Client Profile</span>
+              <span class="spec-val">Global Outside Broadcast Leader</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Industry</span>
+              <span class="spec-val">Live Sports &amp; Media Production</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Operational Scope</span>
+              <span class="spec-val">21+ International Countries</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Core Tech Stack</span>
+              <span class="spec-val">Zoho Creator Low-Code, Deluge, RFID Readers, Zoho CRM, Zoho Books API</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Key Automations</span>
+              <span class="spec-val">RFID Container Scanning, Digital Gate Pass, R&amp;M Maintenance Work Orders</span>
+            </div>
+            <div class="spec-item">
+              <span class="spec-label">Consultant Role</span>
+              <span class="spec-val">Lead Zoho Creator ERP Architect</span>
+            </div>
+          </div>
+
+          <div class="case-sidebar-cta">
+            <a href="../../#contact" class="btn btn-primary btn-sm" style="width: 100%;">
+              Discuss Similar Project
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sticky Table of Contents -->
+        <div class="case-toc-card">
+          <div class="case-toc-title">Deep Dive Index</div>
+          <nav class="case-toc-links">
+            <a href="#overview" class="case-toc-link">
+              <span class="case-toc-num">01</span>
+              <span>Executive Overview</span>
+            </a>
+            <a href="#challenges" class="case-toc-link">
+              <span class="case-toc-num">02</span>
+              <span>Production Challenges</span>
+            </a>
+            <a href="#architecture" class="case-toc-link">
+              <span class="case-toc-num">03</span>
+              <span>Architectural Pillars</span>
+            </a>
+            <a href="#schematic" class="case-toc-link">
+              <span class="case-toc-num">04</span>
+              <span>Technical Blueprint</span>
+            </a>
+            <a href="#tech-stack" class="case-toc-link">
+              <span class="case-toc-num">05</span>
+              <span>Technologies Deployed</span>
+            </a>
+            <a href="#outcomes" class="case-toc-link">
+              <span class="case-toc-num">06</span>
+              <span>Verified Results</span>
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- RIGHT CONTENT STREAM -->
+      <article class="case-article-stream">
+
+        <!-- 01. OVERVIEW -->
+        <section id="overview" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">01 / Overview</span>
+          </div>
+          <h2 class="case-section-title">Executive Project Overview</h2>
+          <div class="case-prose">
+            <p>
+              The client is a pioneering Outside Broadcast (OB) and live media production enterprise, renowned for engineering first-generation flypacks and deploying broadcast kits, production crews, and OB units for landmark sporting tournaments, concerts, and news events across <strong>21+ countries</strong> spanning South Asia, Southeast Asia, and the Middle East.
+            </p>
+            <p>
+              With tens of thousands of high-value broadcast assets (Ultra-HD cameras, specialized lenses, production switchers, audio consoles, flypack containers, and kilometers of optical fiber) constantly moving between international warehouses, cargo freight, and stadium compounds, the organization required a centralized, real-time operational ERP to eliminate equipment loss, dispatch delays, and maintenance blind spots.
+            </p>
+          </div>
+        </section>
+
+        <!-- 02. BUSINESS CHALLENGES -->
+        <section id="challenges" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">02 / Bottlenecks</span>
+          </div>
+          <h2 class="case-section-title">The Operational &amp; Logistics Challenges</h2>
+          
+          <div class="challenge-cards-grid">
+            <div class="challenge-card">
+              <div class="challenge-card-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+                <span>High-Velocity Gear Movements</span>
+              </div>
+              <p class="challenge-card-desc">
+                Broadcast kits deployed concurrently to multiple stadiums globally. Paper-based manifests caused discrepancies in tracking serialized lenses and camera bodies.
+              </p>
+            </div>
+
+            <div class="challenge-card">
+              <div class="challenge-card-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/></svg>
+                <span>Warehouse Dispatch Bottlenecks</span>
+              </div>
+              <p class="challenge-card-desc">
+                Loading massive freight containers lacked instant barcode/RFID verification, risking missing cables or converters that could jeopardize live broadcasts.
+              </p>
+            </div>
+
+            <div class="challenge-card">
+              <div class="challenge-card-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                <span>Maintenance &amp; Repair (R&amp;M) Gaps</span>
+              </div>
+              <p class="challenge-card-desc">
+                Damaged gear returning from harsh weather was mixed into active stock without diagnostic testing logs, technician bench tickets, or vendor RMA tracking.
+              </p>
+            </div>
+
+            <div class="challenge-card">
+              <div class="challenge-card-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                <span>Unstructured Procurement Approvals</span>
+              </div>
+              <p class="challenge-card-desc">
+                Purchase requisitions for event replacements lacked automated approval matrices, causing delays and unbudgeted emergency procurement spending.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 03. ARCHITECTURAL PILLARS -->
+        <section id="architecture" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">03 / Solution</span>
+          </div>
+          <h2 class="case-section-title">Core Architectural Solution Pillars</h2>
+
+          <div class="pillars-container">
+            <!-- Pillar 1 -->
+            <div class="pillar-item">
+              <div class="pillar-top-badge">
+                <span class="pillar-num">Pillar 01</span>
+                <span class="mono-label">Asset Master &amp; RFID</span>
+              </div>
+              <h3 class="pillar-title">Hierarchical Asset Master &amp; Handheld RFID Bulk Scanning</h3>
+              <div class="pillar-points">
+                <div class="pillar-point">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Multi-Tier Asset Hierarchy:</strong> Engineered structured relationships (Flypack Container &rarr; Base Production Kit &rarr; Parent Electronic Unit &rarr; Modular Components) covering optics, RF, switchers, and audio.</div>
+                </div>
+                <div class="pillar-point">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Handheld RFID Scanning:</strong> Built mobile interfaces in Zoho Creator connecting to RFID readers for instant container check-out, verifying 100+ components in seconds during freight loading.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="pillar-item">
+              <div class="pillar-top-badge">
+                <span class="pillar-num">Pillar 02</span>
+                <span class="mono-label">Dispatch &amp; Procurement</span>
+              </div>
+              <h3 class="pillar-title">Digital Delivery Challans, Customs Gate Passes &amp; Multi-Tier PR/PO Engine</h3>
+              <div class="pillar-points">
+                <div class="pillar-point">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Digital Delivery Challan Engine:</strong> Auto-generates customs-ready digital manifests with embedded QR verification, crew signatory capture, and gate-pass clearance.</div>
+                </div>
+                <div class="pillar-point">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Approval-Gated Procurement:</strong> Built conditional Purchase Requisition (PR) matrices that instantly transform approved requisitions into formal POs in Zoho Books.</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="pillar-item">
+              <div class="pillar-top-badge">
+                <span class="pillar-num">Pillar 03</span>
+                <span class="mono-label">Maintenance &amp; Multi-App Sync</span>
+              </div>
+              <h3 class="pillar-title">R&amp;M Maintenance Lifecycle &amp; CRM/Books Bi-Directional Integration</h3>
+              <div class="pillar-points">
+                <div class="pillar-point">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>Field Incident &amp; Bench Testing Work Orders:</strong> Field engineers log equipment errors directly from stadium trucks; technicians record bench tests and spare-part consumption before release.</div>
+                </div>
+                <div class="pillar-point">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <div><strong>CRM &amp; Books Synchronization:</strong> Winning a contract in CRM immediately locks gear allocation schedules in Creator, while POs and vendor bills sync into Books via REST APIs.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04. TECHNICAL SCHEMATIC -->
+        <section id="schematic" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">04 / Architecture Flow</span>
+          </div>
+          <h2 class="case-section-title">Technical Architecture &amp; Data Pipeline</h2>
+
+          <div class="detail-schematic-card">
+            <div class="schematic-top-bar">
+              <div class="schematic-tag">SYSTEM PIPELINE &bull; ZOHO CREATOR BROADCAST ERP</div>
+              <div class="schematic-pulse">LIVE WORKFLOW VERIFIED</div>
+            </div>
+
+            <div class="schematic-flow-grid">
+              <div class="schematic-node">
+                <div>
+                  <div class="node-step-tag">01 / STAGING</div>
+                  <div class="node-main-title">RFID Assembly</div>
+                </div>
+                <div class="node-sub-detail">Flypack container packed; bulk RFID scanner verifies 100% of serialized optics &amp; units.</div>
+                <div class="node-tech-badge">Creator RFID API</div>
+              </div>
+
+              <div class="schematic-node">
+                <div>
+                  <div class="node-step-tag">02 / DISPATCH</div>
+                  <div class="node-main-title">Digital Challan</div>
+                </div>
+                <div class="node-sub-detail">Auto-generates QR gate pass &amp; customs manifest; locks asset status to In-Transit.</div>
+                <div class="node-tech-badge">Deluge Document Engine</div>
+              </div>
+
+              <div class="schematic-node">
+                <div>
+                  <div class="node-step-tag">03 / LIVE EVENT</div>
+                  <div class="node-main-title">Field Incident Log</div>
+                </div>
+                <div class="node-sub-detail">Mobile app allows OB crew to flag faulty channels or request urgent spare PRs.</div>
+                <div class="node-tech-badge">Creator Mobile PWA</div>
+              </div>
+
+              <div class="schematic-node">
+                <div>
+                  <div class="node-step-tag">04 / RECONCILIATION</div>
+                  <div class="node-main-title">R&amp;M &amp; Books Sync</div>
+                </div>
+                <div class="node-sub-detail">Auto-flags missing gear upon return; syncs repair expenses and project bills into Books.</div>
+                <div class="node-tech-badge">Zoho Books API + BI</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05. TECHNOLOGIES DEPLOYED -->
+        <section id="tech-stack" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">05 / Stack</span>
+          </div>
+          <h2 class="case-section-title">Technologies &amp; Application Stack</h2>
+
+          <div class="tech-stack-matrix">
+            <div class="tech-group-box">
+              <div class="tech-group-title">Custom Low-Code Core</div>
+              <div class="tech-tags-list">
+                <span class="tech-tag-chip">Zoho Creator Low-Code</span>
+                <span class="tech-tag-chip">Deluge Scripting</span>
+                <span class="tech-tag-chip">Custom UI Widgets</span>
+                <span class="tech-tag-chip">Hierarchical Relational DB</span>
+              </div>
+            </div>
+
+            <div class="tech-group-box">
+              <div class="tech-group-title">Hardware &amp; Dispatch</div>
+              <div class="tech-tags-list">
+                <span class="tech-tag-chip">Handheld RFID Scanning</span>
+                <span class="tech-tag-chip">Barcode Verification</span>
+                <span class="tech-tag-chip">QR Gate Pass Engine</span>
+                <span class="tech-tag-chip">Digital Signatures</span>
+              </div>
+            </div>
+
+            <div class="tech-group-box">
+              <div class="tech-group-title">Procurement &amp; Finance</div>
+              <div class="tech-tags-list">
+                <span class="tech-tag-chip">Multi-Tier PR Matrix</span>
+                <span class="tech-tag-chip">Zoho Books API Sync</span>
+                <span class="tech-tag-chip">Vendor Purchase Orders</span>
+                <span class="tech-tag-chip">RMA Tracking</span>
+              </div>
+            </div>
+
+            <div class="tech-group-box">
+              <div class="tech-group-title">Executive BI &amp; Analytics</div>
+              <div class="tech-tags-list">
+                <span class="tech-tag-chip">Zoho Analytics BI</span>
+                <span class="tech-tag-chip">Global Gear Matrix</span>
+                <span class="tech-tag-chip">Flypack ROI Dashboards</span>
+                <span class="tech-tag-chip">R&amp;M Downtime Metrics</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 06. VERIFIED DELIVERED OUTCOMES -->
+        <section id="outcomes" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">06 / Impact</span>
+          </div>
+          <h2 class="case-section-title">Verified Delivered Outcomes</h2>
+
+          <div class="outcomes-grid">
+            <div class="outcome-stat-card">
+              <div class="outcome-metric-value">100%</div>
+              <div class="outcome-metric-label">Asset Traceability</div>
+              <p class="outcome-metric-narrative">
+                Zero untracked or lost assets across thousands of high-value optical lenses, broadcast cameras, and flypack containers across 21+ countries.
+              </p>
+            </div>
+
+            <div class="outcome-stat-card">
+              <div class="outcome-metric-value">75%</div>
+              <div class="outcome-metric-label">Faster Dispatch Check-in</div>
+              <p class="outcome-metric-narrative">
+                Automated bulk RFID container scanning reduced truck loading verification from 3+ hours of manual counting to under 15 minutes.
+              </p>
+            </div>
+
+            <div class="outcome-stat-card">
+              <div class="outcome-metric-value">0</div>
+              <div class="outcome-metric-label">Live Broadcast Equipment Failures</div>
+              <p class="outcome-metric-narrative">
+                Mandatory QA bench testing gates and automated R&amp;M work orders ensured 100% of dispatched flypack gear is tested and certified.
+              </p>
+            </div>
+
+            <div class="outcome-stat-card">
+              <div class="outcome-metric-value">21+</div>
+              <div class="outcome-metric-label">Countries Operational Footprint</div>
+              <p class="outcome-metric-narrative">
+                Single unified Zoho Creator architecture powers live Outside Broadcast production crews across Asia, the Middle East, and worldwide.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONSULTATION CTA BANNER -->
+        <div class="consultation-cta-box" style="margin-top: 16px;">
+          <div>
+            <span class="mono-label" style="color: var(--accent); margin-bottom: 12px; display: inline-block;">Technical Architecture</span>
+            <h3 class="cta-box-title">Need a Custom Zoho Creator ERP for Complex Operations?</h3>
+            <p class="cta-box-desc">
+              Let's engineer a bespoke low-code ERP with custom scanning hardware integrations, multi-tier approvals, and complete ERP synchronization.
+            </p>
+          </div>
+          <div class="cta-box-actions">
+            <a href="../../#contact" class="btn btn-primary">
+              Schedule Architecture Call
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="cta-direct-details">
+              <span>Direct: princeyadav7@gmail.com</span>
+              <span>Available for International Engagements</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PREVIOUS / NEXT CASE STUDY SWITCHER -->
+        <div class="case-pagination-nav">
+          <a href="../renewable-energy-solar-crm/" class="case-nav-btn prev">
+            <div class="case-nav-dir">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>Previous Case Study</span>
+            </div>
+            <div class="case-nav-title">Commercial Solar EPC CRM &amp; Multi-Stage Quoting</div>
+          </a>
+
+          <a href="../sensor-manufacturing-creator-erp/" class="case-nav-btn next">
+            <div class="case-nav-dir">
+              <span>Next Case Study</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="case-nav-title">Sensor Manufacturing Batch ERP &amp; QA Traceability</div>
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+              <!-- ─── EDITORIAL ARCHITECTURAL FOOTER ─────────────── -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+
+        <!-- Top Editorial Prompt -->
+        <div class="footer-editorial-prompt">
+          <div class="footer-prompt-left">
+            <span class="footer-prompt-index">Prince Yadav &mdash; Independent Consultant</span>
+            <h2 class="footer-prompt-title">Let’s build systems that actually work.</h2>
+          </div>
+          <div class="footer-prompt-right">
+            <p class="footer-prompt-desc">
+              Available for select CRM architectures, custom Creator ERP engines, and end-to-end operational systems across international markets.
+            </p>
+            <div class="footer-prompt-actions">
+              <a href="../../#contact" class="footer-editorial-link">
+                <span>Discuss a project</span>
+                <span>&rarr;</span>
+              </a>
+              <a href="mailto:princeyadav841@gmail.com" class="footer-editorial-link-muted">
+                princeyadav841@gmail.com ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-editorial-divider"></div>
+
+        <!-- Navigation Grid (All Pages) -->
+        <div class="footer-editorial-grid">
+
+          <!-- Services -->
+          <div class="footer-editorial-col">
+            <h4 class="footer-col-title">Services</h4>
+            <ul class="footer-editorial-list">
+              <li><a href="../../services/zoho-crm-development/" class="footer-editorial-nav-link">Zoho CRM Systems</a></li>
+              <li><a href="../../services/zoho-creator-development/" class="footer-editorial-nav-link">Zoho Creator ERP</a></li>
+              <li><a href="../../services/zoho-api-integrations/" class="footer-editorial-nav-link">API Integrations</a></li>
+              <li><a href="../../services/zoho-data-migration/" class="footer-editorial-nav-link">Data Migration</a></li>
+              <li><a href="../../services/zoho-one-consulting/" class="footer-editorial-nav-link">Zoho One Architecture</a></li>
+              <li><a href="../../services/zoho-erp-development/" class="footer-editorial-nav-link">Custom ERP Development</a></li>
+            </ul>
+          </div>
+
+          <!-- Case Studies -->
+          <div class="footer-editorial-col">
+            <h4 class="footer-col-title">Case Studies</h4>
+            <ul class="footer-editorial-list">
+              <li><a href="../../case-studies/software-services-crm/" class="footer-editorial-nav-link">Software CRM Hub</a></li>
+              <li><a href="../../case-studies/manufacturing-creator-erp/" class="footer-editorial-nav-link">Manufacturing ERP</a></li>
+              <li><a href="../../case-studies/sensor-manufacturing-creator-erp/" class="footer-editorial-nav-link">Sensor IoT ERP</a></li>
+              <li><a href="../../case-studies/renewable-energy-solar-crm/" class="footer-editorial-nav-link">Renewable Energy CRM</a></li>
+              <li><a href="../../case-studies/healthcare-operations/" class="footer-editorial-nav-link">Healthcare Ops</a></li>
+              <li><a href="../../case-studies/financial-services-crm/" class="footer-editorial-nav-link">Financial Compliance CRM</a></li>
+              <li><a href="../../case-studies/" class="footer-editorial-nav-link accent">All Case Studies &rarr;</a></li>
+            </ul>
+          </div>
+
+          <!-- Technical Insights: Architecture -->
+          <div class="footer-editorial-col">
+            <h4 class="footer-col-title">Systems Insights</h4>
+            <ul class="footer-editorial-list">
+              <li><a href="../../insights/10-zoho-crm-automations/" class="footer-editorial-nav-link">10 CRM Automations</a></li>
+              <li><a href="../../insights/zoho-creator-vs-traditional-erp/" class="footer-editorial-nav-link">Creator vs Traditional ERP</a></li>
+              <li><a href="../../insights/zoho-crm-implementation-cost/" class="footer-editorial-nav-link">Implementation Cost Guide</a></li>
+              <li><a href="../../insights/custom-erp-zoho-creator-guide/" class="footer-editorial-nav-link">Custom Creator ERP Guide</a></li>
+              <li><a href="../../insights/common-zoho-crm-implementation-mistakes/" class="footer-editorial-nav-link">Common Implementation Errors</a></li>
+            </ul>
+          </div>
+
+          <!-- Technical Insights: Integrations & Migrations -->
+          <div class="footer-editorial-col">
+            <h4 class="footer-col-title">Migrations &amp; Sync</h4>
+            <ul class="footer-editorial-list">
+              <li><a href="../../insights/hubspot-to-zoho-migration-guide/" class="footer-editorial-nav-link">HubSpot to Zoho Migration</a></li>
+              <li><a href="../../insights/salesforce-vs-zoho-crm/" class="footer-editorial-nav-link">Salesforce vs Zoho CRM</a></li>
+              <li><a href="../../insights/zoho-crm-quickbooks-integration/" class="footer-editorial-nav-link">QuickBooks &amp; Zoho Sync</a></li>
+              <li><a href="../../insights/zoho-crm-api-integration-guide/" class="footer-editorial-nav-link">REST API Integration Guide</a></li>
+              <li><a href="../../insights/automate-sales-processes-zoho-crm/" class="footer-editorial-nav-link">Sales Process Automation</a></li>
+              <li><a href="../../insights/" class="footer-editorial-nav-link accent">All 10+ Insights &rarr;</a></li>
+            </ul>
+          </div>
+
+          <!-- Practice & Overview -->
+          <div class="footer-editorial-col">
+            <h4 class="footer-col-title">Practice &amp; Reach</h4>
+            <ul class="footer-editorial-list">
+              <li><a href="../../about-prince-yadav/" class="footer-editorial-nav-link">About Prince Yadav</a></li>
+              <li><a href="../../zoho-consultant-usa/" class="footer-editorial-nav-link">United States (USA)</a></li>
+              <li><a href="../../zoho-consultant-uk/" class="footer-editorial-nav-link">United Kingdom (UK)</a></li>
+              <li><a href="../../zoho-consultant-europe/" class="footer-editorial-nav-link">Europe (EU)</a></li>
+            </ul>
+            <div class="footer-connect-group">
+              <span class="footer-subheading">Direct Connect</span>
+              <div class="footer-social-logos">
+                <a href="https://www.linkedin.com/in/princeyadav7/" target="_blank" rel="noopener noreferrer" class="footer-logo-btn" aria-label="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/princeyadav7/" target="_blank" rel="noopener noreferrer" class="footer-logo-btn" aria-label="GitHub">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                  </svg>
+                </a>
+                <a href="mailto:princeyadav841@gmail.com" class="footer-logo-btn" aria-label="Gmail / Direct Email">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Colophon -->
+        <div class="footer-colophon">
+          <div class="footer-colophon-left">
+            <span class="footer-colophon-legal">&copy; 2026 Prince Yadav &mdash; Independent Zoho Systems Consultant &amp; Architect.</span>
+            <span class="footer-colophon-note">Engineered with architectural discipline. All Zoho trademarks belong to Zoho Corp.</span>
+          </div>
+          <div class="footer-colophon-right">
+            <button type="button" class="footer-top-trigger" aria-label="Back to top">
+              <span>Top</span>
+              <span>&uarr;</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+  <script src="../../js/main.js?v=5" defer></script>
+</body>
+
+</html>

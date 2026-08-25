@@ -1,65 +1,81 @@
 /* =====================================================
-   tokens.css — Design Tokens, Reset, Base Styles
-   =====================================================
-   Edit this file to change:
-   - Colours (--blue, --text, --bg, etc.)
-   - Typography (font sizes, weights)
-   - Border radii, shadows, transitions
+   tokens.css — Editorial Design System & Tokens
+   Prince Yadav — Independent Zoho Systems Consultant
    ===================================================== */
 
-/* ─── COLOUR TOKENS ─────────────────────────────────
-   Primary accent  → --blue  (professional blue)
-   Backgrounds     → --bg (page), --bg2 (alt sections)
-   Surfaces        → --surface (cards/panels)
-   Text            → --text (headings), --muted (body), --faint (captions)
-   ─────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
 :root {
-  /* Backgrounds */
-  --bg:        #FAFAFD;   /* Soft slate-purple tint */
-  --bg2:       #F2F2FC;   /* Secondary tint */
-  --surface:   #FFFFFF;
+  /* ── Surface & Canvas ────────────────────────────── */
+  --bg: #F7F7F4;
+  /* Warm off-white editorial background */
+  --bg-subtle: #EFEFED;
+  /* Slightly deeper neutral for section contrast */
+  --bg-tint: #FBFBFA;
+  /* Elevated surface */
+  --surface: #FFFFFF;
+  /* Pure card/modal surface */
+  --bg-dark: #121316;
+  /* Deep obsidian for high-contrast statements */
+  --surface-dark: #181A1F;
 
-  /* Borders */
-  --border:    #E2E2F0;
+  /* ── Editorial Hairlines & Dividers ──────────────── */
+  --border: #E5E5DE;
+  /* 1px hairline border */
+  --border-subtle: #EEEEEA;
+  /* Ultra faint separator */
+  --border-strong: #C8C8BF;
+  /* Focus or hovered border */
+  --border-dark: #2A2D35;
+  /* Hairline for dark containers */
 
-  /* Text */
-  --text:      #0B0D17;   /* Charcoal Obsidian */
-  --muted:     #4A4C62;
-  --faint:     #6E708E;
+  /* ── Typography & Contrast Hierarchy ─────────────── */
+  --text: #131417;
+  /* Deep charcoal (not harsh pitch black) */
+  --text-body: #3F424A;
+  /* Comfortable editorial reading tone */
+  --text-muted: #6C707B;
+  /* Secondary editorial descriptions */
+  --text-faint: #9CA0AA;
+  /* Captions, timestamps, mono index */
+  --text-inverse: #F7F7F4;
+  --text-inverse-muted: #9CA0AA;
 
-  /* Primary accent — Sophisticated Indigo */
-  --blue:      #1F2147;   /* Executive Deep Midnight */
-  --blue-l:    #6366F1;   /* Premium Indigo Accent */
-  --blue-d:    #4F46E5;   /* Indigo Base */
-  --blue-bg:   rgba(99, 102, 241, 0.05);   /* Indigo tint background */
-  --blue-bdr:  rgba(99, 102, 241, 0.15);   /* Indigo tint border     */
+  /* ── Restrained Signature Accent (Warm Bronze / Ochre) */
+  --accent: #9E7649;
+  /* Architectural warm bronze */
+  --accent-hover: #825F37;
+  --accent-light: #F3EDE4;
+  --accent-tint: rgba(158, 118, 73, 0.07);
 
-  /* Secondary colours */
-  --teal:      #10B981;   /* Emerald / Green ROI outcomes */
-  --red:       #EF4444;   /* Crimson Accent */
+  /* ── Proportional Radii (Restrained & Architectural) */
+  --r-none: 0px;
+  --r-xs: 2px;
+  --r-sm: 4px;
+  --r: 6px;
+  --r-md: 8px;
+  --r-full: 9999px;
 
-  /* Radii */
-  --r:         6px;
-  --r2:        10px;
-  --r3:        14px;
+  /* ── Shadows (Barely Visible / Flat Graphic Elevation) */
+  --sh-subtle: 0 2px 8px -2px rgba(19, 20, 23, 0.04);
+  --sh-elevated: 0 12px 32px -8px rgba(19, 20, 23, 0.06);
 
-  /* Shadows */
-  --sh:        0 1px 3px rgba(15,23,42,0.03), 0 1px 2px rgba(15,23,42,0.02);
-  --sh2:       0 10px 25px -5px rgba(15,23,42,0.06), 0 8px 10px -6px rgba(15,23,42,0.04);
+  /* ── Spacing Rhythm ─────────────────────────────── */
+  --container-max: 1260px;
+  --container-read: 780px;
+  --sp-section: 120px;
+  --sp-section-sm: 80px;
 
-  /* Transition */
-  --tr:        all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --tr-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-
-  /* Glassmorphism & Premium Glow Additions */
-  --glass-bg:      rgba(255, 255, 255, 0.45);
-  --glass-bdr:     rgba(30, 64, 175, 0.08);
-  --glass-shadow:  0 8px 32px 0 rgba(15, 23, 42, 0.06);
-  --glow-radial:   radial-gradient(circle at center, rgba(30, 64, 175, 0.05) 0%, transparent 70%);
+  /* ── Transitions ────────────────────────────────── */
+  --tr-fast: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --tr-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  --tr-slow: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ─── RESET ───────────────────────────────────────── */
-*, *::before, *::after {
+/* ─── RESET & DEFAULTS ──────────────────────────────── */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -67,28 +83,69 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg);
 }
 
 body {
-  font-family: 'Inter', 'DM Sans', sans-serif;
-  font-weight: 300;
-  background: var(--bg);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  background-color: var(--bg);
   color: var(--text);
   line-height: 1.65;
+  font-size: 16px;
+  letter-spacing: -0.01em;
   overflow-x: hidden;
-  font-size: 15px;
 }
 
 ::selection {
-  background: var(--blue);
-  color: #fff;
+  background: var(--text);
+  color: var(--bg);
 }
 
-a { text-decoration: none; color: inherit; }
-ul { list-style: none; }
-img { max-width: 100%; }
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--tr-fast);
+}
 
-/* ─── SCROLLBAR ─────────────────────────────────── */
-::-webkit-scrollbar       { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg2); }
-::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 2px; }
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ─── EDITORIAL MONO LABELS ─────────────────────────── */
+.mono-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.mono-accent {
+  color: var(--accent);
+}

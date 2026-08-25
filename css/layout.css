@@ -1,100 +1,239 @@
 /* =====================================================
-   layout.css — Grid, Spacing & Typography Utilities
-   =====================================================
-   Edit this file to change:
-   - Max container width (.wrap)
-   - Section vertical padding (.sp)
-   - Grid column counts
-   - Base typography sizes
+   layout.css — Architectural Grids, Scale & Spacing
+   Prince Yadav — Independent Zoho Systems Consultant
    ===================================================== */
 
-/* ─── CONTAINER ─────────────────────────────────── */
-.wrap    { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
-
-/* ─── SECTION PADDING ────────────────────────────
-   .sp     = standard section padding (more spacious for US/EU)
-   .sp-sm  = smaller section padding
-   ─────────────────────────────────────────────── */
-.sp    { padding: 76px 0; }
-.sp-sm { padding: 40px 0; }
-
-/* ─── GRID HELPERS ───────────────────────────────
-   Use inline style for column count overrides only;
-   use these classes for standard layouts.
-   ─────────────────────────────────────────────── */
-.grid2 { display: grid; grid-template-columns: 1fr 1fr;          gap: 28px; }
-.grid3 { display: grid; grid-template-columns: repeat(3, 1fr);   gap: 20px; }
-.grid4 { display: grid; grid-template-columns: repeat(4, 1fr);   gap: 18px; }
-
-/* ─── FLEX HELPERS ───────────────────────────────── */
-.flex   { display: flex; align-items: center; }
-.gap-sm { gap: 8px; }
-.gap-md { gap: 16px; }
-.row    { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
-
-/* ─── SECTION ALTERNATING BG ─────────────────────── */
-.alt { background: var(--bg2); }
-
-/* ─── TYPOGRAPHY ─────────────────────────────────── */
-.eyebrow {
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.72rem; font-weight: 500; letter-spacing: 0.16em;
-  text-transform: uppercase; color: var(--blue-l); margin-bottom: 10px;
-  display: flex; align-items: center; gap: 8px;
-}
-.eyebrow::before {
-  content: ''; display: block; width: 20px; height: 1.5px; background: var(--blue-l);
+/* ─── CONTAINERS & WRAPPERS ─────────────────────────── */
+.wrap {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* Hero headline */
-h1.hero-h {
-  font-family: 'Outfit', sans-serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 300; line-height: 1.15; letter-spacing: -0.03em;
-  color: var(--blue);
-}
-h1.hero-h strong { font-weight: 600; }
-
-/* Section headline */
-h2.sh {
-  font-family: 'Outfit', sans-serif;
-  font-size: clamp(1.45rem, 3vw, 2.2rem);
-  font-weight: 300; line-height: 1.25; letter-spacing: -0.02em;
-  color: var(--blue);
-}
-h2.sh strong { font-weight: 600; }
-
-/* Card headline */
-h3.ch { 
-  font-family: 'Outfit', sans-serif;
-  font-size: 1.05rem; font-weight: 500; line-height: 1.35; margin-bottom: 8px; 
-  color: var(--blue);
+.wrap-reading {
+  width: 100%;
+  max-width: var(--container-read);
+  margin: 0 auto;
+  padding: 0 32px;
 }
 
-/* Body lead text */
-.lead { font-size: 0.98rem; color: var(--muted); line-height: 1.75; font-weight: 300; max-width: 580px; }
+.wrap-fluid {
+  width: 100%;
+  padding: 0 40px;
+}
 
-/* Monospace (JetBrains Mono / DM Mono) */
-.mono { font-family: 'JetBrains Mono', 'DM Mono', monospace; font-size: 0.72rem; font-weight: 300; color: var(--faint); }
+/* ─── SECTION SPACING & RHYTHM ──────────────────────── */
+.sp-section {
+  padding: var(--sp-section) 0;
+  position: relative;
+}
 
-/* Section header wrapper */
-.sec-head              { margin-bottom: 40px; }
-.sec-head.center       { text-align: center; }
-.sec-head.center .eyebrow  { justify-content: center; }
-.sec-head.center .eyebrow::before { display: none; }
-.sec-head.center .lead { margin: 8px auto 0; }
+.sp-section-sm {
+  padding: var(--sp-section-sm) 0;
+  position: relative;
+}
 
-/* ─── SCROLL REVEAL ──────────────────────────────── */
-.rv   { opacity: 0; transform: translateY(18px);  transition: opacity .55s ease, transform .55s ease; }
-.rv-l { opacity: 0; transform: translateX(-18px); transition: opacity .55s ease, transform .55s ease; }
-.rv-r { opacity: 0; transform: translateX(18px);  transition: opacity .55s ease, transform .55s ease; }
-.rv.on, .rv-l.on, .rv-r.on { opacity: 1; transform: translate(0); }
+.sp-section-lg {
+  padding: 150px 0;
+  position: relative;
+}
 
-/* ─── DIVIDERS ───────────────────────────────────── */
-.divider { width: 100%; height: 1px; background: var(--border); }
+/* ─── SECTION BACKGROUNDS ───────────────────────────── */
+.bg-subtle {
+  background-color: var(--bg-subtle);
+}
 
-/* ─── SECTION SEPARATORS ─────────────────────────── */
-section + section          { border-top: 1px solid transparent; }
-.alt + section,
-section + .alt             { border-top: 1px solid var(--border); }
+.bg-dark {
+  background-color: var(--bg-dark);
+  color: var(--text-inverse);
+}
 
+.bg-surface {
+  background-color: var(--surface);
+}
+
+/* ─── HAIRLINE SEPARATORS ───────────────────────────── */
+.hairline-top {
+  border-top: 1px solid var(--border);
+}
+
+.hairline-bottom {
+  border-bottom: 1px solid var(--border);
+}
+
+.hairline-dark-top {
+  border-top: 1px solid var(--border-dark);
+}
+
+.hairline-dark-bottom {
+  border-bottom: 1px solid var(--border-dark);
+}
+
+/* ─── EDITORIAL GRID SYSTEMS ────────────────────────── */
+.grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px;
+}
+
+.grid-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.grid-4col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Asymmetric Editorial Splits */
+.grid-split-hero {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.grid-split-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.grid-split-header {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ─── FLEX UTILITIES ────────────────────────────────── */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gap-xs { gap: 8px; }
+.gap-sm { gap: 16px; }
+.gap-md { gap: 24px; }
+.gap-lg { gap: 36px; }
+.gap-xl { gap: 48px; }
+
+/* ─── EDITORIAL TYPOGRAPHIC SCALE ───────────────────── */
+.display-hero {
+  font-size: clamp(2.4rem, 4.4vw, 3.8rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.display-hero strong,
+.display-hero b {
+  font-weight: 600;
+}
+
+.display-lg {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
+  color: var(--text);
+}
+
+.heading-1 {
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.heading-2 {
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  color: var(--text);
+}
+
+.heading-3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+
+.body-lead {
+  font-size: 1.18rem;
+  line-height: 1.65;
+  font-weight: 400;
+  color: var(--text-body);
+}
+
+.body-main {
+  font-size: 1rem;
+  line-height: 1.65;
+  font-weight: 400;
+  color: var(--text-body);
+}
+
+.body-muted {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.body-caption {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--text-faint);
+}
+
+/* ─── SECTION HEADINGS ──────────────────────────────── */
+.section-meta {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-meta .index-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.section-intro {
+  margin-bottom: 64px;
+}
+
+.section-title-large {
+  font-size: clamp(1.8rem, 2.8vw, 2.5rem);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+}
