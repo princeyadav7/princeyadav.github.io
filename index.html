@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prince Yadav — Independent Zoho Systems Consultant & Developer</title>
   <meta name="description"
-    content="Independent Zoho consultant designing and building CRM, ERP and custom automation systems. Helping international businesses simplify operations, connect data and eliminate manual work." />
+    content="Independent Zoho consultant designing and building CRM, ERP and custom automation systems. Helping international businesses simplify operations, connect…" />
   <meta name="keywords"
     content="Zoho Consultant, Zoho CRM Developer, Zoho Creator Developer, Custom ERP, Deluge Scripting, Business Process Automation, Zoho API Integration, Data Migration, Remote Zoho Consultant" />
   <meta name="author" content="Prince Yadav" />
@@ -27,6 +27,9 @@
   <meta property="og:description"
     content="I design and build CRM, ERP and automation systems using Zoho — helping teams simplify operations, connect systems and reduce manual work." />
   <meta property="og:image" content="https://princeyadav7.github.io/princeyadav.github.io/images/profile.jpeg" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="400" />
+  <meta property="og:image:type" content="image/jpeg" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -63,27 +66,41 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://princeyadav7.github.io/princeyadav.github.io/#website",
+        "name": "Prince Yadav — Certified Zoho Consultant",
+        "url": "https://princeyadav7.github.io/princeyadav.github.io/",
+        "description": "Certified Zoho CRM, Creator ERP, and systems consultant for US, UK, and European businesses.",
+        "author": { "@id": "https://princeyadav7.github.io/princeyadav.github.io/#person" },
+        "inLanguage": "en"
+      },
+      {
         "@type": "Person",
         "@id": "https://princeyadav7.github.io/princeyadav.github.io/#person",
         "name": "Prince Yadav",
-        "jobTitle": "Independent Zoho Systems Consultant",
+        "givenName": "Prince",
+        "familyName": "Yadav",
+        "jobTitle": "Certified Zoho Systems Consultant & Developer",
         "url": "https://princeyadav7.github.io/princeyadav.github.io/",
         "image": "https://princeyadav7.github.io/princeyadav.github.io/images/profile.jpeg",
-        "description": "Independent Zoho consultant designing CRM, ERP and custom business architectures for international organizations.",
+        "description": "Certified Zoho Developer with 16+ enterprise engagements across finance, healthcare, manufacturing and B2B sectors. Expert in Zoho CRM, Creator ERP, Deluge scripting, and API integrations.",
+        "address": { "@type": "PostalAddress", "addressCountry": "IN", "addressLocality": "Delhi" },
+        "hasCredential": [
+          { "@type": "EducationalOccupationalCredential", "name": "Certified Zoho Developer", "credentialCategory": "Professional Certification", "recognizedBy": { "@type": "Organization", "name": "Zoho Corporation" } },
+          { "@type": "EducationalOccupationalCredential", "name": "AI Fundamentals", "credentialCategory": "Professional Certification", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+          { "@type": "EducationalOccupationalCredential", "name": "Data Analytics", "credentialCategory": "Professional Certification", "recognizedBy": { "@type": "Organization", "name": "Accenture" } }
+        ],
         "sameAs": [
           "https://github.com/princeyadav7",
-          "https://linkedin.com/in/prince-yadav-zoho"
+          "https://linkedin.com/in/prince-yadav-zoho",
+          "https://www.linkedin.com/in/princeyadav7/"
         ],
         "knowsAbout": [
-          "Zoho CRM",
-          "Zoho Creator",
-          "Zoho Books",
-          "Zoho Inventory",
-          "Zoho One",
-          "Deluge Scripting",
-          "REST API Integrations",
-          "CRM Data Migration",
-          "Custom ERP Architecture"
+          "Zoho CRM", "Zoho Creator", "Zoho Books", "Zoho Inventory",
+          "Zoho One", "Zoho Analytics", "Deluge Scripting",
+          "REST API Integrations", "CRM Data Migration",
+          "Custom ERP Architecture", "Business Process Automation",
+          "Salesforce to Zoho Migration", "HubSpot to Zoho Migration"
         ]
       },
       {
@@ -161,6 +178,41 @@
             }
           ]
         }
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Schema — powers Google AI Overviews, People Also Ask & Perplexity -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does a Zoho CRM consultant do?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A Zoho CRM consultant designs, builds, and customises Zoho CRM for businesses. This includes creating custom modules, automating workflows with Deluge scripting, integrating third-party APIs (QuickBooks, Stripe, Shopify), migrating data from Salesforce or HubSpot, and building analytics dashboards — all aligned to the company's specific sales process." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does Zoho CRM implementation cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Zoho CRM licensing starts at $14/user/month (Standard tier). Professional implementation consulting — including custom modules, Deluge automation, data migration, and API integrations — typically costs $2,000–$8,000 for standard deployments and $10,000–$30,000 for complex enterprise projects." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I migrate from Salesforce or HubSpot to Zoho CRM?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prince Yadav specialises in enterprise CRM migrations from Salesforce, HubSpot, Pipedrive, and spreadsheets to Zoho CRM. Every migration includes a data audit, field mapping document, staged test migration, and post-migration reconciliation — with zero downtime to the existing system." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Deluge scripting in Zoho?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Deluge is Zoho's native scripting language used to write custom automation functions, workflow rules, API integrations, and scheduled jobs across Zoho CRM, Creator, Books, and other apps. Expert Deluge engineering is essential for complex automations, multi-app data sync, and custom business logic beyond standard Zoho configuration." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Prince Yadav work with US and UK clients remotely?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prince Yadav provides 4+ hours of daily EST overlap for US clients and full GMT alignment for UK clients. Tasks assigned at end of your business day are built and ready for review by your next morning. All engagements include a signed NDA, dedicated developer environment, and 100% client-owned IP upon delivery." }
       }
     ]
   }
