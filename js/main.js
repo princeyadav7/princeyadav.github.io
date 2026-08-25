@@ -128,10 +128,11 @@ document.addEventListener('DOMContentLoaded', () => {
           requirement: requirement
         };
 
-        // Production endpoint: Cloudflare Worker (handles Resend API dispatch securely)
-        // After deploying the worker, replace the URL below with your worker URL.
-        // See cloudflare-worker/README.md for deployment steps.
-        const WORKER_URL = 'https://prince-portfolio-contact.princeyadav7.workers.dev/api/contact';
+        // Determine endpoint: use local endpoint if on localhost/127.0.0.1, otherwise Cloudflare Worker
+        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+        const WORKER_URL = isLocal
+          ? '/api/contact'
+          : 'https://prince-portfolio-contact.princeyadav7.workers.dev/api/contact';
 
         const res = await fetch(WORKER_URL, {
           method: 'POST',
@@ -142,9 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
           body: JSON.stringify(payload)
         });
 
-        const data = await res.json();
+        const data = await res.json().catch(() => ({}));
 
-        if (data.success === 'true' || data.success === true || res.ok) {
+        if (res.ok && (data.success === true || data.success === 'true' || data.id)) {
           const formCard = form.closest('.cta-form-card');
           if (formCard) {
             function escapeHtml(str) {
@@ -188,14 +189,27 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
           }
         } else {
-          throw new Error(data.message || 'Submission error');
+          throw new Error(data.error || data.message || `Server responded with status ${res.status}`);
         }
       } catch (err) {
         console.error('Form submission error:', err);
 
         if (statusDiv) {
           statusDiv.className = 'cta-form-status error';
-          statusDiv.innerHTML = `<strong>Submission note:</strong> If the form is awaiting first-time activation, please check your inbox (princeyadav841@gmail.com) for the FormSubmit activation link. You can also reach Prince directly at <a href="mailto:princeyadav841@gmail.com" style="color:#FFFFFF; text-decoration:underline; font-weight:600;">princeyadav841@gmail.com</a>.`;
+          statusDiv.innerHTML = `
+            <strong>Unable to send directly from browser:</strong>
+            <p style="margin: 6px 0 8px 0; font-size: 0.9em; line-height: 1.5; color: #FCA5A5;">
+              Please send your requirement directly via email or WhatsApp:
+            </p>
+            <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 4px;">
+              <a href="mailto:princeyadav841@gmail.com?subject=Project%20Inquiry%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent('Hi Prince,\n\n' + requirement + '\n\nFrom: ' + name + ' (' + email + ')')}" style="color:#FFFFFF; text-decoration:underline; font-weight:600;">
+                📧 Email Prince (princeyadav841@gmail.com) &rarr;
+              </a>
+              <a href="https://wa.me/919794571928?text=${encodeURIComponent('Hi Prince, I would like to discuss a Zoho project:\n' + requirement)}" target="_blank" rel="noopener noreferrer" style="color:#4ADE80; text-decoration:underline; font-weight:600;">
+                💬 WhatsApp (+91 97945 71928) &rarr;
+              </a>
+            </div>
+          `;
           statusDiv.style.display = 'block';
         }
       } finally {

@@ -17,6 +17,14 @@ const EMAIL_FROM = 'Prince Yadav Portfolio <info@protonvix.com>';
 // ── Allowed origins (update if you add a custom domain) ──────────────────────
 const ALLOWED_ORIGINS = [
   'https://princeyadav7.github.io',
+  'http://localhost:8000',
+  'http://127.0.0.1:8000',
+  'http://localhost:3000',
+  'http://127.0.0.1:3000',
+  'http://localhost:5500',
+  'http://127.0.0.1:5500',
+  'http://localhost:8080',
+  'http://127.0.0.1:8080',
 ];
 
 // ── Simple in-memory rate limiter (per IP, resets each Worker invocation) ────
@@ -157,10 +165,13 @@ export default {
     const origin = request.headers.get('Origin') || '';
 
     // ── CORS preflight ─────────────────────────────────────────────────────────
+    const isAllowedOrigin = !origin || ALLOWED_ORIGINS.includes(origin) || origin.endsWith('.github.io');
+    const allowOriginHeader = isAllowedOrigin ? (origin || '*') : '';
+
     const corsHeaders = {
       'Access-Control-Allow-Methods':  'POST, OPTIONS',
       'Access-Control-Allow-Headers':  'Content-Type, Accept',
-      'Access-Control-Allow-Origin':   ALLOWED_ORIGINS.includes(origin) ? origin : '',
+      'Access-Control-Allow-Origin':   allowOriginHeader,
       'Vary':                          'Origin',
     };
 
