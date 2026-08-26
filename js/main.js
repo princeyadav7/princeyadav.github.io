@@ -125,16 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const payload = {
           name: name,
           email: email,
-          requirement: requirement
+          requirement: requirement,
+          _subject: `Urgent - ${name} - Prince Portfolio`,
+          _template: 'table',
+          _captcha: 'false'
         };
 
-        // Determine endpoint: use local endpoint if on localhost/127.0.0.1, otherwise Cloudflare Worker
-        const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-        const WORKER_URL = isLocal
-          ? '/api/contact'
-          : 'https://prince-portfolio-contact.princeyadav7.workers.dev/api/contact';
+        const FORMSUBMIT_URL = 'https://formsubmit.co/ajax/princeyadav841@gmail.com';
 
-        const res = await fetch(WORKER_URL, {
+        const res = await fetch(FORMSUBMIT_URL, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -145,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const data = await res.json().catch(() => ({}));
 
-        if (res.ok && (data.success === true || data.success === 'true' || data.id)) {
+        if (res.ok && (data.success === true || data.success === 'true' || (data.message && !data.error))) {
           const formCard = form.closest('.cta-form-card');
           if (formCard) {
             function escapeHtml(str) {
