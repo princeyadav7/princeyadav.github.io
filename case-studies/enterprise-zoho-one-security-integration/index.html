@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enterprise Zoho One Implementation &amp; Oracle Cloud Integration | Prince Yadav</title>
+  <meta name="description" content="Case study on enterprise Zoho One administration, least-privilege application access controls, scheduled Oracle Cloud API data integration, and multi-source Zoho Analytics reporting." />
+  <link rel="canonical" href="https://princeyadav7.github.io/princeyadav.github.io/case-studies/enterprise-zoho-one-security-integration/" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="icon" type="image/png" href="../../images/favicon.png" />
+  <link rel="apple-touch-icon" href="../../images/favicon.png" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://princeyadav7.github.io/princeyadav.github.io/case-studies/enterprise-zoho-one-security-integration/" />
+  <meta property="og:title" content="Enterprise Zoho One Implementation &amp; Oracle Cloud Integration | Prince Yadav" />
+  <meta property="og:description" content="Case study on enterprise Zoho One administration, least-privilege application access controls, scheduled Oracle Cloud API data integration, and multi-source Zoho Analytics reporting." />
+  <meta property="og:image" content="https://princeyadav7.github.io/princeyadav.github.io/images/profile.jpeg" />
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="400" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Enterprise Zoho One Implementation &amp; Oracle Cloud Integration | Prince Yadav" />
+  <meta name="twitter:description" content="Case study on enterprise Zoho One administration, least-privilege application access controls, scheduled Oracle Cloud API data integration, and multi-source Zoho Analytics reporting." />
+  <meta name="twitter:image" content="https://princeyadav7.github.io/princeyadav.github.io/images/profile.jpeg" />
+  <meta name="theme-color" content="#0f1117" />
+  <link rel="alternate" hreflang="en" href="https://princeyadav7.github.io/princeyadav.github.io/case-studies/enterprise-zoho-one-security-integration/" />
+  <link rel="alternate" hreflang="x-default" href="https://princeyadav7.github.io/princeyadav.github.io/" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://princeyadav7.github.io/princeyadav.github.io/case-studies/enterprise-zoho-one-security-integration/#article","headline":"Enterprise Zoho One Implementation and Oracle Cloud Data Integration","author":{"@type":"Person","name":"Prince Yadav","url":"https://princeyadav7.github.io/princeyadav.github.io/"},"description":"Case study documenting enterprise Zoho One administration, Oracle Cloud API-based data integration, Zoho Analytics reporting, CRM configuration, and HRMS setup for an industrial products organization.","publisher":{"@type":"Person","name":"Prince Yadav","url":"https://princeyadav7.github.io/princeyadav.github.io/"},"dateModified":"2026-10-18","datePublished":"2026-10-18"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://princeyadav7.github.io/princeyadav.github.io/"},{"@type":"ListItem","position":2,"name":"Case Studies","item":"https://princeyadav7.github.io/princeyadav.github.io/case-studies/"},{"@type":"ListItem","position":3,"name":"Enterprise Zoho One Implementation","item":"https://princeyadav7.github.io/princeyadav.github.io/case-studies/enterprise-zoho-one-security-integration/"}]}]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../css/tokens.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/sections.css" />
+  <link rel="stylesheet" href="../../css/responsive.css" />
+  <link rel="stylesheet" href="../../css/case-study.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header" id="header">
+    <div class="wrap nav-container">
+      <a href="../../" class="nav-brand" aria-label="Prince Yadav Home">
+        <span class="nav-brand-title">PRINCE YADAV</span>
+        <span class="nav-brand-subtitle">SYSTEMS CONSULTING</span>
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="../../case-studies/" class="nav-item active">Case Studies</a>
+        <a href="../../services/" class="nav-item">Services</a>
+        <a href="../../about-prince-yadav/" class="nav-item">About</a>
+        <a href="../../insights/" class="nav-item">Insights</a>
+      </nav>
+      <div class="flex gap-sm">
+        <a href="../../#contact" class="nav-contact-link">Contact <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <button class="mobile-menu-btn" aria-label="Open Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16M4 16h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav-overlay">
+    <div class="mobile-nav-panel">
+      <div>
+        <div class="mobile-nav-header">
+          <span class="mono-label">Navigation</span>
+          <button class="mobile-nav-close" aria-label="Close Menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+        </div>
+        <div class="mobile-nav-links">
+          <a href="../../case-studies/" class="mobile-nav-link">Case Studies</a>
+          <a href="../../services/" class="mobile-nav-link">Services</a>
+          <a href="../../about-prince-yadav/" class="mobile-nav-link">About</a>
+          <a href="../../insights/" class="mobile-nav-link">Insights</a>
+        </div>
+      </div>
+      <div class="mobile-nav-footer"><a href="../../#contact" class="btn btn-primary" style="width:100%">Discuss Your Project</a></div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="case-detail-hero">
+    <div class="wrap">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <a href="../../">Home</a>
+        <span class="breadcrumbs-sep">/</span>
+        <a href="../../case-studies/">Case Studies</a>
+        <span class="breadcrumbs-sep">/</span>
+        <span class="current">Enterprise Zoho One Implementation</span>
+      </nav>
+
+      <div class="case-hero-meta-strip">
+        <span class="case-category-badge">ENTERPRISE ZOHO ONE</span>
+        <span class="mono-label">ORACLE CLOUD SYNC</span>
+        <span class="mono-label">&bull;</span>
+        <span class="mono-label">APPLICATION SECURITY</span>
+        <span class="mono-label">&bull;</span>
+        <span class="mono-label">MULTI-SOURCE BI</span>
+        <span class="mono-label">&bull;</span>
+        <span class="mono-label">SAUDI ARABIA</span>
+      </div>
+
+      <h1 class="case-hero-title">Enterprise Zoho One Implementation &amp; Oracle Cloud Data Integration</h1>
+
+      <p class="case-hero-lead">
+        Configuring enterprise-wide application access controls, implementing scheduled Oracle Cloud data retrieval, and delivering consolidated business intelligence in Zoho Analytics &mdash; as a Zoho Developer within a collaborative implementation team for an industrial products organization.
+      </p>
+
+      <!-- Key Metrics Strip -->
+      <div class="case-hero-metrics-bar" role="list" aria-label="Project highlights">
+        <div class="hero-metric-box" role="listitem">
+          <div class="hero-metric-val">Enterprise</div>
+          <div class="hero-metric-lbl">Zoho One Suite Deployment</div>
+        </div>
+        <div class="hero-metric-box" role="listitem">
+          <div class="hero-metric-val">Oracle Cloud</div>
+          <div class="hero-metric-lbl">Scheduled API Data Ingestion</div>
+        </div>
+        <div class="hero-metric-box" role="listitem">
+          <div class="hero-metric-val">100% RBAC</div>
+          <div class="hero-metric-lbl">Least-Privilege Security</div>
+        </div>
+        <div class="hero-metric-box" role="listitem">
+          <div class="hero-metric-val">Multi-Source</div>
+          <div class="hero-metric-lbl">Zoho Analytics BI Dashboards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN WRAPPER -->
+  <main class="wrap">
+    <div class="case-detail-layout">
+
+      <!-- LEFT SIDEBAR -->
+      <aside class="case-sidebar-col">
+        <div class="case-specs-card">
+          <div class="case-specs-header">
+            <span>Project Specs</span>
+            <span class="mono-accent">#Z1-ORACLE</span>
+          </div>
+          <div class="specs-list">
+            <div class="spec-item"><span class="spec-label">Client Profile</span><span class="spec-val">Industrial Products Organization</span></div>
+            <div class="spec-item"><span class="spec-label">Industry</span><span class="spec-val">Industrial Products &amp; Enterprise Operations</span></div>
+            <div class="spec-item"><span class="spec-label">Region</span><span class="spec-val">Saudi Arabia</span></div>
+            <div class="spec-item"><span class="spec-label">External Source</span><span class="spec-val">Oracle Cloud (Scheduled API Retrieval)</span></div>
+            <div class="spec-item"><span class="spec-label">Analytics Layer</span><span class="spec-val">Zoho Analytics (Multi-Source Dashboards &amp; KPIs)</span></div>
+            <div class="spec-item"><span class="spec-label">My Role</span><span class="spec-val">Zoho Developer &mdash; Security, Integration &amp; BI</span></div>
+            <div class="spec-item"><span class="spec-label">Engagement</span><span class="spec-val">Collaborative Enterprise Implementation Team</span></div>
+          </div>
+          <div class="case-sidebar-cta">
+            <a href="../../#contact" class="btn btn-primary btn-sm" style="width:100%;">Discuss Similar Project <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+
+        <div class="case-toc-card">
+          <div class="case-toc-title">Contents</div>
+          <nav class="case-toc-links" aria-label="In-page navigation">
+            <a href="#overview" class="case-toc-link">
+              <span class="case-toc-num">01</span>
+              <span>Project Overview</span>
+            </a>
+            <a href="#challenges" class="case-toc-link">
+              <span class="case-toc-num">02</span>
+              <span>Problem Faced</span>
+            </a>
+            <a href="#solution" class="case-toc-link">
+              <span class="case-toc-num">03</span>
+              <span>Solution Provided</span>
+            </a>
+            <a href="#outcomes" class="case-toc-link">
+              <span class="case-toc-num">04</span>
+              <span>Project Outcomes</span>
+            </a>
+            <a href="#architecture" class="case-toc-link">
+              <span class="case-toc-num">05</span>
+              <span>Technical Architecture</span>
+            </a>
+            <a href="#contributions" class="case-toc-link">
+              <span class="case-toc-num">06</span>
+              <span>Role &amp; Technical Contributions</span>
+            </a>
+            <a href="#highlights" class="case-toc-link">
+              <span class="case-toc-num">07</span>
+              <span>Implementation Highlights</span>
+            </a>
+            <a href="#tech-stack" class="case-toc-link">
+              <span class="case-toc-num">08</span>
+              <span>Technology Stack</span>
+            </a>
+            <a href="#cta" class="case-toc-link">
+              <span class="case-toc-num">09</span>
+              <span>Contact &amp; Consultation</span>
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- RIGHT CONTENT STREAM -->
+      <article class="case-article-stream">
+
+        <!-- 01. OVERVIEW -->
+        <section id="overview" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">01 / Overview</span>
+          </div>
+          <h2 class="case-section-title">Project Overview</h2>
+          <div class="case-prose">
+            <p>
+              This engagement involved contributing to a comprehensive Zoho One implementation for an industrial products organization operating across enterprise-scale business operations in Saudi Arabia. The organization required a unified, securely administered digital environment spanning customer relationship management, financial operations, human resources, payroll, document signing, forms, custom applications, and customer support &mdash; all within the Zoho One ecosystem.
+            </p>
+            <p>
+              A distinctive feature of the implementation was the organization's use of <strong>Oracle Cloud</strong> as a live source of business data. Relevant operational information maintained and updated within Oracle Cloud needed to be retrieved periodically using APIs and scheduled functions, ingested into Zoho Analytics, and blended alongside data from Zoho CRM and Zoho Books to power executive dashboards, operational reports, and key performance indicators. This Oracle Cloud integration formed a major technical component of the engagement.
+            </p>
+            <p>
+              I contributed to the project as a Zoho Developer within a collaborative enterprise implementation team. My specific responsibilities included application access and permission configuration across Zoho One applications, Oracle Cloud data retrieval and scheduled integration, Zoho Analytics dashboard and report development, Zoho CRM configuration, HRMS and payroll setup in Zoho People and Zoho Payroll, and Zoho Desk ticket-management setup.
+            </p>
+            <div class="cs-team-note">
+              <strong>Team Collaboration &amp; Engineering Scope:</strong> Working as part of a collaborative enterprise implementation squad, I delivered the identity governance framework, the scheduled Oracle Cloud data pipeline, and multi-source analytics intelligence while coordinating with functional specialists across CRM and HRMS.
+            </div>
+          </div>
+        </section>
+
+        <!-- 02. CHALLENGES -->
+        <section id="challenges" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">02 / Bottlenecks</span>
+          </div>
+          <h2 class="case-section-title">Problem Faced</h2>
+
+          <h3 class="case-subsection-title">2.1 Enterprise-Wide Application Access Control</h3>
+          <div class="case-prose">
+            <p>
+              Deploying Zoho One at enterprise scale means configuring access across a suite of interconnected business applications &mdash; each serving a different organizational function and each implementing its own distinct permission model. Zoho CRM, Zoho Books, Zoho Analytics, Zoho People, Zoho Payroll, Zoho Desk, Zoho Creator, Zoho Sign, and Zoho Forms each carry different data sensitivities and serve different user groups with different operational responsibilities.
+            </p>
+            <p>
+              The administrative challenge was establishing a clearly defined access architecture: provisioning user accounts, organizing users into a structured role hierarchy, assigning application profiles, and configuring application-specific permissions appropriate to each platform. Access needed to align precisely with each user's organizational responsibilities &mdash; not just globally, but within each individual application and at the record level where the platform permits such granularity.
+            </p>
+          </div>
+
+          <h3 class="case-subsection-title">2.2 Data Privacy and Dashboard Permissions</h3>
+          <div class="case-prose">
+            <p>
+              Enterprise analytics environments frequently expose information that carries different levels of sensitivity: executive-level financial summaries, operational KPIs, personnel data, and management dashboards should not be universally accessible across an organization. In Zoho Analytics, dashboard and report visibility is governed through workspace and shared-view permissions that operate differently from record-level sharing within transactional applications like Zoho CRM.
+            </p>
+            <p>
+              The requirement was to ensure that sensitive reports, business performance dashboards, and key performance indicators were accessible only to the users and roles for whom that visibility was operationally appropriate. This demanded careful configuration of report folder permissions, shared dashboard access, and cross-application data visibility within the Zoho Analytics environment.
+            </p>
+          </div>
+
+          <h3 class="case-subsection-title">2.3 External Data Integration from Oracle Cloud</h3>
+          <div class="case-prose">
+            <p>
+              The organization maintained continuously updated business data within Oracle Cloud. This external operational dataset was a critical input for the organization's reporting requirements: relevant records needed to be retrieved, structured, and made available within Zoho Analytics alongside internal Zoho data so that comprehensive reports and KPIs could present a complete operational picture.
+            </p>
+            <p>
+              Because Oracle Cloud is an external, independently managed platform, this data could not be accessed through Zoho's native application connections. A dedicated integration approach was needed to query the external platform using its API, retrieve updated records at defined intervals using scheduled functions, and transfer the relevant data into the Zoho Analytics environment. The architectural distinction between periodic scheduled batch polling and event-driven webhook notifications was also maintained in the integration design.
+            </p>
+          </div>
+
+          <h3 class="case-subsection-title">2.4 Consolidated Business Intelligence Across Disparate Systems</h3>
+          <div class="case-prose">
+            <p>
+              Business intelligence is most valuable when it draws on information from all relevant operational sources. In this implementation, relevant data was distributed across three distinct systems: Oracle Cloud (external operational data), Zoho CRM (customer-relationship records), and Zoho Books (financial transaction records). Decision-makers required dashboards and reports that presented relevant information from these sources within a single reporting environment.
+            </p>
+            <p>
+              Building this consolidated reporting layer within Zoho Analytics required ensuring that each data source was appropriately structured, that dashboards and reports were designed to surface the most relevant business indicators, and that KPI widgets provided management with at-a-glance performance visibility.
+            </p>
+          </div>
+
+          <h3 class="case-subsection-title">2.5 Multi-Application Business Operations</h3>
+          <div class="case-prose">
+            <p>
+              Beyond analytics and integration, the organization required comprehensive operational configuration across the Zoho One suite. Human resource administration in Zoho People, payroll processing in Zoho Payroll, support-request management in Zoho Desk, document signing in Zoho Sign, form-based data collection in Zoho Forms, and custom-application development in Zoho Creator all required setup aligned with the organization's structure, responsibilities, and workflows.
+            </p>
+            <p>
+              Each application had to be provisioned, configured with appropriate organizational data, and made available to the relevant staff members with appropriate access controls as part of a coherent, interconnected enterprise system.
+            </p>
+          </div>
+        </section>
+
+        <!-- 03. SOLUTION -->
+        <section id="solution" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">03 / Solution Architecture</span>
+          </div>
+          <h2 class="case-section-title">Solution Provided</h2>
+          <div class="case-prose">
+            <p>
+              To unify enterprise governance and operational reporting across the organization, we engineered a multi-layered solution spanning identity access governance, scheduled Oracle Cloud API pipelines, consolidated Zoho Analytics intelligence, and coordinated Zoho One departmental deployments:
+            </p>
+          </div>
+
+          <!-- Flow Strip: 5-Stage Enterprise Data & Governance Lifecycle -->
+          <div class="cs-flow-strip" role="region" aria-label="Enterprise Zoho One and Oracle Cloud Integration Workflow" style="margin-top: 24px; margin-bottom: 28px;">
+            <div class="cs-flow-node">
+              <div class="cs-flow-node-label">STAGE 01</div>
+              <div class="cs-flow-node-title">Identity &amp; RBAC</div>
+              <div class="cs-flow-node-sub">User provisioning, role hierarchy &amp; profile security</div>
+            </div>
+            <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+            <div class="cs-flow-node">
+              <div class="cs-flow-node-label">STAGE 02</div>
+              <div class="cs-flow-node-title">Oracle Cloud API</div>
+              <div class="cs-flow-node-sub">Scheduled polling &amp; batch operational data extraction</div>
+            </div>
+            <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+            <div class="cs-flow-node">
+              <div class="cs-flow-node-label">STAGE 03</div>
+              <div class="cs-flow-node-title">Data Ingestion</div>
+              <div class="cs-flow-node-sub">Normalized storage into Zoho Analytics tables</div>
+            </div>
+            <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+            <div class="cs-flow-node">
+              <div class="cs-flow-node-label">STAGE 04</div>
+              <div class="cs-flow-node-title">Multi-Source BI</div>
+              <div class="cs-flow-node-sub">Blending Oracle data with CRM &amp; Books metrics</div>
+            </div>
+            <div class="cs-flow-arrow" aria-hidden="true">&#8594;</div>
+            <div class="cs-flow-node">
+              <div class="cs-flow-node-label">STAGE 05</div>
+              <div class="cs-flow-node-title">Executive Delivery</div>
+              <div class="cs-flow-node-sub">Secured dashboards, KPI widgets &amp; Desk operations</div>
+            </div>
+          </div>
+
+          <!-- Solution Pillars -->
+          <div class="pillar-item" style="margin-bottom: 20px;">
+            <div class="pillar-top-badge">
+              <span class="pillar-num">Pillar 01</span>
+              <span class="mono-label">Access &amp; Security</span>
+            </div>
+            <h3 class="pillar-title">Zoho One Administration &amp; Permission Configuration</h3>
+            <div class="pillar-points">
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>User Provisioning &amp; Organisation Administration:</strong> Configured user accounts across the Zoho One organisation, assigned appropriate application licences, and aligned user records with the organisational structure to ensure each individual accessed strictly the tools their role required.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Role Hierarchy Configuration:</strong> Structured the organisational role hierarchy within Zoho applications, establishing reporting lines that determined record ownership, data visibility, and hierarchical inheritance rules.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Application Profile &amp; Permission Setup:</strong> Configured application profiles defining module-level access rights, field visibility, and administrative permissions. Because each Zoho application operates its own distinct permission architecture, permissions were configured per application capability rather than assuming a uniform cross-app model.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Record &amp; Dashboard Visibility Control:</strong> Applied least-privilege access principles across business records, reporting environments, and management dashboards. Sensitive financial summaries, strategic KPI dashboards, and personnel records were secured to authorized leadership roles.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pillar-item" style="margin-bottom: 20px;">
+            <div class="pillar-top-badge">
+              <span class="pillar-num">Pillar 02</span>
+              <span class="mono-label">Cloud Integration</span>
+            </div>
+            <h3 class="pillar-title">Oracle Cloud to Zoho Analytics Data Integration</h3>
+            <div class="pillar-points">
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>API-Based External Data Retrieval:</strong> Implemented API calls to query and extract updated operational records from Oracle Cloud's API surface into the integration pipeline.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Scheduled Function Implementation:</strong> Engineered scheduled functions to automate the periodic batch execution of data extraction routines. Scheduled polling retrieves updated records at configured intervals, providing consistent batch reliability.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Data Ingestion into Zoho Analytics:</strong> Structured the ingestion of retrieved Oracle Cloud data into dedicated Zoho Analytics data tables, making it available for downstream joining with Zoho CRM and Zoho Books transactional tables.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Webhook Support Where Applicable:</strong> Integrated webhook listeners where applicable to provide event-driven notifications complementing the scheduled batch retrieval mechanism.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pillar-item" style="margin-bottom: 20px;">
+            <div class="pillar-top-badge">
+              <span class="pillar-num">Pillar 03</span>
+              <span class="mono-label">Business Intelligence</span>
+            </div>
+            <h3 class="pillar-title">Zoho Analytics Dashboards, Reports &amp; KPIs</h3>
+            <div class="pillar-points">
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Multi-Source Consolidated Reporting:</strong> Developed dashboards and reports in Zoho Analytics blending data across three sources: Oracle Cloud operational records, Zoho CRM customer deals, and Zoho Books financial transactions.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Executive &amp; Departmental Dashboards:</strong> Created visual dashboards presenting key performance metrics tailored for executive leadership and departmental management without exposing sensitive records cross-functionally.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>KPI Widgets &amp; Summary Reporting:</strong> Configured KPI widgets for at-a-glance performance tracking and constructed drill-down tabular reports enabling stakeholders to review granular operational details.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pillar-item" style="margin-bottom: 20px;">
+            <div class="pillar-top-badge">
+              <span class="pillar-num">Pillar 04</span>
+              <span class="mono-label">Enterprise Applications</span>
+            </div>
+            <h3 class="pillar-title">Zoho CRM, HRMS, Payroll &amp; Desk Setup</h3>
+            <div class="pillar-points">
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Zoho CRM Data Configuration:</strong> Structured CRM modules and fields as the primary commercial repository, feeding sales pipelines directly into the consolidated BI layer.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Zoho People &amp; Payroll Setup:</strong> Configured employee administration, organizational hierarchy, leave tracking, and payroll initialization within the enterprise environment.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Zoho Desk Support Management:</strong> Provisioned departments, agent security roles, ticket categories, and service SLAs to provide structured customer support tracking.</div>
+              </div>
+              <div class="pillar-point">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><strong>Wider Suite Integration (Sign, Forms, Creator):</strong> Aligned document signature templates, digital intake forms, and custom Creator tools into the centralized security perimeter.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04. OUTCOMES -->
+        <section id="outcomes" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">04 / Results</span>
+          </div>
+          <h2 class="case-section-title">Project Outcomes</h2>
+          <div class="case-prose">
+            <p>
+              By establishing unified identity governance, automating Oracle Cloud batch ingestion, and centralizing reporting within Zoho Analytics, the enterprise achieved synchronized operational clarity:
+            </p>
+          </div>
+
+          <div class="cs-outcomes-grid">
+            <div class="cs-outcome-card cs-outcome-featured">
+              <div class="cs-outcome-header">
+                <span class="cs-outcome-metric">100% RBAC</span>
+                <span class="mono-accent">GOVERNANCE</span>
+              </div>
+              <div class="cs-outcome-label">Centralized Identity &amp; Access Controls</div>
+              <p class="cs-outcome-desc">Enforced least-privilege security architectures across all Zoho One applications, preventing unauthorized record and dashboard exposure across departments.</p>
+            </div>
+
+            <div class="cs-outcome-card cs-outcome-featured">
+              <div class="cs-outcome-header">
+                <span class="cs-outcome-metric">Automated</span>
+                <span class="mono-accent">INTEGRATION</span>
+              </div>
+              <div class="cs-outcome-label">Scheduled Oracle Cloud Data Pipeline</div>
+              <p class="cs-outcome-desc">Eliminated manual spreadsheet data extracts by establishing automated API polling functions that batch-sync Oracle Cloud records into Zoho Analytics.</p>
+            </div>
+
+            <div class="cs-outcome-card">
+              <div class="cs-outcome-header">
+                <span class="cs-outcome-metric">Unified BI</span>
+                <span class="mono-accent">VISIBILITY</span>
+              </div>
+              <div class="cs-outcome-label">Multi-Source Reporting Environment</div>
+              <p class="cs-outcome-desc">Delivered executive dashboards cross-joining external Oracle operational records with Zoho CRM pipelines and Zoho Books financial accounts.</p>
+            </div>
+
+            <div class="cs-outcome-card">
+              <div class="cs-outcome-header">
+                <span class="cs-outcome-metric">Zero Leakage</span>
+                <span class="mono-accent">PRIVACY</span>
+              </div>
+              <div class="cs-outcome-label">Departmental Isolation &amp; KPI Security</div>
+              <p class="cs-outcome-desc">Structured workspace and folder-level permissions ensuring sensitive executive KPIs, compensation schemas, and client deals remain strictly segregated.</p>
+            </div>
+
+            <div class="cs-outcome-card">
+              <div class="cs-outcome-header">
+                <span class="cs-outcome-metric">Streamlined</span>
+                <span class="mono-accent">OPERATIONS</span>
+              </div>
+              <div class="cs-outcome-label">Coordinated HRMS &amp; Support Systems</div>
+              <p class="cs-outcome-desc">Successfully deployed employee directories in Zoho People, initialized compensation structures in Zoho Payroll, and established ticket routing in Zoho Desk.</p>
+            </div>
+
+            <div class="cs-outcome-card">
+              <div class="cs-outcome-header">
+                <span class="cs-outcome-metric">Reliable</span>
+                <span class="mono-accent">ARCHITECTURE</span>
+              </div>
+              <div class="cs-outcome-label">Auditable Execution &amp; Error Logging</div>
+              <p class="cs-outcome-desc">Maintained clear architectural boundaries between scheduled batch extractions and event-driven webhook notifications with complete integration auditability.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05. ARCHITECTURE -->
+        <section id="architecture" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">05 / Architecture</span>
+          </div>
+          <h2 class="case-section-title">Technical Architecture</h2>
+          <div class="case-prose" style="margin-bottom: 20px;">
+            <p>
+              The enterprise technical architecture organizes system interactions into five distinct operational tiers. Identity governance and access controls govern all applications from Layer 1, while Layer 2 and Layer 3 orchestrate the scheduled extraction and ingestion of Oracle Cloud operational data into the central Zoho Analytics business intelligence repository:
+            </p>
+          </div>
+
+          <div class="cs-arch-card" role="region" aria-label="Enterprise Zoho One and Oracle Cloud Integration Architecture Diagram">
+            <div class="cs-arch-topbar">
+              <div class="cs-arch-tag">TECHNICAL ARCHITECTURE &bull; ZOHO ONE ENTERPRISE SUITE &bull; ORACLE CLOUD INTEGRATION</div>
+              <div class="cs-arch-badge">Solution Layers</div>
+            </div>
+            <div class="cs-svg-wrap">
+              <svg viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="width:100%;height:auto;display:block;">
+                <defs>
+                  <marker id="oc-arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#9E7649" opacity="0.85"/></marker>
+                </defs>
+
+                <!-- Background Frame -->
+                <rect x="0" y="0" width="860" height="520" rx="8" fill="#10131A" stroke="#252B3B" stroke-width="1.2"/>
+
+                <!-- Layer 1: Identity & Access -->
+                <rect x="15" y="15" width="830" height="68" rx="6" fill="#141822" stroke="#283245" stroke-width="1"/>
+                <text x="32" y="32" font-family="JetBrains Mono,monospace" font-size="8.5" fill="#9E7649" letter-spacing="1.3" font-weight="600">LAYER 1 &mdash; IDENTITY, ACCESS GOVERNANCE &amp; APPLICATION SECURITY</text>
+                
+                <rect x="30" y="40" width="188" height="34" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="124" y="54" font-family="JetBrains Mono,monospace" font-size="7" fill="#9E7649" text-anchor="middle" font-weight="600">USER MANAGEMENT</text>
+                <text x="124" y="66" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle">Zoho One User Accounts</text>
+                
+                <rect x="232" y="40" width="188" height="34" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="326" y="54" font-family="JetBrains Mono,monospace" font-size="7" fill="#9E7649" text-anchor="middle" font-weight="600">ROLE HIERARCHY</text>
+                <text x="326" y="66" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle">Org Roles &amp; Data Ownership</text>
+                
+                <rect x="434" y="40" width="188" height="34" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="528" y="54" font-family="JetBrains Mono,monospace" font-size="7" fill="#9E7649" text-anchor="middle" font-weight="600">PROFILES &amp; POLICIES</text>
+                <text x="528" y="66" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle">Module &amp; App Permissions</text>
+                
+                <rect x="636" y="40" width="194" height="34" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="733" y="54" font-family="JetBrains Mono,monospace" font-size="7" fill="#9E7649" text-anchor="middle" font-weight="600">APP-SPECIFIC SECURITY</text>
+                <text x="733" y="66" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle">Per-Application Models</text>
+
+                <!-- Governance arrows down -->
+                <line x1="430" y1="83" x2="430" y2="103" stroke="#9E7649" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#oc-arr)" opacity="0.7"/>
+                <text x="445" y="96" font-family="JetBrains Mono,monospace" font-size="7" fill="#C5A882">Governs Access &amp; Permissions</text>
+
+                <!-- Layer 2: Oracle Cloud External Source -->
+                <rect x="15" y="105" width="250" height="114" rx="6" fill="#141822" stroke="#283245" stroke-width="1"/>
+                <text x="30" y="123" font-family="JetBrains Mono,monospace" font-size="8.5" fill="#9E7649" letter-spacing="1.2" font-weight="600">LAYER 2 &mdash; ORACLE CLOUD</text>
+                <rect x="28" y="133" width="224" height="74" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="140" y="153" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#9E7649" text-anchor="middle" font-weight="600">EXTERNAL DATA SOURCE</text>
+                <text x="140" y="171" font-family="Plus Jakarta Sans,sans-serif" font-size="11" fill="#ECEEF2" text-anchor="middle" font-weight="600">Oracle Cloud</text>
+                <text x="140" y="187" font-family="Plus Jakarta Sans,sans-serif" font-size="9" fill="#ECEEF2" text-anchor="middle">Continuously Updated</text>
+                <text x="140" y="200" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8C93A3" text-anchor="middle">Business Operational Records</text>
+
+                <!-- Layer 3: Integration & Scheduled Polling -->
+                <rect x="280" y="105" width="565" height="114" rx="6" fill="#141822" stroke="#283245" stroke-width="1"/>
+                <text x="296" y="123" font-family="JetBrains Mono,monospace" font-size="8.5" fill="#9E7649" letter-spacing="1.2" font-weight="600">LAYER 3 &mdash; INTEGRATION &amp; SCHEDULED SYNCHRONISATION</text>
+                
+                <rect x="294" y="133" width="168" height="74" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="378" y="153" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#9E7649" text-anchor="middle" font-weight="600">API RETRIEVAL</text>
+                <text x="378" y="171" font-family="Plus Jakarta Sans,sans-serif" font-size="10" fill="#ECEEF2" text-anchor="middle" font-weight="600">Oracle Cloud API</text>
+                <text x="378" y="187" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8C93A3" text-anchor="middle">REST Data Extraction</text>
+                <text x="378" y="200" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">External Query Calls</text>
+                
+                <rect x="474" y="133" width="176" height="74" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="562" y="153" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#9E7649" text-anchor="middle" font-weight="600">SCHEDULED FUNCTIONS</text>
+                <text x="562" y="171" font-family="Plus Jakarta Sans,sans-serif" font-size="10" fill="#ECEEF2" text-anchor="middle" font-weight="600">Periodic Batch Ingestion</text>
+                <text x="562" y="187" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8C93A3" text-anchor="middle">Interval-Based Polling</text>
+                <text x="562" y="200" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Non-Streaming Batch Run</text>
+                
+                <rect x="662" y="133" width="170" height="74" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="747" y="153" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#9E7649" text-anchor="middle" font-weight="600">WEBHOOK NOTIFIERS</text>
+                <text x="747" y="171" font-family="Plus Jakarta Sans,sans-serif" font-size="10" fill="#ECEEF2" text-anchor="middle" font-weight="600">Event Notifications</text>
+                <text x="747" y="187" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#8C93A3" text-anchor="middle">Where Applicable</text>
+                <text x="747" y="200" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Async Trigger Support</text>
+
+                <!-- Arrow from Oracle Cloud to Integration -->
+                <line x1="265" y1="165" x2="280" y2="165" stroke="#9E7649" stroke-width="1.8" marker-end="url(#oc-arr)"/>
+
+                <!-- Layer 4: Zoho One Business Application Suite -->
+                <rect x="15" y="232" width="830" height="118" rx="6" fill="#141822" stroke="#283245" stroke-width="1"/>
+                <text x="32" y="250" font-family="JetBrains Mono,monospace" font-size="8.5" fill="#9E7649" letter-spacing="1.2" font-weight="600">LAYER 4 &mdash; ZOHO ONE BUSINESS APPLICATION SUITE</text>
+                
+                <rect x="28" y="260" width="94" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="75" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho CRM</text>
+                <text x="75" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Commercial Deals</text>
+
+                <rect x="130" y="260" width="94" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="177" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho Books</text>
+                <text x="177" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Financial Data</text>
+
+                <rect x="232" y="260" width="94" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="279" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho People</text>
+                <text x="279" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">HRMS Setup</text>
+
+                <rect x="334" y="260" width="98" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="383" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho Payroll</text>
+                <text x="383" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Payroll Config</text>
+
+                <rect x="440" y="260" width="94" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="487" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho Desk</text>
+                <text x="487" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Ticket Mgmt</text>
+
+                <rect x="542" y="260" width="94" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="589" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho Creator</text>
+                <text x="589" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Custom Apps</text>
+
+                <rect x="644" y="260" width="94" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="691" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho Sign</text>
+                <text x="691" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">E-Signatures</text>
+
+                <rect x="746" y="260" width="88" height="46" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="790" y="278" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Zoho Forms</text>
+                <text x="790" y="294" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Data Intake</text>
+
+                <!-- Data flow arrows from Integration to Analytics -->
+                <line x1="562" y1="219" x2="562" y2="231" stroke="#9E7649" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#oc-arr)" opacity="0.8"/>
+                <text x="575" y="228" font-family="JetBrains Mono,monospace" font-size="7" fill="#C5A882">Retrieved Data Staged</text>
+
+                <!-- Layer 5: Zoho Analytics -->
+                <rect x="15" y="362" width="830" height="120" rx="6" fill="#141822" stroke="#283245" stroke-width="1"/>
+                <text x="32" y="380" font-family="JetBrains Mono,monospace" font-size="8.5" fill="#9E7649" letter-spacing="1.2" font-weight="600">LAYER 5 &mdash; ZOHO ANALYTICS &mdash; BUSINESS INTELLIGENCE &amp; REPORTING</text>
+                
+                <rect x="28" y="390" width="540" height="78" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="44" y="408" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#9E7649" font-weight="600">UNIFIED REPORTING REPOSITORY</text>
+                
+                <rect x="44" y="416" width="155" height="42" rx="4" fill="#141822" stroke="#2C3549" stroke-width="1"/>
+                <text x="121" y="434" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Stored Oracle Data</text>
+                <text x="121" y="448" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">External Staging Tables</text>
+                
+                <rect x="210" y="416" width="155" height="42" rx="4" fill="#141822" stroke="#2C3549" stroke-width="1"/>
+                <text x="287" y="434" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Executive Dashboards</text>
+                <text x="287" y="448" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Operational &amp; C-Suite</text>
+                
+                <rect x="376" y="416" width="176" height="42" rx="4" fill="#141822" stroke="#2C3549" stroke-width="1"/>
+                <text x="464" y="434" font-family="Plus Jakarta Sans,sans-serif" font-size="9.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">Reports &amp; KPIs</text>
+                <text x="464" y="448" font-family="JetBrains Mono,monospace" font-size="7" fill="#8C93A3" text-anchor="middle">Multi-Source Analytics</text>
+
+                <rect x="580" y="390" width="254" height="78" rx="4" fill="#1C212E" stroke="#2C3549" stroke-width="1"/>
+                <text x="707" y="410" font-family="JetBrains Mono,monospace" font-size="7.5" fill="#9E7649" text-anchor="middle" font-weight="600">REPORTING CONTEXT</text>
+                <text x="707" y="428" font-family="Plus Jakarta Sans,sans-serif" font-size="10.5" fill="#ECEEF2" text-anchor="middle" font-weight="600">CRM &amp; Books Data</text>
+                <text x="707" y="444" font-family="Plus Jakarta Sans,sans-serif" font-size="9" fill="#8C93A3" text-anchor="middle">Native Zoho Data Sources</text>
+                <text x="707" y="458" font-family="JetBrains Mono,monospace" font-size="7" fill="#C5A882" text-anchor="middle">Synchronized for Blended KPIs</text>
+
+                <!-- Bottom Tagline -->
+                <text x="430" y="502" font-family="JetBrains Mono,monospace" font-size="7" fill="#6B7280" text-anchor="middle">CONFIRMED INTEGRATION: ORACLE CLOUD &rarr; SCHEDULED API RETRIEVAL &rarr; ZOHO ANALYTICS BLENDED WITH CRM &amp; BOOKS</text>
+              </svg>
+            </div>
+          </div>
+
+          <div class="case-prose" style="margin-top: 20px;">
+            <p>
+              <strong>Architecture Data Flow Breakdown:</strong> In Layer 1, central identity governance defines user roles, application profiles, and granular access rights across the entire enterprise estate, enforcing strict least-privilege security. In Layer 2 and Layer 3, live operational records residing in Oracle Cloud are retrieved via secure REST API calls executed through automated scheduled functions running at predefined batch intervals.
+            </p>
+            <p>
+              In Layer 4 and Layer 5, the retrieved Oracle operational records are staged within dedicated Zoho Analytics data tables. Here, external operational data is joined with customer relationship records from Zoho CRM and accounting transactions from Zoho Books. This multi-source data repository powers executive KPI summaries, departmental performance cards, and operational drill-downs &mdash; all guarded by role-specific viewing permissions.
+            </p>
+          </div>
+        </section>
+
+        <!-- 06. CONTRIBUTIONS -->
+        <section id="contributions" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">06 / Scope &amp; Role</span>
+          </div>
+          <h2 class="case-section-title">Role &amp; Technical Contributions</h2>
+          <div class="case-prose">
+            <p>
+              As a Zoho Developer within a collaborative enterprise implementation team, my delivery focused across four core technical domains:
+            </p>
+          </div>
+
+          <div class="cs-contrib-grid">
+            <div class="cs-contrib-card">
+              <div class="cs-card-title">
+                <span class="mono-accent">// ADMINISTRATION &amp; SECURITY</span>
+                <h4>Zoho One Administration &amp; Application Security</h4>
+              </div>
+              <ul class="cs-card-items">
+                <li class="cs-card-item">Configured organization-wide user accounts and provisioned appropriate Zoho One license allocations.</li>
+                <li class="cs-card-item">Designed organizational role hierarchies and established strict data-ownership boundaries.</li>
+                <li class="cs-card-item">Structured application security profiles defining module-level, field-level, and tool permissions.</li>
+                <li class="cs-card-item">Enforced least-privilege access rules across transactional records and executive dashboards.</li>
+              </ul>
+            </div>
+
+            <div class="cs-contrib-card">
+              <div class="cs-card-title">
+                <span class="mono-accent">// DATA ENGINEERING</span>
+                <h4>External Data Integration &amp; Oracle Cloud Sync</h4>
+              </div>
+              <ul class="cs-card-items">
+                <li class="cs-card-item">Implemented REST API calls querying and extracting operational records from Oracle Cloud.</li>
+                <li class="cs-card-item">Developed scheduled functions to automate periodic batch data synchronization without manual intervention.</li>
+                <li class="cs-card-item">Structured normalized data ingestion pipelines populating dedicated Zoho Analytics storage tables.</li>
+                <li class="cs-card-item">Integrated webhook notification listeners where applicable for event-driven synchronization triggers.</li>
+              </ul>
+            </div>
+
+            <div class="cs-contrib-card">
+              <div class="cs-card-title">
+                <span class="mono-accent">// BUSINESS INTELLIGENCE</span>
+                <h4>Multi-Source Analytics &amp; Dashboard Development</h4>
+              </div>
+              <ul class="cs-card-items">
+                <li class="cs-card-item">Configured Zoho Analytics data models blending Oracle Cloud records with Zoho CRM and Zoho Books data.</li>
+                <li class="cs-card-item">Engineered executive KPI summary widgets surfacing real-time business health indicators.</li>
+                <li class="cs-card-item">Developed structured tabular and operational drill-down reports for departmental heads.</li>
+                <li class="cs-card-item">Configured workspace and folder-level sharing permissions restricting financial and personnel metrics.</li>
+              </ul>
+            </div>
+
+            <div class="cs-contrib-card">
+              <div class="cs-card-title">
+                <span class="mono-accent">// APPLICATIONS &amp; OPERATIONS</span>
+                <h4>Enterprise Suite Alignment (CRM, HRMS, Desk)</h4>
+              </div>
+              <ul class="cs-card-items">
+                <li class="cs-card-item">Configured Zoho CRM data models and pipelines to feed accurate customer metrics into Analytics.</li>
+                <li class="cs-card-item">Set up Zoho People HRMS employee master directories and organizational reporting structures.</li>
+                <li class="cs-card-item">Contributed to Zoho Payroll initial parameter setup and organizational compensation schemas.</li>
+                <li class="cs-card-item">Provisioned Zoho Desk departments, agent role assignments, and ticket routing rules.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cs-team-note">
+            <strong>Team Collaboration Note:</strong> I contributed to the implementation as part of a collaborative team, focusing on Zoho One administration, application access configuration, Oracle Cloud data integration, and Zoho Analytics reporting. The broader rollout was a coordinated squad effort.
+          </div>
+        </section>
+
+        <!-- 07. HIGHLIGHTS -->
+        <section id="highlights" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">07 / Highlights</span>
+          </div>
+          <h2 class="case-section-title">Implementation Highlights</h2>
+          <div class="case-prose">
+            <p>
+              The solution followed a rigorous 5-stage implementation methodology designed to safeguard enterprise data integrity and governance:
+            </p>
+          </div>
+
+          <div class="cs-highlights">
+            <div class="cs-highlight">
+              <div class="cs-highlight-num">01</div>
+              <div class="cs-highlight-text">
+                <strong>Discovery &amp; Access Governance Audit:</strong> Mapping departmental structures, employee role hierarchies, and application licensing requirements across the entire Zoho One suite.
+              </div>
+            </div>
+
+            <div class="cs-highlight">
+              <div class="cs-highlight-num">02</div>
+              <div class="cs-highlight-text">
+                <strong>Oracle Cloud API &amp; Scheduled Ingestion:</strong> Designing secure API extraction queries and deploying scheduled batch functions to periodically ingest updated operational data.
+              </div>
+            </div>
+
+            <div class="cs-highlight">
+              <div class="cs-highlight-num">03</div>
+              <div class="cs-highlight-text">
+                <strong>Zoho Analytics Schema &amp; Blended Models:</strong> Structuring normalized staging tables and writing relational data queries joining Oracle Cloud records with CRM and Books tables.
+              </div>
+            </div>
+
+            <div class="cs-highlight">
+              <div class="cs-highlight-num">04</div>
+              <div class="cs-highlight-text">
+                <strong>Multi-Application Suite Configuration:</strong> Configuring Zoho CRM, Zoho People HRMS, Zoho Payroll, Zoho Desk, and document-signing templates in Zoho Sign.
+              </div>
+            </div>
+
+            <div class="cs-highlight">
+              <div class="cs-highlight-num">05</div>
+              <div class="cs-highlight-text">
+                <strong>Security Hardening &amp; Executive Rollout:</strong> Validating permission boundaries, testing least-privilege folder visibility, and rolling out executive KPI dashboards.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 08. TECH STACK -->
+        <section id="tech-stack" class="case-section-block">
+          <div class="case-section-meta">
+            <span class="mono-label mono-accent">08 / Stack</span>
+          </div>
+          <h2 class="case-section-title">Technology Stack</h2>
+          <div class="case-prose">
+            <p>
+              Confirmed technologies and enterprise platform components deployed within my contribution scope:
+            </p>
+          </div>
+
+          <div class="cs-tech-grid">
+            <div class="cs-tech-group">
+              <div class="cs-tech-label">Zoho One Core Suite</div>
+              <div class="cs-chips">
+                <span class="cs-chip">Zoho One Admin</span>
+                <span class="cs-chip">Zoho CRM</span>
+                <span class="cs-chip">Zoho Books</span>
+                <span class="cs-chip">Zoho Creator</span>
+                <span class="cs-chip">Zoho Sign</span>
+                <span class="cs-chip">Zoho Forms</span>
+              </div>
+            </div>
+
+            <div class="cs-tech-group">
+              <div class="cs-tech-label">HR, Payroll &amp; Support</div>
+              <div class="cs-chips">
+                <span class="cs-chip">Zoho People HRMS</span>
+                <span class="cs-chip">Zoho Payroll</span>
+                <span class="cs-chip">Zoho Desk</span>
+                <span class="cs-chip">Employee Profiles</span>
+                <span class="cs-chip">SLA Routing</span>
+              </div>
+            </div>
+
+            <div class="cs-tech-group">
+              <div class="cs-tech-label">Integration &amp; Data Engineering</div>
+              <div class="cs-chips">
+                <span class="cs-chip">Oracle Cloud</span>
+                <span class="cs-chip">REST APIs</span>
+                <span class="cs-chip">Scheduled Functions</span>
+                <span class="cs-chip">Batch Ingestion</span>
+                <span class="cs-chip">Webhooks (Applicable)</span>
+              </div>
+            </div>
+
+            <div class="cs-tech-group">
+              <div class="cs-tech-label">Business Intelligence &amp; Governance</div>
+              <div class="cs-chips">
+                <span class="cs-chip">Zoho Analytics</span>
+                <span class="cs-chip">Multi-Source BI</span>
+                <span class="cs-chip">KPI Widgets</span>
+                <span class="cs-chip">Least-Privilege RBAC</span>
+                <span class="cs-chip">Workspace Governance</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 09. CONSULTATION CTA BANNER -->
+        <div id="cta" class="consultation-cta-box" style="margin-top: 24px;">
+          <div>
+            <span class="mono-label" style="color: var(--accent); margin-bottom: 12px; display: inline-block;">Enterprise Consultation</span>
+            <h3 class="cta-box-title">Planning an Enterprise Zoho One Architecture or Cloud Integration?</h3>
+            <p class="cta-box-desc">
+              Whether you need to enforce least-privilege security across multi-application Zoho One suites, engineer scheduled Oracle Cloud API pipelines, or design consolidated executive intelligence in Zoho Analytics, I architect secure, enterprise-grade systems that scale.
+            </p>
+          </div>
+          <div class="cta-box-actions">
+            <a href="../../#contact" class="btn btn-primary">
+              Schedule Architecture Call
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="cta-direct-details">
+              <span>Direct: princeyadav9905@gmail.com</span>
+              <span>Certified Zoho Consultant &amp; Solutions Architect</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PAGINATION NAV -->
+        <div class="case-pagination-nav">
+          <a href="../sensor-manufacturing-creator-erp/" class="case-nav-btn prev">
+            <div class="case-nav-dir">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+              <span>Previous Case Study</span>
+            </div>
+            <div class="case-nav-title">Sensor Manufacturing &amp; IoT Creator ERP</div>
+          </a>
+
+          <a href="../supply-chain-erp-zoho-creator/" class="case-nav-btn next">
+            <div class="case-nav-dir">
+              <span>Next Case Study</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            <div class="case-nav-title">Supply Chain ERP &amp; Analytics Dashboard</div>
+          </a>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-editorial-prompt">
+        <div class="footer-prompt-left">
+          <span class="footer-prompt-index">// READY TO SCALE</span>
+          <h3 class="footer-prompt-title">Let&rsquo;s build systems that actually work.</h3>
+          <p class="footer-prompt-desc">Enterprise Zoho Architecture &bull; Full-Stack Custom Apps &bull; End-to-End Workflow Automation</p>
+        </div>
+        <div class="footer-prompt-right">
+          <div class="footer-prompt-actions">
+            <a href="../../#contact" class="btn btn-primary">Book Consultation</a>
+            <a href="mailto:princeyadav9905@gmail.com" class="btn btn-outline">Email Directly</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-editorial-divider"></div>
+
+      <div class="footer-editorial-grid">
+        <div class="footer-editorial-col">
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-editorial-list">
+            <li><a href="../../services/#zoho-crm" class="footer-editorial-link">Zoho CRM Architecture</a></li>
+            <li><a href="../../services/#zoho-one" class="footer-editorial-link">Zoho One Deployment</a></li>
+            <li><a href="../../services/#zoho-creator" class="footer-editorial-link">Custom Creator Applications</a></li>
+            <li><a href="../../services/#integrations" class="footer-editorial-link">API &amp; ERP Integrations</a></li>
+            <li><a href="../../services/#analytics" class="footer-editorial-link">Analytics &amp; Intelligence</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <div class="footer-col-title">Case Studies</div>
+          <ul class="footer-editorial-list">
+            <li><a href="../financial-services-crm/" class="footer-editorial-link">Financial Services CRM</a></li>
+            <li><a href="../software-services-crm/" class="footer-editorial-link">Software Services CRM</a></li>
+            <li><a href="../healthcare-operations/" class="footer-editorial-link">Healthcare Operations</a></li>
+            <li><a href="../renewable-energy-solar-crm/" class="footer-editorial-link">Solar EPC &amp; RFQ Automation</a></li>
+            <li><a href="../sensor-manufacturing-creator-erp/" class="footer-editorial-link">Sensor Manufacturing ERP</a></li>
+            <li><a href="../enterprise-zoho-one-security-integration/" class="footer-editorial-link">Enterprise Zoho One &amp; Oracle</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <div class="footer-col-title">Systems Insights</div>
+          <ul class="footer-editorial-list">
+            <li><a href="../../insights/hubspot-to-zoho-migration-guide/" class="footer-editorial-link">HubSpot to Zoho Migration</a></li>
+            <li><a href="../../insights/salesforce-vs-zoho-crm/" class="footer-editorial-link">Salesforce vs Zoho CRM</a></li>
+            <li><a href="../../insights/zoho-crm-quickbooks-integration/" class="footer-editorial-link">QuickBooks &amp; Zoho Sync</a></li>
+            <li><a href="../../insights/zoho-crm-api-integration-guide/" class="footer-editorial-link">REST API Integration Guide</a></li>
+            <li><a href="../../insights/automate-sales-processes-zoho-crm/" class="footer-editorial-link">Sales Process Automation</a></li>
+            <li><a href="../../insights/" class="footer-editorial-link-muted">All Technical Articles &rarr;</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-editorial-col">
+          <div class="footer-col-title">Practice &amp; Reach</div>
+          <p class="footer-editorial-nav-link" style="color: #9ca3af; font-size: 0.85rem; line-height: 1.6; margin-bottom: 12px;">
+            Consulting internationally across India, APAC, the Middle East, the UK, and North America.
+          </p>
+          <div class="footer-connect-group">
+            <a href="https://linkedin.com/in/prince-yadav" target="_blank" rel="noopener" class="footer-editorial-link">LinkedIn Profile &rarr;</a>
+            <a href="mailto:princeyadav9905@gmail.com" class="footer-editorial-link">princeyadav9905@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-editorial-divider"></div>
+
+      <div class="footer-colophon">
+        <div class="footer-colophon-left">
+          <span class="footer-colophon-legal">&copy; 2026 Prince Yadav &mdash; Certified Zoho Systems Consultant &amp; Architect.</span>
+          <span class="footer-colophon-note">Certified Zoho Systems Consultant &amp; Solutions Architect. All Zoho and Oracle trademarks belong to their respective owners.</span>
+        </div>
+        <div class="footer-colophon-right">
+          <a href="#header" class="scroll-top" aria-label="Back to top">
+            <span>Back to top</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

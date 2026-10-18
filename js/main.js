@@ -228,4 +228,90 @@ document.addEventListener('DOMContentLoaded', () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
+
+  // ─── 7. 3D CONNECTED BUSINESS OPERATIONS ENGINE ─────
+  const grandCard = document.getElementById('grand3dCard');
+  if (grandCard) {
+    const grandViewport = document.getElementById('grandViewport');
+    const grandWorld = document.getElementById('grandWorld');
+    const moduleNodes = document.querySelectorAll('.module-3d-node');
+    const activeLaserPath = document.getElementById('activeLaserPath');
+
+    const moduleKeys = ['marketing', 'sales', 'procurement', 'inventory', 'finance', 'service', 'hr'];
+    let currentModIndex = 0;
+    let autoFlowTimer = null;
+    let isUserHovering = false;
+
+    function activateModule(key) {
+      moduleNodes.forEach(node => {
+        if (node.dataset.module === key) {
+          node.classList.add('is-active');
+        } else {
+          node.classList.remove('is-active');
+        }
+      });
+
+      currentModIndex = moduleKeys.indexOf(key);
+
+      // Micro laser pulse accent on switch
+      if (activeLaserPath) {
+        activeLaserPath.style.animationDuration = '2s';
+        setTimeout(() => {
+          activeLaserPath.style.animationDuration = '5s';
+        }, 800);
+      }
+    }
+
+    // Interactive node hover & click
+    moduleNodes.forEach(node => {
+      node.addEventListener('click', () => {
+        const modKey = node.dataset.module;
+        activateModule(modKey);
+      });
+      node.addEventListener('mouseenter', () => {
+        isUserHovering = true;
+        const modKey = node.dataset.module;
+        activateModule(modKey);
+      });
+      node.addEventListener('mouseleave', () => {
+        isUserHovering = false;
+      });
+    });
+
+    // 3D Mouse Parallax Tilt
+    if (grandViewport && grandWorld) {
+      const defaultRotX = 54;
+      const defaultRotZ = -26;
+
+      grandViewport.addEventListener('mousemove', (e) => {
+        const rect = grandViewport.getBoundingClientRect();
+        const x = (e.clientX - rect.left) / rect.width - 0.5;
+        const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+        const rotX = defaultRotX - y * 10;
+        const rotZ = defaultRotZ + x * 10;
+
+        grandWorld.style.transform = `rotateX(${rotX}deg) rotateZ(${rotZ}deg)`;
+      });
+
+      grandViewport.addEventListener('mouseleave', () => {
+        grandWorld.style.transform = `rotateX(${defaultRotX}deg) rotateZ(${defaultRotZ}deg)`;
+      });
+    }
+
+    // Auto-cycle through connected nodes smoothly
+    function startAutoFlow() {
+      clearInterval(autoFlowTimer);
+      autoFlowTimer = setInterval(() => {
+        if (!isUserHovering) {
+          currentModIndex = (currentModIndex + 1) % moduleKeys.length;
+          activateModule(moduleKeys[currentModIndex]);
+        }
+      }, 3200);
+    }
+
+    // Initial activation & start
+    activateModule('marketing');
+    startAutoFlow();
+  }
 });

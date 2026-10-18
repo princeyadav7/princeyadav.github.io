@@ -89,12 +89,15 @@
 
   /* Case Detail Tablet */
   .case-detail-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 40px;
     padding: 40px 0 70px;
   }
 
-  .case-sidebar-col {
+  .case-sidebar-col,
+  .case-content-col {
+    min-width: 0;
+    max-width: 100%;
     position: static;
   }
 
@@ -278,13 +281,20 @@
     grid-template-columns: 1fr;
   }
 
-  .flow-step-row {
-    grid-template-columns: 1fr;
-    gap: 8px;
+  .section-3d-automation {
+    padding: 60px 0;
   }
 
-  .flow-connector {
-    display: none;
+  .grand-3d-card {
+    padding: 16px 12px;
+  }
+
+  .grand-3d-viewport {
+    height: 420px;
+  }
+
+  .grand-3d-world {
+    transform: scale(0.52) rotateX(54deg) rotateZ(-26deg) !important;
   }
 
   /* Case Detail Mobile */
@@ -326,8 +336,10 @@
     grid-template-columns: 1fr;
   }
 
-  .about-stats-grid {
+  .about-stats-grid,
+  .philosophy-stats-grid {
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   /* Insights Page Mobile */

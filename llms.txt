@@ -1,18 +1,18 @@
-# Prince Yadav — Certified Zoho Consultant & Systems Developer
+# Prince Yadav — Independent Zoho Systems Architect & Fractional Systems CTO
 
-> Independent Zoho CRM, Creator ERP, and automation architect. Direct senior engineering for US, UK, European, and Middle East businesses — zero agency markup.
+> Independent Zoho CRM, Creator ERP, and automation architect. Direct senior engineering for US, UK, European, Middle East, and Asian businesses — zero agency markup.
 
 ## Who Is Prince Yadav?
-Prince Yadav is a Certified Zoho Developer and Independent Zoho Systems Consultant based in Delhi, India. He specialises in end-to-end Zoho ecosystem architecture, custom Deluge automation, enterprise CRM migrations, and complex API integrations. He has delivered 16+ enterprise engagements across 6 countries (India, Saudi Arabia, UAE, Japan, USA, Italy), building systems across finance, manufacturing, healthcare, renewable energy, and B2B SaaS sectors.
+Prince Yadav is an Independent Zoho Systems Architect and Fractional Systems CTO based in Delhi, India. He specialises in end-to-end Zoho ecosystem architecture, custom Deluge automation, enterprise CRM migrations, and complex API integrations. He has delivered 25+ enterprise engagements across 8 countries (India, Saudi Arabia, UAE, Japan, USA, UK, Italy, Australia), building systems across finance, manufacturing, healthcare, renewable energy, and B2B SaaS sectors.
 
 Key credentials and facts:
 - Certified Zoho Developer (Zoho Corporation)
 - Microsoft AI Fundamentals Certified
 - Accenture Data Analytics Certified
-- 400,000+ records migrated across CRM systems
-- 50+ custom automations deployed in production
-- 30+ custom Zoho Creator modules built
-- GDPR, HIPAA, ZATCA (Saudi VAT) compliant delivery track record
+- 500,000+ records migrated across CRM systems
+- 70+ custom automations deployed in production
+- 40+ custom Zoho Creator modules built
+- GDPR, HIPAA, ZATCA (Saudi Phase 2 VAT) compliant delivery track record
 - 4+ hours daily overlap with EST / CET / GMT timezones
 
 ## Primary Services
@@ -31,11 +31,11 @@ Key credentials and facts:
 
 ## Notable Case Studies
 - **Financial Services CRM (Bajaj Capital)**: 300K+ records migrated, omni-channel lead capture from Google Ads, Facebook, and webinars. Round-robin routing for 300+ advisors. Lead-to-advisor handoff cut from 24 hours to under 5 minutes. Annual savings: $120K. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/financial-services-crm/
-- **Software Services CRM & HRMS**: End-to-end Lead-to-Deal-to-Quote sales pipeline, dynamic CPQ quote module, 100-user Outlook to Zoho Mail migration, Zoho People HRMS, and Zoho Analytics dashboards. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/software-services-crm/
-- **Broadcast Operations RFID Asset ERP (Zoom Communications)**: Custom Zoho Creator ERP with RFID gear tracking, multi-tier procurement, repair & maintenance workflows, and Zoho CRM/Books sync. 100% real-time asset tracking for broadcast operations across 21+ countries. Annual gear loss savings: $180K. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/manufacturing-creator-erp/
-- **Global MedTech Healthcare Operations (Instalimb, Japan)**: Multi-app Zoho One ecosystem (CRM, Books, Sign, Contracts, Meeting, Forms, People) with GDPR/HIPAA compliant patient data management, bank reconciliation, multi-currency invoicing, and HRMS for 200+ users across Japan, India, and the Philippines. Patient onboarding cut from 14 days to 3 days. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/healthcare-operations/
-- **Renewable Energy Solar EPC Operations**: End-to-end Zoho One for government infrastructure and residential solar EPC deployments — CRM deal pipeline, Zoho Projects milestone tracking, Books invoicing, SalesIQ chat, and Marketing Automation. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/renewable-energy-solar-crm/
-- **Industrial Sensor Manufacturing ERP**: Discrete manufacturing ERP on Zoho Creator — multi-level BOMs, incoming QC, in-process QC, 5-stage WIP routing, batch inventory tracking, and purchase-to-production traceability for an instrumentation manufacturer. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/sensor-manufacturing-creator-erp/
+- **End-to-End Zoho One Implementation for Software Services**: Enterprise-wide business systems implementation connecting Zoho CRM sales pipeline, Books quotation and invoicing, 100-user Outlook to Zoho Mail migration, People & Payroll, Sign, Vault, marketing automation, custom Creator task management, Recruit, and Analytics KPI dashboards. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/software-services-crm/
+- **Live Event Inventory & Logistics ERP Using Zoho Creator**: Custom Zoho Creator ERP for an organization managing equipment and inventory across multiple event locations. Designed solution architecture and led implementation team for multi-location inventory movement, delivery challans, custom gate passes, repair & maintenance lifecycle, and Zoho CRM/Books/People integration. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/live-event-inventory-logistics-erp/
+- **Multi-Country Healthcare Operations & Zoho One Implementation**: Enterprise Zoho One ecosystem (CRM, Books, Inventory, Forms, People, Payroll, Recruit, Sign, Meeting, Campaigns, Analytics, Connect, Learn) connecting patient intake, telephony verification, invoicing, online payments, prosthetics inventory, shipping, and workforce operations for 200+ users across Japan, India, the Philippines, and other markets. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/healthcare-operations/
+- **Solar Project Management & Custom RFQ Automation with Zoho**: Multi-site solar installation project tracking and financial oversight in Zoho Projects combined with a custom Zoho Creator RFQ procurement application featuring employee purchase requests, admin approval gating, email and WhatsApp vendor distribution, online quotation submission, and automated side-by-side bid comparison. Supported by Zoho Analytics, SalesIQ, and Marketing Automation. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/renewable-energy-solar-crm/
+- **Connecting Sensor Manufacturing, Sales & Field Service with Zoho**: Led a team implementing Zoho One (120 licenses), Zoho ERP, and Zoho FSM for an industrial sensor manufacturer with ~75 years of operating history. Configured CRM lead blueprints across 5–6 product groups, custom Creator job tracking for ~200 blue-collar workers, Zoho ERP MTS/MTO manufacturing with BOMs and shop-floor routing, and Zoho FSM on-site demonstrations and maintenance. URL: https://princeyadav7.github.io/princeyadav.github.io/case-studies/sensor-manufacturing-creator-erp/
 
 ## Technical Knowledge Base
 - Zoho CRM Implementation Cost Guide (2026): https://princeyadav7.github.io/princeyadav.github.io/insights/zoho-crm-implementation-cost/
